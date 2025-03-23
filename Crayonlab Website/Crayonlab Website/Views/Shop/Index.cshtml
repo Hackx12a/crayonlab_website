@@ -1,0 +1,652 @@
+﻿@model Crayonlab.Models.ShopViewModel
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService AuthorizationService
+
+@{
+    ViewBag.Title = "Shop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://fonts.cdnfonts.com/css/heaters" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+<link rel="stylesheet" href="~/Content/StyleSheet.css">
+<link rel="stylesheet" href="~/css/shop.css">
+
+<main>
+
+
+
+
+
+    <!-- Corporate Section -->
+    <!-- Corporate Section -->
+    <div>
+        <h1>CORPORATE SHIRT</h1>
+        <p>COLLECTIONS</p>
+    </div>
+
+    <div id="uploadCorporateModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Upload New Corporate Designs</h2>
+            <form asp-action="UploadDesign" asp-controller="Shop" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="frontDesignCorporate">Front Design:</label>
+                    <input type="file" name="frontDesign" id="frontDesignCorporate" required>
+                </div>
+                <div>
+                    <label for="backDesignCorporate">Back Design:</label>
+                    <input type="file" name="backDesign" id="backDesignCorporate" required>
+                </div>
+                <div>
+                    <label for="shortDesignCorporate">Lower Design (Optional):</label>
+                    <input type="file" name="shortDesign" id="shortDesignCorporate">
+                </div>
+                <div class="uploadcenter"><button type="submit">Upload</button></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Delete Modal for Corporate -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Delete Design</h2>
+            <div id="deleteDesignImages" class="imagess">
+                @foreach (var item in Model.Designs)
+            {
+                <div class="design-item">
+                    <div class="swiper-slide category" data-name="@item.FrontDesign" data-image="@item.FrontDesign">
+                        <div class="category-image-container">
+                            <a href="@Url.Action("Index", "Item", new {
+                                id = item.Id,
+                                frontImage = Url.Content("~/Content/assets/" + item.FrontDesign),
+                                backImage = Url.Content("~/Content/assets/" + item.BackDesign),
+                                shortsImage = !string.IsNullOrEmpty(item.ShortsDesign) ? Url.Content("~/Content/assets/" + item.ShortsDesign) : null
+                            })">
+                                <img src="~/Content/assets/@item.FrontDesign" alt="@item.FrontDesign" class="main-image">
+                                <img src="~/Content/assets/@item.BackDesign" alt="@item.BackDesign" class="zoomed-image">
+                                @if (!string.IsNullOrEmpty(item.ShortsDesign))
+                                {
+                                <img src="~/Content/assets/@item.ShortsDesign" alt="@item.ShortsDesign Upload Lower Design" class="third-image">
+                                }
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="delete-design-button" data-id="@item.Id">Delete</button>
+            }
+            </div>
+        </div>
+    </div>
+
+    @if (User.Identity.IsAuthenticated)
+{
+    <div class="deleteupload">
+        <button id="uploadCorporateButton" class="upload-button">Upload Design</button>
+        <button id="deleteCorporateButton" class="delete-button">Delete Design</button>
+    </div>
+}
+
+    <div class="center">
+        <div class="left">
+            <button class="nav-button left-button">
+                <img class="leftimg" src="~/Content/assets/left.png" alt="Left Arrow" />
+            </button>
+        </div>
+
+        <div class="right">
+            <button class="nav-button right-button">
+                <img class="rightimg" src="~/Content/assets/right.png" alt="Right Arrow" />
+            </button>
+        </div>
+
+        <div class="CorpoContainer">
+            @foreach (var item in Model.Designs)
+        {
+            <div class="swiper-slide category" data-name="@item.FrontDesign" data-image="@item.FrontDesign">
+                <div class="category-image-container">
+                    <a href="@Url.Action("Index", "Item", new {
+                        id = item.Id,
+                        frontImage = Url.Content("~/Content/assets/" + item.FrontDesign),
+                        backImage = Url.Content("~/Content/assets/" + item.BackDesign),
+                        shortsImage = !string.IsNullOrEmpty(item.ShortsDesign) ? Url.Content("~/Content/assets/" + item.ShortsDesign) : null
+                    })">
+                        <img src="~/Content/assets/@item.FrontDesign" alt="@item.FrontDesign" class="main-image">
+                        <img src="~/Content/assets/@item.BackDesign" alt="@item.BackDesign" class="zoomed-image">
+                        @if (!string.IsNullOrEmpty(item.ShortsDesign))
+                        {
+                        <img src="~/Content/assets/@item.ShortsDesign" alt="@item.ShortsDesign Upload Lower Design" class="third-image">
+                        }
+                    </a>
+                </div>
+            </div>
+        }
+        </div>
+
+        <div class="pagination"></div>
+    </div>
+
+    <!-- Corporate Section -->
+    <!-- Basketball Section -->
+    <div>
+        <h1>BASKETBALL JERSEY</h1>
+        <p>COLLECTIONS</p>
+    </div>
+    <!-- Upload Modal for Basketball -->
+    <div id="uploadBasketballModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Upload New Basketball Designs</h2>
+            <form asp-action="UploadBasketballJersey" asp-controller="Shop" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="frontDesignBasketball">Front Design:</label>
+                    <input type="file" name="frontDesign" id="frontDesignBasketball" required>
+                </div>
+                <div>
+                    <label for="backDesignBasketball">Back Design:</label>
+                    <input type="file" name="backDesign" id="backDesignBasketball" required>
+                </div>
+                <div>
+                    <label for="shortsDesignBasketball">Lower Design (Optional):</label>
+                    <input type="file" name="shortsDesign" id="shortsDesignBasketball">
+                </div>
+
+                <div class="uploadcenter"><button type="submit">Upload</button></div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Delete Modal for Basketball -->
+    <div id="deleteBasketballModal" class="modal">
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+            <h2>Delete Basketball Designs</h2>
+            <div id="deleteBasketballImages" class="imagess">
+                <!-- Design images will be dynamically inserted here -->
+                @foreach (var jersey in Model.BasketballJerseys)
+            {
+
+                <div class="design-item">
+                    <div class="swiper-slide category" data-name="@jersey.FrontDesign" data-image="@jersey.FrontDesign">
+                        <div class="category-image-container">
+                            <a href="@Url.Action("Index", "Item", new { id = jersey.Id })">
+                                <img src="~/Content/assets/@jersey.FrontDesign" alt="@jersey.FrontDesign" class="main-image">
+                                <img src="~/Content/assets/@jersey.BackDesign" alt="@jersey.BackDesign" class="zoomed-image">
+                                @if (!string.IsNullOrEmpty(jersey.ShortsDesign))
+                    {
+                                <img src="~/Content/assets/@jersey.ShortsDesign" alt="@jersey.ShortsDesign Upload Lower Design" class="third-image">
+                    }
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <button class="delete-basketball-design-button" data-id="@jersey.Id">Delete</button>
+            }
+            </div>
+        </div>
+    </div>
+    @if (User.Identity.IsAuthenticated)
+ {
+    <div class="deleteupload">
+        <button id="uploadBasketballButton" class="upload-button">Upload Design</button>
+        <button id="deleteBasketballButton" class="delete-button">Delete Design</button>
+    </div>
+ }
+
+
+    <div class="center">
+        <div class="left">
+            <button class="nav-button left-button">
+                <img class="leftimg" src="~/Content/assets/left.png" alt="Left Arrow" />
+            </button>
+        </div>
+
+        <div class="right">
+            <button class="nav-button right-button">
+                <img class="rightimg" src="~/Content/assets/right.png" alt="Right Arrow" />
+            </button>
+        </div>
+
+
+        <div class="BasketballContainer">
+            @foreach (var jersey in Model.BasketballJerseys)
+        {
+            <div class="swiper-slide category" data-name="@jersey.FrontDesign" data-image="@jersey.FrontDesign">
+                <div class="category-image-container">
+                    <a href="@Url.Action("Index", "Item", new {
+                        id = jersey.Id,
+                        frontImage = Url.Content("~/Content/assets/" + jersey.FrontDesign),
+                        backImage = Url.Content("~/Content/assets/" + jersey.BackDesign),
+                        shortsImage = !string.IsNullOrEmpty(jersey.ShortsDesign) ? Url.Content("~/Content/assets/" + jersey.ShortsDesign) : null
+                    })">
+                        <img src="~/Content/assets/@jersey.FrontDesign" alt="@jersey.FrontDesign" class="main-image">
+                        <img src="~/Content/assets/@jersey.BackDesign" alt="@jersey.BackDesign" class="zoomed-image">
+                        @if (!string.IsNullOrEmpty(jersey.ShortsDesign))
+                        {
+                        <img src="~/Content/assets/@jersey.ShortsDesign" alt="@jersey.ShortsDesign Upload Lower Design" class="third-image">
+                        }
+                    </a>
+                </div>
+            </div>
+        }
+        </div>
+        <div class="pagination"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- THIRD SECTION: SOCCER JERSEY -->
+    <div>
+        <h1>SOCCER JERSEY</h1>
+        <p>COLLECTIONS</p>
+    </div>
+    <!-- Upload Modal for SOCCER JERSEY -->
+    <div id="uploadSoccerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Upload New Soccer Designs</h2>
+            <form asp-action="UploadSoccerJersey" asp-controller="Shop" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="frontDesignSoccer">Front Design:</label>
+                    <input type="file" name="frontDesign" id="frontDesignSoccer" required>
+                </div>
+                <div>
+                    <label for="backDesignSoccer">Back Design:</label>
+                    <input type="file" name="backDesign" id="backDesignSoccer" required>
+                </div>
+                <div>
+                    <label for="shortsDesignSoccer">Lower Design (Optional):</label>
+                    <input type="file" name="shortsDesign" id="shortsDesignSoccer">
+                </div>
+
+                <div class="uploadcenter"><button type="submit">Upload</button></div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Delete Modal for SOCCER JERSEY -->
+    <div id="deleteSoccerModal" class="modal">
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+            <h2>Delete Soccer Designs</h2>
+            <div id="deleteSoccerlImages" class="imagess">
+                <!-- Design images will be dynamically inserted here -->
+                @foreach (var sjersey in Model.Soccerjerseys)
+         {
+
+                <div class="design-item">
+                    <div class="swiper-slide category" data-name="@sjersey.FrontDesign" data-image="@sjersey.FrontDesign">
+                        <div class="category-image-container">
+                            <a href="@Url.Action("Index", "Item", new { id = sjersey.Id })">
+                                <img src="~/Content/assets/@sjersey.FrontDesign" alt="@sjersey.FrontDesign" class="main-image">
+                                <img src="~/Content/assets/@sjersey.BackDesign" alt="@sjersey.BackDesign" class="zoomed-image">
+                                @if (!string.IsNullOrEmpty(sjersey.ShortsDesign))
+                 {
+                                <img src="~/Content/assets/@sjersey.ShortsDesign" alt="@sjersey.ShortsDesign Upload Lower Design" class="third-image">
+                 }
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <button class="delete-Soccer-design-button" data-id="@sjersey.Id">Delete</button>
+         }
+            </div>
+        </div>
+    </div>
+    @if (User.Identity.IsAuthenticated)
+ {
+    <div class="deleteupload">
+        <button id="uploadSoccerButton" class="upload-button">Upload Design</button>
+        <button id="deleteSoccerButton" class="delete-button">Delete Design</button>
+    </div>
+ }
+    <div class="center">
+        <div class="left">
+            <button class="nav-button left-button">
+                <img class="leftimg" src="~/Content/assets/left.png" alt="Left Arrow" />
+            </button>
+        </div>
+
+        <div class="right">
+            <button class="nav-button right-button">
+                <img class="rightimg" src="~/Content/assets/right.png" alt="Right Arrow" />
+            </button>
+        </div>
+
+
+        <div class="SoccerContainer">
+            @foreach (var sjersey in Model.Soccerjerseys)
+     {
+            <div class="swiper-slide category" data-name="@sjersey.FrontDesign" data-image="@sjersey.FrontDesign">
+                <div class="category-image-container">
+                    <a href="@Url.Action("Index", "Item", new {
+                        id = sjersey.Id,
+                        frontImage = Url.Content("~/Content/assets/" + sjersey.FrontDesign),
+                        backImage = Url.Content("~/Content/assets/" + sjersey.BackDesign),
+                        shortsImage = !string.IsNullOrEmpty(sjersey.ShortsDesign) ? Url.Content("~/Content/assets/" + sjersey.ShortsDesign) : null
+                    })">
+                        <img src="~/Content/assets/@sjersey.FrontDesign" alt="@sjersey.FrontDesign" class="main-image">
+                        <img src="~/Content/assets/@sjersey.BackDesign" alt="@sjersey.BackDesign" class="zoomed-image">
+                        @if (!string.IsNullOrEmpty(sjersey.ShortsDesign))
+                        {
+                        <img src="~/Content/assets/@sjersey.ShortsDesign" alt="@sjersey.ShortsDesign Upload Lower Design" class="third-image">
+                        }
+                    </a>
+                </div>
+            </div>
+     }
+        </div>
+        <div class="pagination"></div>
+    </div>
+
+
+
+
+
+
+    <!-- FOURTH SECTION: LONG SLEEVE -->
+    <div>
+        <h1>LONG SLEEVE</h1>
+        <p>COLLECTIONS</p>
+    </div>
+    <!-- Upload Modal for LONG SLEEVE -->
+    <div id="uploadLongSleeveModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Upload New LongSleeve Designs</h2>
+            <form asp-action="UploadLongSleeve" asp-controller="Shop" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="frontDesignLongSleeve">Front Design:</label>
+                    <input type="file" name="frontDesign" id="frontDesignLongSleeve" required>
+                </div>
+                <div>
+                    <label for="backDesignLongSleeve">Back Design:</label>
+                    <input type="file" name="backDesign" id="backDesignLongSleeve" required>
+                </div>
+                <div>
+                    <label for="shortsDesignLongSleeve">Lower Design (Optional):</label>
+                    <input type="file" name="shortsDesign" id="shortsDesignLongSleeve">
+                </div>
+
+                <div class="uploadcenter"><button type="submit">Upload</button></div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Delete Modal for LONG SLEEVE -->
+    <div id="deleteLongSleeveModal" class="modal">
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+            <h2>Delete LongSleeve Designs</h2>
+            <div id="deleteLongSleeveImages" class="imagess">
+                <!-- Design images will be dynamically inserted here -->
+                @foreach (var sleeves in Model.Longsleeves)
+      {
+
+                <div class="design-item">
+                    <div class="swiper-slide category" data-name="@sleeves.FrontDesign" data-image="@sleeves.FrontDesign">
+                        <div class="category-image-container">
+                            <a href="@Url.Action("Index", "Item", new { id = sleeves.Id })">
+                                <img src="~/Content/assets/@sleeves.FrontDesign" alt="@sleeves.FrontDesign" class="main-image">
+                                <img src="~/Content/assets/@sleeves.BackDesign" alt="@sleeves.BackDesign" class="zoomed-image">
+                                @if (!string.IsNullOrEmpty(sleeves.ShortsDesign))
+              {
+                                <img src="~/Content/assets/@sleeves.ShortsDesign" alt="@sleeves.ShortsDesign Upload Lower Design" class="third-image">
+              }
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <button class="delete-LongSleeve-design-button" data-id="@sleeves.Id">Delete</button>
+      }
+            </div>
+        </div>
+    </div>
+    @if (User.Identity.IsAuthenticated)
+ {
+    <div class="deleteupload">
+        <button id="uploadLongSleeveButton" class="upload-button">Upload Design</button>
+        <button id="deleteLongSleeveButton" class="delete-button">Delete Design</button>
+    </div>
+ }
+    <div class="center">
+        <div class="left">
+            <button class="nav-button left-button">
+                <img class="leftimg" src="~/Content/assets/left.png" alt="Left Arrow" />
+            </button>
+        </div>
+
+        <div class="right">
+            <button class="nav-button right-button">
+                <img class="rightimg" src="~/Content/assets/right.png" alt="Right Arrow" />
+            </button>
+        </div>
+
+
+        <div class="SleeveContainer">
+            @foreach (var sleeves in Model.Longsleeves)
+  {
+            <div class="swiper-slide category" data-name="@sleeves.FrontDesign" data-image="@sleeves.FrontDesign">
+                <div class="category-image-container">
+                    <a href="@Url.Action("Index", "Item", new {
+                        id = sleeves.Id,
+                        frontImage = Url.Content("~/Content/assets/" + sleeves.FrontDesign),
+                        backImage = Url.Content("~/Content/assets/" + sleeves.BackDesign),
+                        shortsImage = !string.IsNullOrEmpty(sleeves.ShortsDesign) ? Url.Content("~/Content/assets/" + sleeves.ShortsDesign) : null
+                    })">
+                        <img src="~/Content/assets/@sleeves.FrontDesign" alt="@sleeves.FrontDesign" class="main-image">
+                        <img src="~/Content/assets/@sleeves.BackDesign" alt="@sleeves.BackDesign" class="zoomed-image">
+                        @if (!string.IsNullOrEmpty(sleeves.ShortsDesign))
+                        {
+                        <img src="~/Content/assets/@sleeves.ShortsDesign" alt="@sleeves.ShortsDesign Upload Lower Design" class="third-image">
+                        }
+                    </a>
+                </div>
+            </div>
+  }
+        </div>
+        <div class="pagination"></div>
+    </div>
+
+
+
+
+
+    <script>
+        // Get the upload modals
+        var uploadCorporateModal = document.getElementById("uploadCorporateModal");
+        var uploadBasketballModal = document.getElementById("uploadBasketballModal");
+        var uploadSoccerModal = document.getElementById("uploadSoccerModal");
+        var uploadLongSleeveModal = document.getElementById("uploadLongSleeveModal");
+
+        var uploadCorporateButton = document.getElementById("uploadCorporateButton");
+        var uploadBasketballButton = document.getElementById("uploadBasketballButton");
+        var uploadSoccerButton = document.getElementById("uploadSoccerButton");
+        var uploadLongSleeveButton = document.getElementById("uploadLongSleeveButton");
+
+
+        // Open upload modals
+        uploadCorporateButton.onclick = function () {
+            uploadCorporateModal.style.display = "block";
+        }
+        uploadBasketballButton.onclick = function () {
+            uploadBasketballModal.style.display = "block";
+        }
+        uploadSoccerButton.onclick = function () {
+            uploadSoccerModal.style.display = "block";
+        }
+        uploadLongSleeveButton.onclick = function () {
+            uploadLongSleeveModal.style.display = "block";
+        }
+
+        // Close upload modals
+        var uploadCloseButtons = document.querySelectorAll(".modal .close");
+        uploadCloseButtons.forEach(closeButton => {
+            closeButton.onclick = function () {
+                var modal = this.closest(".modal");
+                if (modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+
+        // Get the delete modals
+        var deleteModal = document.getElementById("deleteModal");
+        var deleteBasketballModal = document.getElementById("deleteBasketballModal");
+        var deleteSoccerModal = document.getElementById("deleteSoccerModal");
+        var deleteLongSleeveModal = document.getElementById("deleteLongSleeveModal");
+
+        var deleteCorporateButton = document.getElementById("deleteCorporateButton");
+        var deleteBasketballButton = document.getElementById("deleteBasketballButton");
+        var deleteSoccerButton = document.getElementById("deleteSoccerButton");
+        var deleteLongSleeveButton = document.getElementById("deleteLongSleeveButton");
+
+        // Open delete modals
+        deleteCorporateButton.onclick = function () {
+            deleteModal.style.display = "block";
+        }
+        deleteBasketballButton.onclick = function () {
+            deleteBasketballModal.style.display = "block";
+        }
+        deleteSoccerButton.onclick = function () {
+            deleteSoccerModal.style.display = "block";
+        }
+        deleteLongSleeveButton.onclick = function () {
+            deleteLongSleeveModal.style.display = "block";
+        }
+
+        // Close delete modals
+        var deleteCloseButtons = document.querySelectorAll(".modal .close");
+        deleteCloseButtons.forEach(closeButton => {
+            closeButton.onclick = function () {
+                var modal = this.closest(".modal");
+                if (modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+
+        // Handle delete button clicks for individual designs
+        document.querySelectorAll('.delete-design-button').forEach(button => {
+            button.addEventListener('click', function () {
+                var designId = this.getAttribute('data-id');
+                if (confirm('Are you sure you want to delete this corporate design?')) {
+                    fetch(`/Shop/DeleteDesign?id=${designId}`, { method: 'POST' })
+                        .then(response => {
+                            if (response.ok) {
+                                window.location.reload(); // Reload the page to reflect the deletion
+                            } else {
+                                console.error('Failed to delete design');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                        });
+                }
+            });
+        });
+
+        // Handle delete button clicks for basketball designs
+        document.querySelectorAll('.delete-basketball-design-button').forEach(button => {
+            button.addEventListener('click', function () {
+                var designId = this.getAttribute('data-id');
+                if (confirm('Are you sure you want to delete this basketball design?')) {
+                    fetch(`/Shop/DeleteBasketballJersey?id=${designId}`, { method: 'POST' })
+                        .then(response => {
+                            if (response.ok) {
+                                window.location.reload(); // Reload the page to reflect the deletion
+                            }
+                        });
+                }
+            });
+        });
+
+        // Handle delete button clicks for soccer designs
+        document.querySelectorAll('.delete-Soccer-design-button').forEach(button => {
+            button.addEventListener('click', function () {
+                var designId = this.getAttribute('data-id');
+                if (confirm('Are you sure you want to delete this soccer design?')) {
+                    fetch(`/Shop/DeleteSoccerJersey?id=${designId}`, { method: 'POST' })
+                        .then(response => {
+                            if (response.ok) {
+                                window.location.reload(); // Reload the page to reflect the deletion
+                            }
+                        });
+                }
+            });
+        });
+
+        // Handle delete button clicks for long sleeve designs
+        document.querySelectorAll('.delete-LongSleeve-design-button').forEach(button => {
+            button.addEventListener('click', function () {
+                var designId = this.getAttribute('data-id');
+                if (confirm('Are you sure you want to delete this long sleeve design?')) {
+                    fetch(`/Shop/DeleteLongSleeve?id=${designId}`, { method: 'POST' })
+                        .then(response => {
+                            if (response.ok) {
+                                window.location.reload(); // Reload the page to reflect the deletion
+                            }
+                        });
+                }
+            });
+        });
+
+        // Close modals when clicking outside
+        window.onclick = function (event) {
+            if (event.target == uploadCorporateModal) {
+                uploadCorporateModal.style.display = "none";
+            }
+            if (event.target == uploadBasketballModal) {
+                uploadBasketballModal.style.display = "none";
+            }
+            if (event.target == uploadSoccerModal) {
+                uploadSoccerModal.style.display = "none";
+            }
+            if (event.target == uploadLongSleeveModal) {
+                uploadLongSleeveModal.style.display = "none";
+            }
+            if (event.target == deleteModal) {
+                deleteModal.style.display = "none";
+            }
+            if (event.target == deleteBasketballModal) {
+                deleteBasketballModal.style.display = "none";
+            }
+            if (event.target == deleteSoccerModal) {
+                deleteSoccerModal.style.display = "none";
+            }
+            if (event.target == deleteLongSleeveModal) {
+                deleteLongSleeveModal.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Other sections remain unchanged -->
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="~/js/productlist.js"></script>
+

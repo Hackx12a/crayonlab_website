@@ -1,0 +1,64 @@
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\appsettings.json
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.staticwebassets.runtime.json
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.exe
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.deps.json
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.runtimeconfig.json
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.dll
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.pdb
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.csproj.AssemblyReference.cache
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.AssemblyInfoInputs.cache
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.AssemblyInfo.cs
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.csproj.CoreCompileInputs.cache
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.RazorAssemblyInfo.cache
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.RazorAssemblyInfo.cs
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets\msbuild.WebApplication3.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets\msbuild.build.WebApplication3.props
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication3.props
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.WebApplication3.props
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\scopedcss\bundle\WebApplication3.styles.css
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\scopedcss\projectbundle\WebApplication3.bundle.scp.css
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.dll
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\refint\WebApplication3.dll
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.pdb
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.genruntimeconfig.cache
+C:\Users\RICHELLE CALLAO\source\repos\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\ref\WebApplication3.dll
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\appsettings.json
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.staticwebassets.runtime.json
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.staticwebassets.endpoints.json
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.exe
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.deps.json
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.runtimeconfig.json
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.dll
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\bin\Debug\net7.0\WebApplication3.pdb
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.AssemblyInfoInputs.cache
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.AssemblyInfo.cs
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.csproj.CoreCompileInputs.cache
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.RazorAssemblyInfo.cache
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.RazorAssemblyInfo.cs
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\scopedcss\bundle\WebApplication3.styles.css
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\scopedcss\projectbundle\WebApplication3.bundle.scp.css
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets\msbuild.WebApplication3.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets\msbuild.WebApplication3.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets\msbuild.build.WebApplication3.props
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication3.props
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.WebApplication3.props
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.dll
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\refint\WebApplication3.dll
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.pdb
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\WebApplication3.genruntimeconfig.cache
+C:\Users\alber\OneDrive\Desktop\Crayonlab Website\Crayonlab Website\obj\Debug\net7.0\ref\WebApplication3.dll

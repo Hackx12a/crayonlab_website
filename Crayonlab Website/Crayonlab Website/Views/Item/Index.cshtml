@@ -1,0 +1,250 @@
+﻿@{
+    ViewBag.Title = "Item";
+}
+
+<!-- Include Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha384-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="@Url.Content("~/Content/Sheet.css")" />
+<link rel="stylesheet" href="~/Content/StyleSheet.css">
+
+<body>
+
+    <div class="wrapper">
+        <!-- TOP SECTION: PRODUCT IMAGE + INFO -->
+        <div class="top-section">
+            <!-- LEFT COLUMN: PRODUCT IMAGE -->
+            <div class="left-column">
+                <!-- BACK ARROW ICON -->
+                <div class="back-arrow" onclick="window.location.href='@Url.Action("Index", "Shop")'">
+                    <i class="fas fa-arrow-left"></i> <!-- Font Awesome back arrow icon -->
+                </div>
+                <!-- IMAGE CONTAINER -->
+                <div class="image-container">
+
+
+                    <div class="image-wrapper">
+                        <div class="short">
+                            <img id="shortsImage" class="third-image" src="" alt="Product Shorts Image" style="display: none;" />
+                        </div>
+
+                        <img id="mainImage" class="main-image" src="~/Content/assets/image4.png" alt="Product Main Image">
+                        <img id="backImage" class="back-image" src="" alt="Product Back Image" style="display: none;">
+                        <img id="zoomedImage" class="zoomed-image" src="~/Content/assets/image4.png" alt="Product Zoomed Image">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: PRODUCT DETAILS -->
+            <div class="right-column">
+                <h1 class="product-name" id="productName">Product Name</h1>
+                <!-- RATINGS & REVIEWS -->
+                <div class="ratings">
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <div class="reviews">4.0 • 3.1K Ratings</div>
+                </div>
+                <!-- PRICE -->
+                <div class="price" id="productPrice">₱600</div>
+                <!-- SIZE SELECTOR -->
+                <div class="size-selector">
+                    <div class="size-row">
+                        <div class="gender-toggle">
+                            <button id="menBtn" class="gender-btn active">Men Sizes</button>
+                            <button id="womenBtn" class="gender-btn">Women Sizes</button>
+                        </div>
+                    </div>
+                    <div class="size-row">
+                        <label>Size:</label>
+                        <!-- Men Sizes -->
+                        <div class="size-options men-sizes" id="menSizes">
+                            <button>XS</button>
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                            <button>XXL</button>
+                        </div>
+                        <!-- Women Sizes -->
+                        <div class="size-options women-sizes" id="womenSizes" style="display: none;">
+                            <button>XS</button>
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                            <button>XXL</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- QUANTITY SELECTOR -->
+                <div class="quantity-selector">
+                    <button id="minusBtn">-</button>
+                    <input type="text" id="quantityInput" value="1" readonly>
+                    <button id="plusBtn">+</button>
+                </div>
+                <!-- BUTTON GROUP -->
+                <div class="btn-group">
+                    <button class="add-to-cart-btn">
+                        <i class="fa-solid fa-cart-shopping" style="margin-right:8px;"></i>ADD TO CART
+                    </button>
+                    <button class="buy-now-btn">BUY NOW</button>
+                </div>
+
+                <!-- FREE DELIVERY NOTE -->
+                <div class="free-delivery">
+                    <i class="fa-solid fa-truck" style="margin-right: 5px;"></i>Free Delivery On Order Over 2,000₱
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT DETAILS SECTION (Collage) -->
+        <div class="details-section">
+            <h2>PRODUCT DETAILS</h2>
+            <p>
+                Here you can showcase more images of the product from different angles, or close-up shots.
+                The collage below displays one large landscape image on top and two smaller images side by side below.
+            </p><br>
+            <div class="detail-images">
+                <!-- Upper (landscape) image spanning two columns -->
+                <img src="~/Content/assets/logo2.jpg" alt="Detail 1">
+                <!-- Two images side by side -->
+                <img src="~/Content/assets/partner1.png" alt="Detail 2">
+                <img src="~/Content/assets/partner2.png" alt="Detail 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT: RETRIEVE PRODUCT DETAILS, QUANTITY & TOGGLE LOGIC -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Retrieve query parameters from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const frontImage = urlParams.get('frontImage');
+            const backImage = urlParams.get('backImage');
+            const shortsImage = urlParams.get('shortsImage');
+
+            // Update the main and zoomed images
+            if (frontImage) {
+                document.getElementById('mainImage').src = frontImage;
+                document.getElementById('zoomedImage').src = backImage;
+                document.getElementById('shortsImage').src = shortsImage;
+            }
+
+            // Update the back image (if available)
+            if (backImage) {
+                document.getElementById('backImage').src = backImage;
+                document.getElementById('backImage').style.display = 'block';
+                // Show both images
+            }
+
+            // Update the shorts image (if available)
+            if (shortsImage) {
+                document.getElementById('shortsImage').src = shortsImage;
+                document.getElementById('shortsImage').style.display = 'block';
+            }
+
+            // Retrieve product info from localStorage (if available)
+            const productName = localStorage.getItem('productName') || 'Product Name';
+            const basePrice = parseFloat(localStorage.getItem('productPrice').replace('₱', '').replace(',', '')) || 700;
+
+            document.getElementById('productName').textContent = productName;
+            document.getElementById('productPrice').textContent = '₱' + basePrice.toFixed(2);
+
+            // Size prices (example prices for each size)
+            const sizePrices = {
+                men: {
+                    'XS': 600,
+                    'S': 650,
+                    'M': 700,
+                    'L': 750,
+                    'XL': 800,
+                    'XXL': 850
+                },
+                women: {
+                    'XS': 580,
+                    'S': 630,
+                    'M': 680,
+                    'L': 730,
+                    'XL': 780,
+                    'XXL': 830
+                }
+            };
+
+            // Quantity selector logic
+            const minusBtn = document.getElementById('minusBtn');
+            const plusBtn = document.getElementById('plusBtn');
+            const quantityInput = document.getElementById('quantityInput');
+
+            minusBtn.addEventListener('click', () => {
+                let currentVal = parseInt(quantityInput.value);
+                if (currentVal > 1) {
+                    quantityInput.value = currentVal - 1;
+                }
+            });
+
+            plusBtn.addEventListener('click', () => {
+                let currentVal = parseInt(quantityInput.value);
+                quantityInput.value = currentVal + 1;
+            });
+
+            // Men/Women toggle logic for size selection
+            const menBtn = document.getElementById('menBtn');
+            const womenBtn = document.getElementById('womenBtn');
+            const menSizes = document.getElementById('menSizes');
+            const womenSizes = document.getElementById('womenSizes');
+
+            menSizes.style.display = 'flex';
+            womenSizes.style.display = 'none';
+
+            function resetGenderActive() {
+                menBtn.classList.remove('active');
+                womenBtn.classList.remove('active');
+            }
+
+            menBtn.addEventListener('click', () => {
+                resetGenderActive();
+                menBtn.classList.add('active');
+                menSizes.style.display = 'flex';
+                womenSizes.style.display = 'none';
+                removeActiveFromSizes(menSizes);
+            });
+
+            womenBtn.addEventListener('click', () => {
+                resetGenderActive();
+                womenBtn.classList.add('active');
+                menSizes.style.display = 'none';
+                womenSizes.style.display = 'flex';
+                removeActiveFromSizes(womenSizes);
+            });
+
+            function removeActiveFromSizes(container) {
+                const sizeButtons = container.querySelectorAll('button');
+                sizeButtons.forEach(btn => btn.classList.remove('active'));
+            }
+
+            function addSizeButtonEvents(container, gender) {
+                const sizeButtons = container.querySelectorAll('button');
+                sizeButtons.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        sizeButtons.forEach(button => button.classList.remove('active'));
+                        btn.classList.add('active');
+
+                        // Update price based on selected size
+                        const selectedSize = btn.textContent;
+                        const newPrice = sizePrices[gender][selectedSize];
+                        document.getElementById('productPrice').textContent = '₱' + newPrice.toFixed(2);
+                    });
+                });
+            }
+
+            addSizeButtonEvents(menSizes, 'men');
+            addSizeButtonEvents(womenSizes, 'women');
+        });
+    </script>
+
+    <!-- Optional: Font Awesome Kit Script (if needed) -->
+    <!-- <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script> -->
+</body>

@@ -1,0 +1,47 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/Login.css">
+</head>
+<body>
+    <div class="login-container">
+        <a href="~/Home" class="back-home">Back to Home</a>
+        <img class="logo" src="~/Content/assets/logo.png" alt="Alternate Text" />
+        <h2>Admin Login</h2>
+
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+        <div class="alert">
+            <p>@ViewBag.ErrorMessage</p>
+        </div>
+        }
+
+        <form asp-action="Login" method="post">
+            <div class="user-forms">
+                <div class="input-group">
+                    <img class="imgs" src="~/Content/assets/profile-user.png" alt="user" />
+                    <input type="text" class="form-control" id="username" name="username" placeholder="username" required>
+                </div>
+            </div>
+            <div class="password-forms">
+                <div class="input-group">
+                    <img class="imgs" src="~/Content/assets/padlock.png" alt="password" />
+                    <input type="password" class="form-control" id="password" name="password" placeholder="password" required>
+                    <img id="togglePassword" src="~/Content/assets/hidden.png" alt="Toggle Password Visibility" class="toggle-password" onclick="togglePasswordVisibility()" />
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit" class="btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="~/js/login.js"></script>
+</body>
+</html>

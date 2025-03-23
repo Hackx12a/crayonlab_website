@@ -1,0 +1,773 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebApplication3.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebApplication3.g3elcy9i7s.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\Sheet.css",
+      "PackagePath": "staticwebassets\\Content\\Sheet.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\Content\\StyleSheet.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Hback.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\Hback.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Hfront.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\Hfront.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Jback.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\Jback.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Jfront.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\Jfront.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Lback.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\Lback.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Lfront.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\Lfront.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Pback.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\Pback.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Pfront.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\Pfront.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Sback.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\Sback.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Sfront.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\Sfront.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\about1.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\about1.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\about2.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\about2.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\about3.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\about3.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas10.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas10.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas11.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas11.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas12.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas12.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas13.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas13.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas14.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas14.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas15.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas15.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas16.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas16.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas17.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas17.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas18.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas18.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas19.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas19.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas2.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas2.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas20.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas20.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas21.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas21.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas22.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas22.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas23.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas23.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas24.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas24.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas25.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas25.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas26.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas26.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas27.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas27.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas3.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas3.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas4.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas4.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas5.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas5.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas6.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas6.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas7.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas7.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas8.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas8.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\bas9.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\bas9.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\basshort.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\basshort.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor1.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor1.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor10.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor10.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor11.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor11.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor12.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor12.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor13.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor13.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor14.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor14.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor15.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor15.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor16.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor16.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor17.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor17.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor18.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor18.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor19.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor19.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor2.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor2.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor20.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor20.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor21.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor21.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor22.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor22.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor23.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor23.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor24.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor24.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor3.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor3.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor4.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor4.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor5.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor5.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor6.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor6.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor7.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor7.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor8.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor8.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cor9.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\cor9.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\image.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image1.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\image1.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image10.jfif",
+      "PackagePath": "staticwebassets\\Content\\assets\\image10.jfif"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image11.jfif",
+      "PackagePath": "staticwebassets\\Content\\assets\\image11.jfif"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image2.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\image2.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image3.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\image3.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image4.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\image4.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image5.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\image5.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image6.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\image6.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image7.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\image7.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image8.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\image8.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\image9.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\image9.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\left.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\left.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\logo.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\logo1.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\logo1.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\logo2.jpg",
+      "PackagePath": "staticwebassets\\Content\\assets\\logo2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\logo3.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\logo3.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls1.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls1.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls10.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls10.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls11.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls11.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls12.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls12.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls13.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls13.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls14.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls14.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls15.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls15.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls16.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls16.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls17.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls17.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls18.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls18.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls19.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls19.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls2.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls2.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls20.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls20.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls3.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls3.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls4.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls4.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls5.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls5.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls6.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls6.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls7.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls7.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls8.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls8.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\ls9.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\ls9.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\padlock.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\padlock.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\partner1.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\partner1.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\partner2.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\partner2.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\partner3.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\partner3.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\partner4.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\partner4.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\partner5.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\partner5.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\partner6.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\partner6.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\profile-user.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\profile-user.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\right.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\right.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\short.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\short.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\soccer1.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\soccer1.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\soccer2.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\soccer2.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\soccer3.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\soccer3.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\soccer4.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\soccer4.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\soccer5.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\soccer5.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\soccer6.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\soccer6.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\soccer7.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\soccer7.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\soccer8.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\soccer8.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\customize.css",
+      "PackagePath": "staticwebassets\\Content\\customize.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\shop.css",
+      "PackagePath": "staticwebassets\\css\\shop.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\js\\productlist.js",
+      "PackagePath": "staticwebassets\\js\\productlist.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css .map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css .map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min (1).css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min (1).css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl (1).css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl (1).css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApplication3.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApplication3.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebApplication3.props",
+      "PackagePath": "build\\WebApplication3.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication3.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication3.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebApplication3.props",
+      "PackagePath": "buildTransitive\\WebApplication3.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

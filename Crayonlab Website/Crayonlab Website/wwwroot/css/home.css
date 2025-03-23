@@ -1,0 +1,418 @@
+﻿/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    flex: 0 1 auto; /* Ensure the logo stays at its natural size */
+}
+
+    .logo img {
+        height: 60px;
+        margin-left: 50px;
+    }
+
+nav {
+    display: flex;
+    justify-content: flex-start; /* Align the nav items to the left */
+    margin-left: 100px; /* Add space between the logo and nav items */
+    position: sticky;
+}
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 50px; /* Adjust space between nav items */
+        padding: 0;
+        margin: 0;
+    }
+
+        nav ul li {
+            display: inline;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+.search-icon {
+    margin-left: auto;
+}
+
+/* Right Side Icons Section */
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between icons */
+}
+
+.logo-right img {
+    height: 60px; /* Size for the secondary logo */
+    margin-left: 400px;
+}
+
+.facebook-icon img {
+    height: 50px; /* Facebook icon size */
+    margin-right: 80px; /* Add margin-right */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 87vh;
+    background: url('assets/logo2.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    .hero h1 {
+        font-size: 4rem;
+        margin: 0;
+        font-family: 'Heaters', sans-serif;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        font-family: 'Gotham', sans-serif;
+        color: rgba(255, 255, 255, 0.9);
+    }
+/* General Footer Styling */
+footer {
+    background-color: #181818;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Logo */
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+    .footer-logo img {
+        width: 180px;
+    }
+
+/* Subscription Section */
+.footer-subscribe {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    .footer-subscribe h3 {
+        font-size: 20px;
+    }
+
+    .footer-subscribe form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .footer-subscribe input {
+        padding: 12px;
+        width: 250px;
+        border: none;
+        border-radius: 5px;
+        background: #2a2a2a;
+        color: white;
+    }
+
+    .footer-subscribe button {
+        background-color: #ffa500;
+        border: none;
+        padding: 12px 25px;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .footer-subscribe p {
+        font-size: 14px;
+        color: #aaa;
+    }
+
+/* Links Section */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+    .column h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .column ul li {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 5px;
+        }
+
+/* Contact Section */
+.contact p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+    flex-wrap: wrap;
+}
+
+    .footer-bottom p {
+        margin: 5px 0;
+    }
+
+.footer-logo i {
+    font-size: 40px; /* Increase the size of the Facebook icon */
+    margin-left: 970px; /* Add space to the left of the icon */
+    color: white; /* Ensure the icon color matches the footer's text */
+    cursor: pointer; /* Optional: Add pointer cursor on hover */
+}
+
+
+/* Container for the category layout */
+.category-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap in the container */
+    justify-content: center; /* Center the items */
+    gap: 20px; /* Space between items */
+    margin-top: 30px;
+}
+
+/* Updated Category with box shadow */
+.category {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Three rows */
+    grid-template-columns: 1fr; /* Single column */
+    align-items: center;
+    justify-items: center;
+    width: 290px;
+    height: 370px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* Add box shadow */
+    transition: box-shadow 0.5s ease-in-out; /* Add transition for smooth hover effect */
+}
+
+    /* Hover effect for the category */
+    .category:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    }
+
+/* Category image container */
+.category-image-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+/* Main image (standard size) */
+.main-image {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%; /* Make the image take the full width of the container */
+    height: 270px; /* Set a fixed height for consistency */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    object-fit: contain; /* Ensure the image fits within the container without cropping */
+    margin-top: 70px;
+}
+
+/* Zoomed image (the image in the background) */
+.zoomed-image {
+    grid-row: 1;
+    grid-column: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px; /* Match the height of the main image */
+    object-fit: contain; /* Ensure the image fits fully within the container */
+    z-index: 0; /* Default, zoomed image is behind */
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+/* New third image - smaller size */
+.third-image {
+    width: 45%; /* Set the width to be smaller */
+    height: auto; /* Keep the aspect ratio intact */
+    object-fit: contain; /* Ensure the image fits within the container without cropping */
+    border-radius: 10px;
+    position: absolute; /* Absolute positioning to place it in front */
+    top: 235px; /* Optional: adjust top position if necessary */
+    left: 65%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    z-index: 3; /* Ensure it sits above the zoomed image */
+}
+
+/* On hover, swap the positions of the images */
+.category:hover .main-image {
+    position: absolute; /* Make it absolute to move freely */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Send main image to the back */
+    margin-bottom: 40px; /* Ensure the margin bottom is applied to the main image */
+    margin-top: 30px; /* Reset margin-top to avoid unwanted space */
+    height: 200px;
+}
+
+.category:hover .zoomed-image {
+    position: relative; /* Make zoomed image return to its default position */
+    margin-top: 75px; /* Add margin-top to the zoomed image */
+    z-index: 2; /* Bring zoomed image to the front */
+    height: 270px;
+}
+
+/* Your styles */
+.swiper {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 110px;
+    width: 1320px;
+    height: 450px;
+}
+
+/* Swiper Navigation Arrows */
+.swiper-button-next {
+    color: black;
+    margin-left: 70px;
+    margin-bottom: 60px;
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.swiper-button-prev {
+    color: black;
+    margin-right: 150px;
+    margin-bottom: 60px;
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+    /* Hover effect on navigation buttons */
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        opacity: 0.5; /* Dim the buttons */
+        filter: brightness(50%); /* Apply a dimming effect */
+    }
+
+@media (max-width: 1024px) {
+    .swiper-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .category {
+        width: 100%;
+    }
+}
+
+.category-label {
+    position: absolute;
+    top: 320px;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 290px; /* Increased the width */
+    height: 400px;
+    z-index: 10;
+    text-align: center;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-label {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 265px; /* Increased the width */
+    height: 30px;
+    z-index: 10;
+    text-align: center;
+}

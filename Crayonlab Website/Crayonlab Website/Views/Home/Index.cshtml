@@ -1,0 +1,218 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+  <link rel="stylesheet" href="~/Content/StyleSheet.css">
+
+<section class="hero" style="
+    position: relative;
+    width: 100%;
+    height: 87vh;
+    background-image: url('./Content/assets/logo2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;">
+
+    <!-- Dim Overlay -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);  /* Adjust opacity as needed */
+        z-index: 0;">
+    </div>
+
+   
+   <!-- Content -->
+<div class="hero-content">
+    <h1>DEFINE YOUR VIBE</h1>
+    <p>Style that empowers your every move</p>
+    <a href="@Url.Action("Index", "Shop")" class="shop-button">SHOP COLLECTIONS</a>
+</div>
+
+
+
+</section>
+
+
+<section class="explore-more" style="padding: 10px 0; text-align: center; background-color: #f9f9f9;">
+    <h2 style="font-size: 3rem; font-family: 'Gotham', sans-serif; color: orange; margin-top: 50px; margin-bottom: 10px;">
+        Explore More About Our Product
+    </h2>
+    <p style="font-size: 1.1rem; font-family: 'Gotham', sans-serif;">
+        We know what buyers are looking for and they want top products for clients' needs.
+    </p>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide category">
+                <div class="category-label">LONGSLEEVE</div>
+                <div class="category-image-container">
+                    <img src="~/Content/assets/image1.png" class="main-image">
+                    <img src="~/Content/assets/image2.png" class="zoomed-image">
+                </div>
+            </div>
+            <div class="swiper-slide category">
+                <div class="category-label">CORPORATE</div>
+                <div class="category-image-container">
+                    <img src="~/Content/assets/image3.png" class="main-image">
+                    <img src="~/Content/assets/image4.png" class="zoomed-image">
+                </div>
+            </div>
+            <div class="swiper-slide category">
+                <div class="category-label">ESPORT</div>
+                <div class="category-image-container">
+                    <img src="~/Content/assets/image5.png" class="main-image">
+                    <img src="~/Content/assets/image6.png" class="zoomed-image">
+                </div>
+            </div>
+            <div class="swiper-slide category">
+                <div class="category-label">JERSEY</div>
+                <div class="category-image-container">
+                    <img src="~/Content/assets/image7.png" class="main-image">
+                    <img src="~/Content/assets/image8.png" class="zoomed-image">
+                    <img src="~/Content/assets/image9.png" class="third-image">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <form action="@Url.Action("Index", "Product")" method="get">
+        <button type="submit" class="custom-button">Customize Your Own Design</button>
+    </form>
+</section>
+
+
+
+
+<!-- About Us Section -->
+<section class="about-us" style="padding: 20px 0; background-color: white; text-align: center; margin-top: 10px;">
+    <h2 style="font-size: 3rem; color: orange; margin-bottom: 10px;">ABOUT US</h2>
+    <p style="font-size: 1.1rem; font-family: 'Gotham', sans-serif; margin: 20px auto; width: 80%; max-width: 800px; text-align: center;">
+        Welcome to CrayonLab, where creativity meets fashion! We specialize in high-quality <br /> apparel and sublimation printing, transforming ideas into vibrant, wearable art.<br /> Our mission is to empower individuals to express their unique style through<br /> custom designs that pop with color and personality.
+    </p>
+
+    <div class="about-images">
+        <!-- Image 1 -->
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <!-- Image 1 -->
+            <div class="about-image">
+                <img src="~/Content/assets/about1.png" alt="About Us Image 1">
+                <div class="about-label">Heat Pressing Process</div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="about-image">
+                <img src="~/Content/assets/about2.png" alt="About Us Image 2">
+                <div class="about-label">Stitching Service</div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="about-image">
+                <img src="~/Content/assets/about3.png" alt="About Us Image 3">
+                <div class="about-label">Design Service</div>
+            </div>
+        </div>
+          </div>
+</section>
+<!-- Our Partners Section -->
+<section class="our-partners" style="padding: 50px 0; background-color: #f9f9f9; text-align: center; margin-top:10rem;">
+    <h2 style="font-size: 3rem; color: orange; font-family: 'Gotham', sans-serif;">OUR PARTNERS</h2>
+    <div class="partners-images" style="display: flex; justify-content: space-between; margin-top: 30px; gap: 20px; align-items: center; width: 80%; margin-left: auto; margin-right: auto;">
+        <!-- Partner 1 -->
+        <div class="partner-image" style="flex: 1;">
+            <img src="~/Content/assets/partner1.png" alt="Partner 1" style="width: 200px; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+        </div>
+
+        <!-- Partner 2 -->
+        <div class="partner-image" style="flex: 1;">
+            <img src="~/Content/assets/partner2.png" alt="Partner 2" style="width: 200px; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+        </div>
+
+        <!-- Partner 3 -->
+        <div class="partner-image" style="flex: 1;">
+            <img src="~/Content/assets/partner3.png" alt="Partner 3" style="width: 200px; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+        </div>
+
+        <!-- Partner 4 -->
+        <div class="partner-image" style="flex: 1;">
+            <img src="~/Content/assets/partner4.png" alt="Partner 4" style="width: 200px; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+        </div>
+
+        <div class="partner-image" style="flex: 1;">
+            <img src="~/Content/assets/partner5.png" alt="Partner 4" style="width: 200px; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+        </div>
+
+        <div class="partner-image" style="flex: 1;">
+            <img src="~/Content/assets/partner6.png" alt="Partner 4" style="width: 200px; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+
+<section class="contact-us" style="padding: 50px 0; color: white; text-align: center; width: 100%;">
+    <h2 style="font-size: 3rem; color: orange; font-family: 'Corbel', sans-serif; margin-top: 160px; text-transform: uppercase; margin-bottom: 30px;">Contact Us</h2>
+    <div class="contact-container" style="max-width: 80%; margin: 0 auto; padding: 30px; background-color:navajowhite; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-align: left; color: #333;">
+        <form action="#" method="POST">
+            <!-- First Name, Last Name, and Company Name (Horizontal Layout) -->
+            <div class="input-group" style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 20px;">
+                <div style="flex: 1;">
+                    <label for="first-name" style="font-weight: bold; font-size: 1rem; font-family: 'Gotham', sans-serif; color: #333; margin-bottom: 8px;">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="" style="padding: 15px; font-size: 1rem; width: 50%;margin-left:25px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;">
+                </div>
+                <div style="flex: 1;">
+                    <label for="last-name" style="font-weight: bold; font-size: 1rem; font-family: 'Gotham', sans-serif; color: #333; margin-bottom: 8px;">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="" style="padding: 15px; font-size: 1rem; width: 50%;margin-left:57px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;">
+                </div>
+                <div style="flex: 1;">
+                    <label for="company-name" style="font-weight: bold; font-size: 1rem; font-family: 'Gotham', sans-serif; color: #333; margin-bottom: 8px;">Company Name</label>
+                    <input type="text" id="company-name" name="company-name" value="Crayonlab" readonly style="padding: 15px; font-size: 1rem; width: 50%;margin-left:15px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease; background-color: #f0f0f0;">
+                </div>
+            </div>
+
+            <!-- Email Address, Company Address, and Contact Number (Horizontal Layout) -->
+            <div class="input-group" style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 20px;">
+                <div style="flex: 1;">
+                    <label for="email" style="font-weight: bold; font-size: 1rem; font-family: 'Gotham', sans-serif; color: #333; margin-bottom: 8px;">Email Address</label>
+                    <input type="email" id="email" name="email" value="crayonlab2023@gmail.com" readonly placeholder="" style="padding: 15px; font-size: 1rem; width: 50%; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;">
+                </div>
+                <div style="flex: 1;">
+                    <label for="company-address" style="font-weight: bold; font-size: 1rem; font-family: 'Gotham', sans-serif; color: #333; margin-bottom: 8px;">Company Address</label>
+                    <input type="text" id="company-address" name="company-address" value="Mandaue, Looc, Cebu" readonly placeholder="" style="padding: 15px; font-size: 1rem; width: 50%; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;">
+                </div>
+                <div style="flex: 1;">
+                    <label for="contact-number" style="font-weight: bold; font-size: 1rem; font-family: 'Gotham', sans-serif; color: #333; margin-bottom: 8px;">Contact Number</label>
+                    <input type="text" id="contact-number" name="contact-number" placeholder="" style="padding: 15px; font-size: 1rem; width: 50%;margin-left:10px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;">
+                </div>
+            </div>
+
+            <!-- Write Message and Submit Button (Vertical Layout) -->
+            <div class="input-group" style="flex-direction: column; align-items: flex-start; margin-top: 20px;">
+                <div style="width: 100%;">
+                    <label for="message" style="font-weight: bold; font-size: 1rem; font-family: 'Gotham', sans-serif; color: #333; margin-bottom: 8px;">Write Message</label>
+                    <textarea id="message" name="message" placeholder="" rows="6" style="padding: 15px; font-size: 1rem; width: 90%; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;"></textarea>
+                </div>
+                <div>
+                    <button type="submit"
+                            style="background-color: #ff8c00; color: white; font-size: 1.2rem; font-weight: bold; padding: 15px 30px; border-radius: 25px; cursor: pointer; margin-top: 20px; border: none; transition: background-color 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#ff6f00';"
+                            onmouseout="this.style.backgroundColor='#ff8c00';">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+

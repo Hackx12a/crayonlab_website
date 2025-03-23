@@ -1,0 +1,121 @@
+.login-container {
+	width: 500px;
+	margin: 260px auto;
+	padding: 20px;
+	border: 5px solid #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgb(0, 0, 0);
+	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 {
+	color: #2b2929;
+	font-family: 'Arial Narrow', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #191717;
+}
+
+.user-forms, .password-forms {
+	padding: 5px;
+	display: flex;
+}
+
+.password-forms {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.input-group {
+	position: relative;
+	margin-bottom: 20px; /* Space between input fields */
+}
+
+.form-control {
+	width: 100%; /* Full width */
+	height: 50px; /* Adjust height as needed */
+	border: 2px solid #494646; /* Border style */
+	border-radius: 5px; /* Rounded corners */
+	box-sizing: border-box; /* Include padding and borders in total width and height */
+	padding-left: 50px; /* Space for the icon */
+	padding-right: 35px; /* Space on the right */
+	font-size: 15px; /* Font size */
+	text-align: left; /* Align text to the left */
+}
+
+.imgs {
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	left: 10px; /* Icon position inside the input */
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none; /* Prevents the icon from interfering with input */
+}
+
+.logo {
+	height: 50px;
+	width: 150px;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.btn-primary {
+    border-radius: 5px;
+    height: 45px;
+    width: 100%;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ff6a00;
+    color: white;
+    border-color: transparent;
+    margin-bottom: 20px; /* Space between button and input fields */
+}
+    .btn-primary:hover {
+        background-color: #ff6a00bc;
+        color: white;
+        border-color: transparent;
+    }
+
+
+	p {
+		color: darkred;
+	}
+.toggle-password {
+	height: 25px; /* Adjust height as needed */
+	width: 25px; /* Adjust width as needed */
+	position: absolute;
+	right: 10px; /* Position it inside the input box */
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer; /* Change cursor to pointer */
+
+}
+
+.back-home {
+    display: block;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+    font-size: 16px; /* Adjust font size */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: #ff6a00;
+}
+
+	.back-home:hover {
+		text-decoration: underline; /* Underline on hover */
+	}
+
+

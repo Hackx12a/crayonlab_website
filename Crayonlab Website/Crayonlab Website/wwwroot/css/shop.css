@@ -1,0 +1,429 @@
+
+/* Common Styles for Category Containers */
+.category {
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 270px;
+    height: 360px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease-in-out;
+    border: 2px solid #dadada;
+}
+
+.category:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-image-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.main-image {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    height: 270px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    object-fit: contain;
+    margin-top: 70px;
+}
+
+.zoomed-image {
+    grid-row: 1;
+    grid-column: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    z-index: 0;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.category:hover .main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    height: 200px;
+}
+
+.category:hover .zoomed-image {
+    position: relative;
+    margin-top: 75px;
+    z-index: 2;
+    height: 270px;
+}
+
+/* Container & Section Styles */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    position: relative;
+    background-color: blue;
+}
+
+
+
+.swiper {
+    width: 10%; /* Set to 10% */
+    overflow: visible; /* Allow overflow */
+    background-color: aqua;
+}
+
+.swiper-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+/* Ensure the first slide is fully visible */
+
+
+/* Remove margin from the last slide */
+.swiper-wrapper {
+    margin-right: -10px; /* Adjust this value to match the gap */
+}
+
+.third-image {
+    width: 45%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    position: absolute;
+    top: 235px;
+    left: 65%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+
+
+.space {
+    margin-top: 100px;
+}
+
+
+h1 {
+    color: #f58220;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+p {
+    color: #3b3838;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.CorpoContainer, .BasketballContainer, .SoccerContainer, .SleeveContainer {
+    width: 82%;
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    align-items: flex-start; /* Align items at the start of the container */
+    justify-content: flex-start; /* Align items to the left */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  
+}
+
+.swiper-slide {
+    width: 200px; /* Set a fixed width for each item */
+    margin: 10px; /* Add some margin for spacing between items */
+}
+
+/* Container for pagination */
+.pagination {
+    display: flex;
+    justify-content: center; /* Center the pagination bullets */
+    margin-top: 10px; /* Space between the slides and pagination */
+    margin-bottom: 150px;
+}
+
+
+.pagination-bullet {
+    width: 10px; /* Width of each bullet */
+    height: 10px; /* Height of each bullet */
+    background-color: #ccc; /* Default color */
+    border-radius: 50%; /* Make it round */
+    margin: 0 5px; /* Space between bullets */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+    .pagination-bullet.active {
+        background-color: #007bff; /* Active bullet color */
+    }
+
+.nav-button {
+ 
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure buttons are above other content */
+
+}
+
+.left-button {
+    left: 145px; /* Position outside the left edge */
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.right-button {
+    border-radius: 50%;
+    right: 140px; /* Position outside the right edge */
+    z-index: 5;
+}
+
+.leftimg, .rightimg {
+    height: 40px;
+    width: 40px;
+}
+.upload-form {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+    .upload-form h2 {
+        margin-bottom: 10px;
+    }
+
+    .upload-form div {
+        margin-bottom: 10px;
+    }
+
+    .upload-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .upload-form button {
+        padding: 10px 15px;
+        background-color: #f58220;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .upload-form button:hover {
+            background-color: #218838;
+        }
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+    z-index: 50;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+h2 {
+    color: #f58220; /* Darker color for better readability */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="file"] {
+    width: 95%; /* Full width for inputs */
+    padding: 10px; /* Padding for better touch targets */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between inputs */
+}
+
+form button {
+    margin-top: 20px; /* Space between button and form */
+    padding: 10px 15px;
+    background-color: #f58220; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+    width: 100%;
+}
+
+    button:hover {
+        background-color: #eeac7376 /* Darker green on hover */
+    }
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+
+.upload-button,
+.delete-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: transparent;
+    color: white;
+    background-color: #f58220;
+    font-weight: 600;
+    z-index: 10; 
+}
+.delete-button {
+    background-color: red;
+
+}
+
+
+
+
+.design-item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Spacing between items */
+    justify-content: center;
+}
+
+.delete-design-button, .delete-basketball-design-button, .delete-Soccer-design-button, .delete-LongSleeve-design-button {
+    margin-left: 10px; /* Space between image and button */
+    padding: 5px 10px; /* Button padding */
+    background-color: #f44336; /* Red background for delete button */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    height: 40px;
+    width: 40%;
+    margin-bottom: 20px;
+    margin-top: -12px;
+}
+
+    .delete-design-button, .delete-basketball-design-button, .delete-Soccer-design-button, .delete-LongSleeve-design-button:hover {
+        background-color: #d32f2f; /* Darker red on hover */
+    }
+
+.imagess {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.deleteupload {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 170px;
+    margin-bottom: 20px;
+}
+
+.uploadcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.logout-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-end; /* Align items to the left */
+}
+
+.logout-button {
+    width: 120px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
+    background-color: #f44336; /* Example background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Optional: rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-bottom: 10px; /* Space between buttons */
+    font-weight: bold; /* Bold text */
+}
+
+    .logout-button:hover {
+        background-color: #d32f2f; /* Darker shade on hover */
+    }
+@media (max-width: 768px) {
+    .left-button,
+    .right-button {
+        display: none; /* Hide buttons */
+    }
+
+    .CorpoContainer, .BasketballContainer, .SoccerContainer, .SleeveContainer {
+        flex-direction: row; /* Stack items vertically */
+        width: 45%; /* Full width for mobile */
+        align-items: center; /* Center items horizontally */
+        justify-content: space-between; /* Center items vertically */
+    }
+}

@@ -1,0 +1,218 @@
+﻿@model Crayonlab.Models.ShopViewModel
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService AuthorizationService
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crayonlab - Printing Services=s</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/heaters" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/site.css" />
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; /* Adjust padding as needed */
+            background-color: #fff; /* Optional: Set a background color */
+        }
+
+
+
+
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            nav ul li {
+                margin-right: 10px; /* Space between nav items */
+            }
+
+        .search-container {
+            position: relative;
+        }
+
+        .search-input {
+            padding: 8px 30px 8px 10px; /* Padding for the input */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px; /* Set a fixed width */
+            transition: width 0.3s ease; /* Smooth transition for width */
+        }
+
+            .search-input:focus {
+                width: 250px; /* Expand width on focus */
+                border-color: #f58220; /* Change border color on focus */
+                outline: none; /* Remove default outline */
+            }
+
+        .search-icon {
+            position: absolute;
+            right: 10px; /* Position the icon inside the input */
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #f58220; /* Icon color */
+            font-size: 20px; /* Adjust icon size */
+        }
+
+        .right-icons {
+            display: flex;
+            align-items: inherit;
+        }
+
+        .logo-right {
+            margin-right: 10px; /* Space between the logos */
+        }
+
+        .facebook-icon {
+            margin-left: 10px; /* Space between the icons */
+        }
+
+
+        .logout-container {
+            display: flex; /* Use flexbox for alignment */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: flex-end; /* Align items to the left */
+        }
+
+        .logout-button {
+            width: 120px; /* Set the desired width */
+            height: 40px; /* Set the desired height */
+            background-color: #f44336; /* Example background color */
+            color: white; /* Text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Optional: rounded corners */
+            cursor: pointer; /* Change cursor to pointer */
+            margin-bottom: 10px; /* Space between buttons */
+            font-weight: bold; /* Bold text */
+        }
+
+            .logout-button:hover {
+                background-color: #d32f2f; /* Darker shade on hover */
+            }
+
+
+    </style>
+</head>
+
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+        <div class="logo">
+            <img src="~/Content/assets/logo.png" alt="Crayonlab Logo">
+        </div>
+        <nav>
+            <ul style="display: flex; align-items: center; list-style: none; margin: 0; padding: 0;">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Shop", "Index", "Shop")</li>
+                <li>@Html.ActionLink("Product", "Index", "Product")</li>
+                <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+                <li class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <span class="search-icon"><i class="bi bi-search"></i></span>
+                </li>
+                @if (User.Identity.IsAuthenticated)
+ {
+                <li>
+                    <form asp-action="Logout" asp-controller="Account" method="post" style="display: inline;">
+                        <button type="submit" class="logout-button" style="width: 120px; height: 40px;">Logout</button>
+                    </form>
+                </li>
+
+ }
+            </ul>
+        </nav>
+        <div class="right-icons" style="display: flex; align-items: center;">
+            <div class="logo-right">
+                <img src="~/Content/assets/logo1.png" alt="Secondary Logo">
+            </div>
+            <div class="facebook-icon">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="bi bi-facebook" style="font-size: 30px;"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+
+ <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="~/Content/assets/logo3.png" alt="Crayonlab Logo">
+                <i class="bi bi-facebook"></i>
+            </div>
+            <!-- Subscription Section -->
+            <div class="footer-links">
+                <div class="footer-subscribe">
+                    <h3>Subscribe</h3>
+                    <form>
+                        <input type="email" placeholder="Your e-mail">
+                        <button type="submit">Send →</button>
+                    </form>
+                    <p>Subscribe to our website to receive our discount.</p>
+                </div>
+                <div class="column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li>Corporate Shirt</li>
+                        <li>T-Shirt & Esport Shirt</li>
+                        <li>Hoodie Jacket</li>
+                        <li>Long Sleeve</li>
+                        <li>Jersey Set</li>
+                        <li>Embroidery</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Home</h4>
+                    <ul>
+                        <li>Shop</li>
+                        <li>Categories</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="column contact">
+                    <h4>Contact Us</h4>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                    <p>Email: crayonlab2023@gmail.com</p>
+                    <h4>Address</h4>
+                    <p>Mandaue, Looc, Cebu</p>
+                    <h4>Contact Number</h4>
+                    <p>0908-629-0972</p>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <p>© 2024 Crayonlab. Powered by Crayonlab</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

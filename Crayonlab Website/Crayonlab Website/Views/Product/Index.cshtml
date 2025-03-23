@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Link to CSS in the Content folder -->
+<link rel="stylesheet" href="@Url.Content("~/Content/StyleSheet.css")" />
+
+    <main>
+
+
+            <h2>CUSTOMIZED YOUR SHIRT</h2>
+            <h5>COLLECTION</h5>
+
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Category 1 -->
+                    <div class="swiper-slide category">
+                        <div class="category-label">CORPORATE SHIRT</div> <!-- Label for Category 1 -->
+                        <div class="category-image-container">
+                    <a href="@Url.Action("Index", "Customize", new { id = "Corporate Shirt" })">
+                        <img src="~/Content/assets/Pfront.png" alt="Category 1 Image 1" class="main-image">
+                        <img src="~/Content/assets/Pback.png" alt="Category 1 Image 2" class="zoomed-image">
+                              </a>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="swiper-slide category">
+                        <div class="category-label">SHIRT</div> <!-- Label for Category 2 -->
+                        <div class="category-image-container">
+                    <a href="@Url.Action("Index", "Customize", new { id = "Shirt" })">
+                        <img src="~/Content/assets/Sfront.png" alt="Category 2 Image 1" class="main-image">
+                        <img src="~/Content/assets/Sback.png" alt="Category 2 Image 2" class="zoomed-image">
+                    </a>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="swiper-slide category">
+                        <div class="category-label">LONG SLEEVE</div> <!-- Label for Category 3 -->
+                        <div class="category-image-container">
+                    <a href="@Url.Action("Index", "Customize", new { id = "Long Sleeve" })">
+                        <img src="~/Content/assets/Lfront.png" alt="Category 3 Image 1" class="main-image">
+                    </a>
+                        <img src="~/Content/assets/Lback.png" alt="Category 3 Image 2" class="zoomed-image">
+                        </div>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="swiper-slide category">
+                        <div class="category-label">JERSEY</div> <!-- Label for Category 4 -->
+                        <div class="category-image-container">
+                    <a href="@Url.Action("Index", "Customize", new { id = "Jersey" })">
+                        <img src="~/Content/assets/Jfront.png" alt="Category 4 Image 1" class="main-image">
+                        <img src="~/Content/assets/Jback.png" alt="Category 4 Image 2" class="zoomed-image">
+                        <img src="~/Content/assets/short.png" alt="Category 4 Image 3" class="third-image">
+                    </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="category-container" id="category-container-1">
+                    <!-- Category 1 -->
+                    <!-- Swiper Container -->
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Category 1 -->
+                            <div class="swiper-slide category">
+                                <div class="category-label">WARMER JACKET</div> <!-- Label for Category 1 -->
+                                <div class="category-image-container">
+                            <a href="@Url.Action("Index", "Customize", new { id = "Warmer Jacket" })">
+                                <img src="~/Content/assets/Hfront.png" alt="Category 1 Image 1" class="main-image">
+                                <img src="~/Content/assets/Hback.png" alt="Category 1 Image 2" class="zoomed-image">
+                            </a>
+                                </div>
+                            </div>
+
+                            <!-- Category 2 -->
+                            <div class="swiper-slide category">
+                                <div class="category-label">JERSEY</div> <!-- Label for Category 2 -->
+                                <div class="category-image-container">
+                            <a href="@Url.Action("Index", "Customize", new { id = "Jersey" })">
+                                <img src="~/Content/assets/image7.png" alt="Category 2 Image 1" class="main-image">
+                                <img src="~/Content/assets/image8.png" alt="Category 2 Image 2" class="zoomed-image">
+                                <img src="~/Content/assets/image9.png" alt="Category 4 Image 3" class="third-image">
+                            </a>
+                                </div>
+                            </div>
+
+                            <!-- Category 3 -->
+                            <div class="swiper-slide category">
+                                <div class="category-label">SHIRT NAME</div> <!-- Label for Category 3 -->
+                                <div class="category-image-container">
+                            <a href="@Url.Action("Index", "Customize", new { id = "Shirt Name" })">
+                                <img src="~/Content/assets/image5.png" alt="Category 3 Image 1" class="main-image">
+                                <img src="~/Content/assets/image6.png" alt="Category 3 Image 2" class="zoomed-image">
+                            </a>
+                                </div>
+                            </div>
+
+                            <!-- Category 4 -->
+                            <div class="swiper-slide category">
+                                <div class="category-label">SHIRT NAME</div> <!-- Label for Category 4 -->
+                                <div class="category-image-container">
+                            <a href="@Url.Action("Index", "Customize", new { id = "Shirt Name" })">
+                                <img src="~/Content/assets/image7.png" alt="Category 4 Image 1" class="main-image">
+                                <img src="~/Content/assets/image8.png" alt="Category 4 Image 2" class="zoomed-image">
+                            </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+    </main>
+
