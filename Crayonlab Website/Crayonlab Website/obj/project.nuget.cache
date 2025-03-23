@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OKCgBPgyPs8=",
+  "dgSpecHash": "mW2x/KLOczs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alber\\OneDrive\\Desktop\\Crayonlab Website\\Crayonlab Website\\WebApplication3.csproj",
+  "projectFilePath": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\WebApplication3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alber\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\alber\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

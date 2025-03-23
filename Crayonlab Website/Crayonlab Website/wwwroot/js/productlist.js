@@ -10,7 +10,7 @@ containerElements.forEach((container) => {
         if (window.innerWidth <= 768) { // Mobile view
             visibleSlides = totalSlides; // Show all slides
         } else {
-            visibleSlides = Math.min(totalSlides, totalSlides-6); // Limit to a maximum of 4 visible slides
+            visibleSlides = Math.min(totalSlides, totalSlides-7); // Limit to a maximum of 4 visible slides
         }
     }
 
