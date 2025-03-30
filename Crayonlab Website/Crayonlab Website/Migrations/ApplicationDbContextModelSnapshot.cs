@@ -61,9 +61,45 @@ namespace WebApplication3.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("MenLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenMPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("ShortsDesign")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("WomenLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenMPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXXLPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -86,9 +122,45 @@ namespace WebApplication3.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("MenLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenMPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("ShortsDesign")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("WomenLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenMPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXXLPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -111,9 +183,45 @@ namespace WebApplication3.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("MenLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenMPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("ShortsDesign")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("WomenLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenMPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXXLPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -136,9 +244,45 @@ namespace WebApplication3.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("MenLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenMPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MenXXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("ShortsDesign")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("WomenLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenMPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXLPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXSPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WomenXXLPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 

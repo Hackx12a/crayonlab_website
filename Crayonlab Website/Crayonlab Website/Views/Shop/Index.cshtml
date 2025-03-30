@@ -16,20 +16,26 @@
 
 <main>
 
-
+    <div class="space">
+   
+    </div>
 
 
 
     <!-- Corporate Section -->
     <!-- Corporate Section -->
-    <div>
+    <div class="titles">
         <h1>CORPORATE SHIRT</h1>
         <p>COLLECTIONS</p>
     </div>
 
+
     <div id="uploadCorporateModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <div class="modal-headers">
+                <span class="close">&times;</span>
+
+            </div>
             <h2>Upload New Corporate Designs</h2>
             <form asp-action="UploadDesign" asp-controller="Shop" method="post" enctype="multipart/form-data">
                 <div>
@@ -44,16 +50,53 @@
                     <label for="shortDesignCorporate">Lower Design (Optional):</label>
                     <input type="file" name="shortDesign" id="shortDesignCorporate">
                 </div>
+                <div id="sizeInputs">
+                    <div id="menSizesInputs" style="display: block;">
+                        <label for="menSPrice">Men XS Price:</label>
+                        <input type="number" name="menXSPrice" id="menXSPrice" step="0.01" required>
+                        <label for="menSPrice">Men S Price:</label>
+                        <input type="number" name="menSPrice" id="menSPrice" step="0.01" required>
+                        <label for="menMPrice">Men M Price:</label>
+                        <input type="number" name="menMPrice" id="menMPrice" step="0.01" required>
+                        <label for="menLPrice">Men L Price:</label>
+                        <input type="number" name="menLPrice" id="menLPrice" step="0.01" required>
+                        <label for="menXLPrice">Men XL Price:</label>
+                        <input type="number" name="menXLPrice" id="menXLPrice" step="0.01" required>
+                        <label for="menXXLPrice">Men XXL Price:</label>
+                        <input type="number" name="menXXLPrice" id="menXXLPrice" step="0.01" required>
+                    </div>
+                    <div id="womenSizesInputs" style="display: block;">
+                        <label for="womenXSPrice">Women XS Price:</label>
+                        <input type="number" name="womenXSPrice" id="womenXSPrice" step="0.01" required>
+                        <label for="womenSPrice">Women S Price:</label>
+                        <input type="number" name="womenSPrice" id="womenSPrice" step="0.01" required>
+                        <label for="womenMPrice">Women M Price:</label>
+                        <input type="number" name="womenMPrice" id="womenMPrice" step="0.01" required>
+                        <label for="womenLPrice">Women L Price:</label>
+                        <input type="number" name="womenLPrice" id="womenLPrice" step="0.01" required>
+                        <label for="womenXLPrice">Women XL Price:</label>
+                        <input type="number" name="womenXLPrice" id="womenXLPrice" step="0.01" required>
+                        <label for="womenXXLPrice">Women XXL Price:</label>
+                        <input type="number" name="womenXXLPrice" id="womenXXLPrice" step="0.01" required>
+                    </div>
+                </div>
                 <div class="uploadcenter"><button type="submit">Upload</button></div>
+
             </form>
         </div>
     </div>
 
+
+
     <!-- Delete Modal for Corporate -->
     <div id="deleteModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
+        <div class="delete-modal-content">
+            <div class="modal-headers">
+                <span class="close">&times;</span>
+
+            </div>
             <h2>Delete Design</h2>
+
             <div id="deleteDesignImages" class="imagess">
                 @foreach (var item in Model.Designs)
             {
@@ -74,6 +117,7 @@
                                 }
                             </a>
                         </div>
+
                     </div>
 
                 </div>
@@ -132,7 +176,7 @@
 
     <!-- Corporate Section -->
     <!-- Basketball Section -->
-    <div>
+    <div class="titles">
         <h1>BASKETBALL JERSEY</h1>
         <p>COLLECTIONS</p>
     </div>
@@ -251,7 +295,7 @@
 
 
     <!-- THIRD SECTION: SOCCER JERSEY -->
-    <div>
+    <div class="titles">
         <h1>SOCCER JERSEY</h1>
         <p>COLLECTIONS</p>
     </div>
@@ -365,7 +409,7 @@
 
 
     <!-- FOURTH SECTION: LONG SLEEVE -->
-    <div>
+    <div class="titles">
         <h1>LONG SLEEVE</h1>
         <p>COLLECTIONS</p>
     </div>

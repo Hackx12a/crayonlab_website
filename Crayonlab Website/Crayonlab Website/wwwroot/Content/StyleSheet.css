@@ -1,42 +1,36 @@
 ﻿/* General Styles */
 body {
     margin: 0;
+    padding-top: 60px;
+
     font-family: Arial, sans-serif;
 }
 
 
 /* Header Styles */
-header {
-    display: flex;
-    align-items: center;
-    padding: 30px 30px;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+
 
 .logo {
     flex: 0 1 auto; /* Ensure the logo stays at its natural size */
+    margin-left: 100px;
+    margin-right:100px;
 }
 
     .logo img {
         height: 60px;
-        margin-left: 50px;
+        margin-left: 60px;
     }
 
-nav {
+
+
+.ul-navbar {
+    list-style: none;
     display: flex;
-    justify-content: flex-start; /* Align the nav items to the left */
-    margin-left: 100px; /* Add space between the logo and nav items */
+    align-items: center;
+    gap: 40px; /* Adjust space between nav items */
+    padding: 0;
+    margin: 0;
 }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap: 50px; /* Adjust space between nav items */
-        padding: 0;
-        margin: 0;
-    }
 
         nav ul li {
             display: inline;
@@ -50,20 +44,21 @@ nav {
             }
 
 .search-icon {
-    margin-left: auto;
+    margin-left: 15px;
 }
 
 /* Right Side Icons Section */
 .right-icons {
-    display: flex;
+    display: block;
     align-items: center;
     gap: 20px; /* Space between icons */
 }
 
-.logo-right img {
-    height: 60px; /* Size for the secondary logo */
-    margin-left: 400px;
-}
+
+
+
+
+
 
 .facebook-icon img {
     height: 30px; /* Facebook icon size */

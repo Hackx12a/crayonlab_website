@@ -8,7 +8,7 @@ containerElements.forEach((container) => {
     // Function to set visibleSlides based on screen width
     function setVisibleSlides() {
         if (window.innerWidth <= 768) { // Mobile view
-            visibleSlides = totalSlides; // Show all slides
+            visibleSlides = (0); // Show all slides
         } else {
             visibleSlides = Math.min(totalSlides, totalSlides-7); // Limit to a maximum of 4 visible slides
         }
