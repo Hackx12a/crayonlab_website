@@ -103,6 +103,7 @@
                 <div class="design-item">
                     <div class="swiper-slide category" data-name="@item.FrontDesign" data-image="@item.FrontDesign">
                         <div class="category-image-container">
+
                             <a href="@Url.Action("Index", "Item", new {
                                 id = item.Id,
                                 frontImage = Url.Content("~/Content/assets/" + item.FrontDesign),
@@ -116,6 +117,8 @@
                                 <img src="~/Content/assets/@item.ShortsDesign" alt="@item.ShortsDesign Upload Lower Design" class="third-image">
                                 }
                             </a>
+
+
                         </div>
 
                     </div>
@@ -157,7 +160,19 @@
                         id = item.Id,
                         frontImage = Url.Content("~/Content/assets/" + item.FrontDesign),
                         backImage = Url.Content("~/Content/assets/" + item.BackDesign),
-                        shortsImage = !string.IsNullOrEmpty(item.ShortsDesign) ? Url.Content("~/Content/assets/" + item.ShortsDesign) : null
+                        shortsImage = !string.IsNullOrEmpty(item.ShortsDesign) ? Url.Content("~/Content/assets/" + item.ShortsDesign) : null, 
+                        menXSPrice = item.MenXSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menSPrice = item.MenSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menMPrice = item.MenMPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menLPrice = item.MenLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menXLPrice = item.MenXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menXXLPrice = item.MenXXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXSPrice = item.WomenXSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenSPrice = item.WomenSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenMPrice = item.WomenMPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenLPrice = item.WomenLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXLPrice = item.WomenXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXXLPrice = item.WomenXXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture)
                     })">
                         <img src="~/Content/assets/@item.FrontDesign" alt="@item.FrontDesign" class="main-image">
                         <img src="~/Content/assets/@item.BackDesign" alt="@item.BackDesign" class="zoomed-image">
@@ -175,6 +190,18 @@
     </div>
 
     <!-- Corporate Section -->
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Basketball Section -->
     <div class="titles">
         <h1>BASKETBALL JERSEY</h1>
@@ -270,7 +297,19 @@
                         id = jersey.Id,
                         frontImage = Url.Content("~/Content/assets/" + jersey.FrontDesign),
                         backImage = Url.Content("~/Content/assets/" + jersey.BackDesign),
-                        shortsImage = !string.IsNullOrEmpty(jersey.ShortsDesign) ? Url.Content("~/Content/assets/" + jersey.ShortsDesign) : null
+                        shortsImage = !string.IsNullOrEmpty(jersey.ShortsDesign) ? Url.Content("~/Content/assets/" + jersey.ShortsDesign) : null,    
+                       menXSPrice = jersey.MenXSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menSPrice = jersey.MenSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menMPrice = jersey.MenMPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menLPrice = jersey.MenLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menXLPrice = jersey.MenXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menXXLPrice = jersey.MenXXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXSPrice = jersey.WomenXSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenSPrice = jersey.WomenSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenMPrice = jersey.WomenMPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenLPrice = jersey.WomenLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXLPrice = jersey.WomenXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXXLPrice = jersey.WomenXXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture)
                     })">
                         <img src="~/Content/assets/@jersey.FrontDesign" alt="@jersey.FrontDesign" class="main-image">
                         <img src="~/Content/assets/@jersey.BackDesign" alt="@jersey.BackDesign" class="zoomed-image">
@@ -387,7 +426,19 @@
                         id = sjersey.Id,
                         frontImage = Url.Content("~/Content/assets/" + sjersey.FrontDesign),
                         backImage = Url.Content("~/Content/assets/" + sjersey.BackDesign),
-                        shortsImage = !string.IsNullOrEmpty(sjersey.ShortsDesign) ? Url.Content("~/Content/assets/" + sjersey.ShortsDesign) : null
+                        shortsImage = !string.IsNullOrEmpty(sjersey.ShortsDesign) ? Url.Content("~/Content/assets/" + sjersey.ShortsDesign) : null,      
+                       menXSPrice = sjersey.MenXSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menSPrice = sjersey.MenSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menMPrice = sjersey.MenMPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menLPrice = sjersey.MenLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menXLPrice = sjersey.MenXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menXXLPrice = sjersey.MenXXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXSPrice = sjersey.WomenXSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenSPrice = sjersey.WomenSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenMPrice = sjersey.WomenMPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenLPrice = sjersey.WomenLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXLPrice = sjersey.WomenXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXXLPrice = sjersey.WomenXXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture)
                     })">
                         <img src="~/Content/assets/@sjersey.FrontDesign" alt="@sjersey.FrontDesign" class="main-image">
                         <img src="~/Content/assets/@sjersey.BackDesign" alt="@sjersey.BackDesign" class="zoomed-image">
@@ -501,7 +552,19 @@
                         id = sleeves.Id,
                         frontImage = Url.Content("~/Content/assets/" + sleeves.FrontDesign),
                         backImage = Url.Content("~/Content/assets/" + sleeves.BackDesign),
-                        shortsImage = !string.IsNullOrEmpty(sleeves.ShortsDesign) ? Url.Content("~/Content/assets/" + sleeves.ShortsDesign) : null
+                        shortsImage = !string.IsNullOrEmpty(sleeves.ShortsDesign) ? Url.Content("~/Content/assets/" + sleeves.ShortsDesign) : null,
+                       menXSPrice = sleeves.MenXSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menSPrice = sleeves.MenSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menMPrice = sleeves.MenMPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menLPrice = sleeves.MenLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menXLPrice = sleeves.MenXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        menXXLPrice = sleeves.MenXXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXSPrice = sleeves.WomenXSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenSPrice = sleeves.WomenSPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenMPrice = sleeves.WomenMPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenLPrice = sleeves.WomenLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXLPrice = sleeves.WomenXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                        womenXXLPrice = sleeves.WomenXXLPrice.ToString(System.Globalization.CultureInfo.InvariantCulture)
                     })">
                         <img src="~/Content/assets/@sleeves.FrontDesign" alt="@sleeves.FrontDesign" class="main-image">
                         <img src="~/Content/assets/@sleeves.BackDesign" alt="@sleeves.BackDesign" class="zoomed-image">
@@ -533,7 +596,25 @@
         var uploadSoccerButton = document.getElementById("uploadSoccerButton");
         var uploadLongSleeveButton = document.getElementById("uploadLongSleeveButton");
 
+        document.addEventListener("DOMContentLoaded", function () {
+            const imageContainers = document.querySelectorAll('.category-image-container');
 
+            function checkVisibility() {
+                const windowHeight = window.innerHeight;
+
+                imageContainers.forEach(container => {
+                    const rect = container.getBoundingClientRect();
+                    if (rect.top < windowHeight && rect.bottom > 0) {
+                        container.classList.add('visible');
+                    } else {
+                        container.classList.remove('visible'); // Optional: remove class when out of view
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Initial check
+        });
         // Open upload modals
         uploadCorporateButton.onclick = function () {
             uploadCorporateModal.style.display = "block";

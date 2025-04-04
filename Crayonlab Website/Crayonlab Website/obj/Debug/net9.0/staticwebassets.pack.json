@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\Content\\assets\\537a67a9-1f57-4030-80a8-a76a0111dec7_f62d0758-d0db-4e66-a142-af82011d53e5_front design2.png"
     },
     {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\543268af-e290-494c-8bb5-128971733214_cor8.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\543268af-e290-494c-8bb5-128971733214_cor8.png"
+    },
+    {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\5562619d-549c-4c00-9d04-e2961b9412bc_cor19.png",
       "PackagePath": "staticwebassets\\Content\\assets\\5562619d-549c-4c00-9d04-e2961b9412bc_cor19.png"
     },
@@ -147,6 +151,10 @@
     {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\8c45906b-eddd-49d7-b76f-1a6d040ccbe6_cor17.png",
       "PackagePath": "staticwebassets\\Content\\assets\\8c45906b-eddd-49d7-b76f-1a6d040ccbe6_cor17.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\8ee4073e-3eb9-40ec-a6a8-ebcb0e88a3b9_f62d0758-d0db-4e66-a142-af82011d53e5_front design2.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\8ee4073e-3eb9-40ec-a6a8-ebcb0e88a3b9_f62d0758-d0db-4e66-a142-af82011d53e5_front design2.png"
     },
     {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\948302ed-49fa-4a48-9bc3-6354548ef3ef_f62d0758-d0db-4e66-a142-af82011d53e5_front design2.png",
@@ -753,6 +761,10 @@
       "PackagePath": "staticwebassets\\Content\\assets\\soccer8.png"
     },
     {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\cart.css",
+      "PackagePath": "staticwebassets\\Content\\cart.css"
+    },
+    {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\customize.css",
       "PackagePath": "staticwebassets\\Content\\customize.css"
     },
@@ -769,12 +781,20 @@
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
     {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
+      "PackagePath": "staticwebassets\\css\\navbar.css"
+    },
+    {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\shop.css",
       "PackagePath": "staticwebassets\\css\\shop.css"
     },
     {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\js\\cart.js",
+      "PackagePath": "staticwebassets\\js\\cart.js"
     },
     {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\js\\login.js",

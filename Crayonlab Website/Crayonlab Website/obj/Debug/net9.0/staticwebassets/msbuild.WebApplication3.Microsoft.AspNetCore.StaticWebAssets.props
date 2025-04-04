@@ -324,6 +324,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\assets\537a67a9-1f57-4030-80a8-a76a0111dec7_f62d0758-d0db-4e66-a142-af82011d53e5_front design2.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\assets\543268af-e290-494c-8bb5-128971733214_cor8.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebApplication3</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebApplication3</BasePath>
+      <RelativePath>Content/assets/543268af-e290-494c-8bb5-128971733214_cor8.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4bc48lq8pq</Fingerprint>
+      <Integrity>sMzF7ljYd3TCPC5yYlBWs3+d+cBWp62+262UIJ+Jpe4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\assets\543268af-e290-494c-8bb5-128971733214_cor8.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\assets\5562619d-549c-4c00-9d04-e2961b9412bc_cor19.png'))">
       <SourceType>Package</SourceType>
       <SourceId>WebApplication3</SourceId>
@@ -611,6 +629,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\assets\8c45906b-eddd-49d7-b76f-1a6d040ccbe6_cor17.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\assets\8ee4073e-3eb9-40ec-a6a8-ebcb0e88a3b9_f62d0758-d0db-4e66-a142-af82011d53e5_front design2.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebApplication3</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebApplication3</BasePath>
+      <RelativePath>Content/assets/8ee4073e-3eb9-40ec-a6a8-ebcb0e88a3b9_f62d0758-d0db-4e66-a142-af82011d53e5_front design2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lzz4is6oth</Fingerprint>
+      <Integrity>MTGMhapqNGtwvV3d0gea4BJu+2hvdq44Jsa4Zcw7k74=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\assets\8ee4073e-3eb9-40ec-a6a8-ebcb0e88a3b9_f62d0758-d0db-4e66-a142-af82011d53e5_front design2.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\assets\948302ed-49fa-4a48-9bc3-6354548ef3ef_f62d0758-d0db-4e66-a142-af82011d53e5_front design2.png'))">
       <SourceType>Package</SourceType>
@@ -3330,6 +3366,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\assets\soccer8.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\cart.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebApplication3</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebApplication3</BasePath>
+      <RelativePath>Content/cart.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>b263hatjgr</Fingerprint>
+      <Integrity>c+q/e6MKD1E56cwmsmrHzpqdIqN05oaDZXnCqkwIuOc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\cart.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\customize.css'))">
       <SourceType>Package</SourceType>
       <SourceId>WebApplication3</SourceId>
@@ -3378,8 +3432,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wxfjun7uqw</Fingerprint>
-      <Integrity>dGFibD/Ev4JxewzaibcObOd5dVZcs2NYA+VUka3TZug=</Integrity>
+      <Fingerprint>0w6naxukrz</Fingerprint>
+      <Integrity>oNAHhIoyd/ZWw+aSVBvqUj/SkV4GsU9XvRT61tTdm48=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Content\StyleSheet.css'))</OriginalItemSpec>
@@ -3438,6 +3492,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\navbar.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebApplication3</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebApplication3</BasePath>
+      <RelativePath>css/navbar.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7mmr2folhw</Fingerprint>
+      <Integrity>P0kMJKZ9t70hLLbLTRzcPLT6FiEYRsLlRtym/zRHWzM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\navbar.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\shop.css'))">
       <SourceType>Package</SourceType>
       <SourceId>WebApplication3</SourceId>
@@ -3450,8 +3522,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kefjaali9s</Fingerprint>
-      <Integrity>vFYeVrDE4ZB3SGqLwxjIi3BF0eKGgvPxkC0g+a/D/o4=</Integrity>
+      <Fingerprint>ij6v8usrvv</Fingerprint>
+      <Integrity>3vKjP1HHp7A0EV+N9sgYqA1XNC7/Ws8lVBoQ1pFYojs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\shop.css'))</OriginalItemSpec>
@@ -3473,6 +3545,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\cart.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebApplication3</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebApplication3</BasePath>
+      <RelativePath>js/cart.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>cxks3av51y</Fingerprint>
+      <Integrity>8NNuWFEiQ+EYmL61TEw9j1Wgbbe/Hu1qQThOaATX5vU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\cart.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\login.js'))">
       <SourceType>Package</SourceType>
@@ -3504,8 +3594,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6r8izvrimu</Fingerprint>
-      <Integrity>0gvdGWgyz3B6IN8L80C0SFnXFbU0TIvshy6LJ2qzq/U=</Integrity>
+      <Fingerprint>kuouagjy6t</Fingerprint>
+      <Integrity>tOyitq7+qq7M+K64xmO3O6dVkPKsshordZDFPnrG1Ac=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\productlist.js'))</OriginalItemSpec>

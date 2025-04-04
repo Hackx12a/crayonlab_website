@@ -11,6 +11,7 @@
 
 <body>
 
+
     <div class="wrapper">
         <!-- TOP SECTION: PRODUCT IMAGE + INFO -->
         <div class="top-section">
@@ -117,133 +118,458 @@
         </div>
     </div>
 
+
+
     <!-- SCRIPT: RETRIEVE PRODUCT DETAILS, QUANTITY & TOGGLE LOGIC -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Retrieve query parameters from the URL
             const urlParams = new URLSearchParams(window.location.search);
+
+            // Helper function to safely parse decimal prices from URL
+            const parseDecimal = (value) => {
+                if (!value) return 0;
+                try {
+                    return parseFloat(value.replace(',', '.'));
+                } catch {
+                    return 0;
+                }
+            };
+
+            // Get all price parameters with proper decimal parsing
+            const sizePrices = {
+                men: {
+                    'XS': parseDecimal(urlParams.get('menXSPrice')),
+                    'S': parseDecimal(urlParams.get('menSPrice')),
+                    'M': parseDecimal(urlParams.get('menMPrice')),
+                    'L': parseDecimal(urlParams.get('menLPrice')),
+                    'XL': parseDecimal(urlParams.get('menXLPrice')),
+                    'XXL': parseDecimal(urlParams.get('menXXLPrice'))
+                },
+                women: {
+                    'XS': parseDecimal(urlParams.get('womenXSPrice')),
+                    'S': parseDecimal(urlParams.get('womenSPrice')),
+                    'M': parseDecimal(urlParams.get('womenMPrice')),
+                    'L': parseDecimal(urlParams.get('womenLPrice')),
+                    'XL': parseDecimal(urlParams.get('womenXLPrice')),
+                    'XXL': parseDecimal(urlParams.get('womenXXLPrice'))
+                }
+            };
+
+            // Enhanced Cart Object with localStorage persistence
+            const cart = {
+                items: [],
+                get total() {
+                    return this.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                },
+                get itemCount() {
+                    return this.items.reduce((count, item) => count + item.quantity, 0);
+                },
+
+                init() {
+                    this.loadFromLocalStorage();
+                    this.updateCartUI();
+                    this.updateCartCounter();
+                },
+
+                addItem(product) {
+                    const existingItemIndex = this.items.findIndex(item =>
+                        item.id === product.id &&
+                        item.size === product.size &&
+                        item.gender === product.gender &&
+                        item.frontImage === product.frontImage
+                    );
+
+                    if (existingItemIndex >= 0) {
+                        this.items[existingItemIndex].quantity += product.quantity;
+                        this.showNotification('Quantity updated');
+                    } else {
+                        const newItem = {
+                            id: product.id,
+                            name: product.name || "Product",
+                            frontImage: product.frontImage || "",
+                            price: product.price || 0,
+                            size: product.size || "M",
+                            gender: product.gender || "men",
+                            quantity: product.quantity || 1
+                        };
+                        this.items.push(newItem);
+                        this.showNotification('Added to cart');
+                    }
+
+                    this.saveToLocalStorage();
+                    this.updateCartUI();
+                    this.updateCartCounter();
+                    this.animateAddToCart(product.frontImage);
+                },
+
+                removeItem(index) {
+                    this.items.splice(index, 1);
+                    this.saveToLocalStorage();
+                    this.updateCartUI();
+                    this.updateCartCounter();
+                    this.showNotification('Item removed');
+                },
+
+                updateQuantity(index, newQuantity) {
+                    if (newQuantity > 0) {
+                        this.items[index].quantity = newQuantity;
+                        this.saveToLocalStorage();
+                        this.updateCartUI();
+                        this.updateCartCounter();
+                    }
+                },
+
+                saveToLocalStorage() {
+                    localStorage.setItem('shoppingCart', JSON.stringify(this.items));
+                },
+
+                loadFromLocalStorage() {
+                    const savedItems = localStorage.getItem('shoppingCart');
+                    if (savedItems) {
+                        try {
+                            this.items = JSON.parse(savedItems);
+                        } catch (e) {
+                            console.error("Error loading cart:", e);
+                            this.items = [];
+                        }
+                    }
+                },
+
+                animateAddToCart(imageSrc) {
+                    const flyingItem = document.createElement('div');
+                    flyingItem.className = 'flying-item';
+                    flyingItem.style.backgroundImage = `url(${imageSrc})`;
+
+                    const button = document.querySelector('.add-to-cart-btn');
+                    const buttonRect = button.getBoundingClientRect();
+                    const startX = buttonRect.left + buttonRect.width / 2;
+                    const startY = buttonRect.top + buttonRect.height / 2;
+
+                    const cartIcon = document.getElementById('cartIcon');
+                    const cartRect = cartIcon.getBoundingClientRect();
+                    const endX = cartRect.left + cartRect.width / 2 - startX;
+                    const endY = cartRect.top + cartRect.height / 2 - startY;
+
+                    flyingItem.style.left = `${startX}px`;
+                    flyingItem.style.top = `${startY}px`;
+                    flyingItem.style.setProperty('--end-x', `${endX}px`);
+                    flyingItem.style.setProperty('--end-y', `${endY}px`);
+
+                    document.body.appendChild(flyingItem);
+
+                    setTimeout(() => {
+                        flyingItem.remove();
+                    }, 800);
+                },
+
+                updateCartUI() {
+                    const cartItemsEl = document.getElementById('cartItems');
+                    const cartTotalEl = document.getElementById('cartTotalPrice');
+
+                    if (this.items.length === 0) {
+                        cartItemsEl.innerHTML = '<div class="empty-cart">Your cart is empty</div>';
+                    } else {
+                        cartItemsEl.innerHTML = this.items.map((item, index) => `
+                        <div class="cart-item">
+                            <img src="${item.frontImage}" alt="${item.name}" class="cart-item-image">
+                            <div class="cart-item-details">
+                                <div class="cart-item-title">${item.name}</div>
+                                <div class="cart-item-size">${item.gender === 'men' ? 'Men' : 'Women'}'s ${item.size}</div>
+                                <div class="cart-item-quantity">
+                                    <button class="cart-item-decrease" data-index="${index}">-</button>
+                                    <input type="number" min="1" value="${item.quantity}" class="cart-item-quantity-input" data-index="${index}">
+                                    <button class="cart-item-increase" data-index="${index}">+</button>
+                                </div>
+                                <div class="cart-item-price">₱${(item.price * item.quantity).toFixed(2)}</div>
+                                <button class="cart-item-remove" data-index="${index}">Remove</button>
+                            </div>
+                        </div>
+                    `).join('');
+
+                        // Add event listeners with stopPropagation
+                        document.querySelectorAll('.cart-item-decrease, .cart-item-increase, .cart-item-quantity-input, .cart-item-remove').forEach(element => {
+                            element.addEventListener('click', (e) => {
+                                e.stopPropagation(); // This prevents the click from bubbling up to the cart
+                            });
+                        });
+
+                        // Quantity decrease buttons
+                        document.querySelectorAll('.cart-item-decrease').forEach(btn => {
+                            btn.addEventListener('click', (e) => {
+                                const index = e.target.getAttribute('data-index');
+                                this.updateQuantity(index, this.items[index].quantity - 1);
+                            });
+                        });
+
+                        // Quantity increase buttons
+                        document.querySelectorAll('.cart-item-increase').forEach(btn => {
+                            btn.addEventListener('click', (e) => {
+                                const index = e.target.getAttribute('data-index');
+                                this.updateQuantity(index, this.items[index].quantity + 1);
+                            });
+                        });
+
+                        // Quantity input changes
+                        document.querySelectorAll('.cart-item-quantity-input').forEach(input => {
+                            input.addEventListener('change', (e) => {
+                                const index = e.target.getAttribute('data-index');
+                                const newQuantity = parseInt(e.target.value) || 1;
+                                this.updateQuantity(index, newQuantity);
+                            });
+                        });
+
+                        // Remove item buttons
+                        document.querySelectorAll('.cart-item-remove').forEach(btn => {
+                            btn.addEventListener('click', (e) => {
+                                const index = e.target.getAttribute('data-index');
+                                this.removeItem(index);
+                            });
+                        });
+                    }
+
+                    cartTotalEl.textContent = `₱${this.total.toFixed(2)}`;
+                },
+
+                updateCartCounter() {
+                    document.getElementById('cartCounter').textContent = this.itemCount;
+                },
+
+                showNotification(message) {
+                    const notification = document.createElement('div');
+                    notification.className = 'notification';
+                    notification.textContent = message;
+                    document.body.appendChild(notification);
+                    setTimeout(() => notification.remove(), 2000);
+                }
+            };
+
+            // Store the current state
+            let currentState = {
+                gender: 'men',
+                size: 'M',
+                quantity: 1,
+                get basePrice() {
+                    return sizePrices[this.gender][this.size];
+                },
+                get totalPrice() {
+                    return this.basePrice * this.quantity;
+                }
+            };
+
+            // Update the displayed price
+            const updatePriceDisplay = () => {
+                document.getElementById('productPrice').textContent =
+                    '₱' + currentState.totalPrice.toFixed(2);
+            };
+
+            // Update the selected size buttons
+            const updateSizeSelection = () => {
+                document.querySelectorAll('.size-options button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                const activeContainer = currentState.gender === 'men' ?
+                    document.getElementById('menSizes') :
+                    document.getElementById('womenSizes');
+
+                const buttons = activeContainer.querySelectorAll('button');
+                buttons.forEach(btn => {
+                    if (btn.textContent === currentState.size) {
+                        btn.classList.add('active');
+                    }
+                });
+            };
+
+            // Image handling
             const frontImage = urlParams.get('frontImage');
             const backImage = urlParams.get('backImage');
             const shortsImage = urlParams.get('shortsImage');
 
-            // Update the main and zoomed images
             if (frontImage) {
                 document.getElementById('mainImage').src = frontImage;
-                document.getElementById('zoomedImage').src = backImage;
-                document.getElementById('shortsImage').src = shortsImage;
+                document.getElementById('zoomedImage').src = backImage || frontImage;
             }
 
-            // Update the back image (if available)
             if (backImage) {
                 document.getElementById('backImage').src = backImage;
                 document.getElementById('backImage').style.display = 'block';
-                // Show both images
             }
 
-            // Update the shorts image (if available)
             if (shortsImage) {
                 document.getElementById('shortsImage').src = shortsImage;
                 document.getElementById('shortsImage').style.display = 'block';
             }
 
-            // Retrieve product info from localStorage (if available)
-            const productName = localStorage.getItem('productName') || 'Product Name';
-            const basePrice = parseFloat(localStorage.getItem('productPrice').replace('₱', '').replace(',', '')) || 700;
-
-            document.getElementById('productName').textContent = productName;
-            document.getElementById('productPrice').textContent = '₱' + basePrice.toFixed(2);
-
-            // Size prices (example prices for each size)
-            const sizePrices = {
-                men: {
-                    'XS': 600,
-                    'S': 650,
-                    'M': 700,
-                    'L': 750,
-                    'XL': 800,
-                    'XXL': 850
-                },
-                women: {
-                    'XS': 580,
-                    'S': 630,
-                    'M': 680,
-                    'L': 730,
-                    'XL': 780,
-                    'XXL': 830
-                }
-            };
-
-            // Quantity selector logic
+            // Quantity selector
             const minusBtn = document.getElementById('minusBtn');
             const plusBtn = document.getElementById('plusBtn');
             const quantityInput = document.getElementById('quantityInput');
 
-            minusBtn.addEventListener('click', () => {
-                let currentVal = parseInt(quantityInput.value);
-                if (currentVal > 1) {
-                    quantityInput.value = currentVal - 1;
+            minusBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent the event from bubbling up
+                if (currentState.quantity > 1) {
+                    currentState.quantity--;
+                    quantityInput.value = currentState.quantity;
+                    updatePriceDisplay();
                 }
             });
 
-            plusBtn.addEventListener('click', () => {
-                let currentVal = parseInt(quantityInput.value);
-                quantityInput.value = currentVal + 1;
+            plusBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent the event from bubbling up
+                currentState.quantity++;
+                quantityInput.value = currentState.quantity;
+                updatePriceDisplay();
             });
 
-            // Men/Women toggle logic for size selection
-            const menBtn = document.getElementById('menBtn');
-            const womenBtn = document.getElementById('womenBtn');
-            const menSizes = document.getElementById('menSizes');
-            const womenSizes = document.getElementById('womenSizes');
-
-            menSizes.style.display = 'flex';
-            womenSizes.style.display = 'none';
-
-            function resetGenderActive() {
-                menBtn.classList.remove('active');
-                womenBtn.classList.remove('active');
-            }
-
-            menBtn.addEventListener('click', () => {
-                resetGenderActive();
-                menBtn.classList.add('active');
-                menSizes.style.display = 'flex';
-                womenSizes.style.display = 'none';
-                removeActiveFromSizes(menSizes);
-            });
-
-            womenBtn.addEventListener('click', () => {
-                resetGenderActive();
-                womenBtn.classList.add('active');
-                menSizes.style.display = 'none';
-                womenSizes.style.display = 'flex';
-                removeActiveFromSizes(womenSizes);
-            });
-
-            function removeActiveFromSizes(container) {
-                const sizeButtons = container.querySelectorAll('button');
-                sizeButtons.forEach(btn => btn.classList.remove('active'));
-            }
-
-            function addSizeButtonEvents(container, gender) {
-                const sizeButtons = container.querySelectorAll('button');
-                sizeButtons.forEach(btn => {
+            // Size selection
+            function setupSizeButtons(container, gender) {
+                const buttons = container.querySelectorAll('button');
+                buttons.forEach(btn => {
                     btn.addEventListener('click', () => {
-                        sizeButtons.forEach(button => button.classList.remove('active'));
-                        btn.classList.add('active');
-
-                        // Update price based on selected size
-                        const selectedSize = btn.textContent;
-                        const newPrice = sizePrices[gender][selectedSize];
-                        document.getElementById('productPrice').textContent = '₱' + newPrice.toFixed(2);
+                        currentState.gender = gender;
+                        currentState.size = btn.textContent;
+                        updateSizeSelection();
+                        updatePriceDisplay();
                     });
                 });
             }
 
-            addSizeButtonEvents(menSizes, 'men');
-            addSizeButtonEvents(womenSizes, 'women');
+            // Initialize size buttons
+            setupSizeButtons(document.getElementById('menSizes'), 'men');
+            setupSizeButtons(document.getElementById('womenSizes'), 'women');
+
+            // Gender toggle
+            const menBtn = document.getElementById('menBtn');
+            const womenBtn = document.getElementById('womenBtn');
+
+            menBtn.addEventListener('click', () => {
+                currentState.gender = 'men';
+                menBtn.classList.add('active');
+                womenBtn.classList.remove('active');
+                document.getElementById('menSizes').style.display = 'flex';
+                document.getElementById('womenSizes').style.display = 'none';
+                updateSizeSelection();
+                updatePriceDisplay();
+            });
+
+            womenBtn.addEventListener('click', () => {
+                currentState.gender = 'women';
+                womenBtn.classList.add('active');
+                menBtn.classList.remove('active');
+                document.getElementById('menSizes').style.display = 'none';
+                document.getElementById('womenSizes').style.display = 'flex';
+                updateSizeSelection();
+                updatePriceDisplay();
+            });
+
+            // Cart toggle functionality
+            const cartSidebar = document.getElementById('cartSidebar');
+            const cartOverlay = document.getElementById('cartOverlay');
+            const closeCartBtn = document.getElementById('closeCartBtn');
+
+            function openCart() {
+                cartSidebar.classList.add('active');
+                cartOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeCart() {
+                cartSidebar.classList.remove('active');
+                cartOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            // Enhanced cart icon click handler for mobile
+            document.getElementById('cartIcon').addEventListener('click', function (e) {
+                console.log("Cart icon clicked"); // Debugging line
+                if (window.innerWidth <= 768) {
+                    e.stopPropagation();
+                    cartSidebar.classList.toggle('active');
+                    cartOverlay.classList.toggle('active');
+                    document.body.style.overflow =
+                        cartSidebar.classList.contains('active') ? 'hidden' : '';
+                    console.log("Cart toggled"); // Debugging line
+                } else {
+                    openCart();
+                }
+            });
+            cartOverlay.addEventListener('click', closeCart);
+            closeCartBtn.addEventListener('click', closeCart);
+
+            // Add to cart button
+            document.querySelector('.add-to-cart-btn').addEventListener('click', () => {
+                const product = {
+                    id: urlParams.get('id'),
+                    name: document.getElementById('productName').textContent,
+                    frontImage: urlParams.get('frontImage'),
+                    price: currentState.basePrice,
+                    size: currentState.size,
+                    gender: currentState.gender,
+                    quantity: currentState.quantity
+                };
+
+                cart.addItem(product);
+                if (window.innerWidth > 768) {
+                    openCart(); // Only auto-open on desktop
+                }
+            });
+
+            // Handle clicking on other product images to add to cart
+            document.querySelectorAll('.product-image').forEach(img => {
+                img.addEventListener('click', function () {
+                    const product = {
+                        id: this.dataset.productId || urlParams.get('id'),
+                        name: this.dataset.productName || document.getElementById('productName').textContent,
+                        frontImage: this.src,
+                        price: parseFloat(this.dataset.productPrice) || currentState.basePrice,
+                        size: currentState.size,
+                        gender: currentState.gender,
+                        quantity: currentState.quantity
+                    };
+
+                    cart.addItem(product);
+                    if (window.innerWidth > 768) {
+                        openCart();
+                    }
+                });
+            });
+
+            // Proceed to checkout
+            document.querySelector('.checkout-btn').addEventListener('click', () => {
+                if (cart.items.length > 0) {
+                    alert('Proceeding to checkout with ' + cart.itemCount + ' items');
+                } else {
+                    cart.showNotification('Your cart is empty!');
+                }
+            });
+
+            // Mobile responsiveness
+            window.addEventListener('resize', () => {
+                if (window.innerWidth <= 768) {
+                    cartSidebar.style.width = '100%';
+                } else {
+                    cartSidebar.style.width = '380px';
+                }
+            });
+
+            // Initialize UI
+            menBtn.classList.add('active');
+            document.getElementById('menSizes').style.display = 'flex';
+            document.getElementById('womenSizes').style.display = 'none';
+            quantityInput.value = currentState.quantity;
+
+            // Activate default size (M)
+            const defaultSizeBtn = document.querySelector('#menSizes button:nth-child(3)');
+            if (defaultSizeBtn) defaultSizeBtn.click();
+
+            updatePriceDisplay();
+            cart.init();
         });
+
     </script>
+
+
 
     <!-- Optional: Font Awesome Kit Script (if needed) -->
     <!-- <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script> -->

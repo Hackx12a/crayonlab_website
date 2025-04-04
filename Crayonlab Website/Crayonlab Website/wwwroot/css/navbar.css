@@ -50,7 +50,7 @@ li {
 
 .logo-right img {
     height: 60px; /* Size for the secondary logo */
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
 /* Toggle button styles */
@@ -104,13 +104,10 @@ li {
     .right-icons {
         margin-left: 0;
     }
-}
-
-/* Hide toggle button on larger screens */
-@media (min-width: 769px) {
-    .menu-toggle {
-        display: none; /* Hide toggle button on larger screens */
-    }
-
    
+
+ 
+ 
 }
+
+

@@ -3,13 +3,13 @@
     "",
     "\\Crayonlab Website",
     "\\Crayonlab Website\\Crayonlab Website",
+    "\\Crayonlab Website\\Crayonlab Website\\Controllers",
     "\\Crayonlab Website\\Crayonlab Website\\Views",
-    "\\Crayonlab Website\\Crayonlab Website\\Views\\Customize",
-    "\\Crayonlab Website\\Crayonlab Website\\Views\\Product",
-    "\\Crayonlab Website\\Crayonlab Website\\Views\\Shared",
+    "\\Crayonlab Website\\Crayonlab Website\\Views\\Item",
     "\\Crayonlab Website\\Crayonlab Website\\wwwroot",
     "\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content",
-    "\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css"
+    "\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\logo",
+    "\\Crayonlab Website\\Crayonlab Website\\wwwroot\\js"
   ],
   "SelectedNode": "\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
