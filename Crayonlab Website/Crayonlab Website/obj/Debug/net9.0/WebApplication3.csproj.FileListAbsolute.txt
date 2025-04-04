@@ -399,8 +399,6 @@ C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab We
 C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\scopedcss\projectbundle\WebApplication3.bundle.scp.css
 C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\cqxkfm9id9-3r8b2a0bt1.gz
 C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\75r4r9k627-9uti5736a3.gz
-C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\gh3km5sen7-5nf65uuv54.gz
-C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\601spmxorl-potlo35hvq.gz
 C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\xm73sp7fjr-fcp20psvzk.gz
 C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\d9awlmrscw-61n19gt1b8.gz
 C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\9ik81u7jpb-9fszdlu4xp.gz
@@ -481,6 +479,9 @@ C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab We
 C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\hwl2t1y9eh-kuouagjy6t.gz
 C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\uh69h7dn1v-ij6v8usrvv.gz
 C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\q3nxbf6krz-b263hatjgr.gz
-C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\bezpkl6r13-0w6naxukrz.gz
-C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\gutjxrvo2z-7mmr2folhw.gz
 C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\ji27ut43oa-cxks3av51y.gz
+C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\601spmxorl-vm4m0w8gru.gz
+C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\callkjev4r-hdwezreo9q.gz
+C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\bezpkl6r13-9lbwgd4tog.gz
+C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\gutjxrvo2z-wwksbjlrnu.gz
+C:\Users\alber\OneDrive\Desktop\crayonlab_website\Crayonlab Website\Crayonlab Website\obj\Debug\net9.0\compressed\gh3km5sen7-5nf65uuv54.gz

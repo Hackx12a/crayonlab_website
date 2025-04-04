@@ -412,9 +412,7 @@ footer {
     flex-wrap: wrap;
 }
 
-    .footer-bottom p {
-        margin: 5px 0;
-    }
+
 
 .footer-logo i {
     font-size: 40px; /* Increase the size of the Facebook icon */
