@@ -35,6 +35,36 @@ html {
         margin-left: 40px;
     }
 
+.partner-image {
+    text-align: center; /* Center the text below the image */
+    margin: 20px; /* Add some margin around the images */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.description {
+    margin-top: 8px; /* Space between the image and the description */
+    font-size: 15px; /* Adjust font size as needed */
+    color: #333; /* Text color */
+    display: none; /* Hide by default */
+    position: absolute; /* Position it absolutely */
+    transform: translateX(-5%); /* Adjust for centering */
+    z-index: 1000; /* Ensure it appears above other elements */
+    
+}
+
+.partner-image:hover .description,
+.partner-image.active .description {
+    display: flex; /* Show the description on hover or when active */
+}
+
+.partner-image:hover,
+.partner-image.active {
+    margin-bottom: 200px; /* Add bottom margin when hovered or active */
+}
+
+
+
+
 
 
 .ul-navbar {
@@ -1078,7 +1108,7 @@ h2 {
     justify-content: center;
     gap: 2rem;
     margin: 3rem auto;
-    max-width: 1200px;
+    max-width: 1700px;
     padding: 0 2rem;
 }
 
@@ -1093,7 +1123,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 8rem;
+    height: 10rem;
 }
 
     .partner-image:hover {

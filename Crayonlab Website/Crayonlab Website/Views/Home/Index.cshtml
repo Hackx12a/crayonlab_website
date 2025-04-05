@@ -5,14 +5,11 @@
 
 <link rel="stylesheet" href="~/Content/StyleSheet.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="~/css/modal.css">
 
 <!-- Hero Section -->
 <section class="hero">
-    <!-- Dim Overlay -->
     <div class="hero-overlay"></div>
-
-    <!-- Content -->
     <div class="hero-content">
         <h1>DEFINE YOUR VIBE</h1>
         <p>Style that empowers your every move</p>
@@ -70,68 +67,85 @@
 
 <!-- About Us Section -->
 <section class="about-us">
-    <div class="section-header">
-        <h2>ABOUT US</h2>
-    </div>
-    <p class="about-description">
-        Welcome to CrayonLab, where creativity meets fashion! We specialize in high-quality <br class="desktop-only" />
-        apparel and sublimation printing, transforming ideas into vibrant, wearable art.<br class="desktop-only" />
-        Our mission is to empower individuals to express their unique style through<br class="desktop-only" />
-        custom designs that pop with color and personality.
-    </p>
-
-    <div class="about-images">
-        <div class="about-image">
-            <img src="~/Content/assets/about1.png" alt="Heat Pressing Process">
-            <div class="about-label">Heat Pressing Process</div>
-        </div>
-        <div class="about-image">
-            <img src="~/Content/assets/about2.png" alt="Stitching Service">
-            <div class="about-label">Stitching Service</div>
-        </div>
-        <div class="about-image">
-            <img src="~/Content/assets/about3.png" alt="Design Service">
-            <div class="about-label">Design Service</div>
-        </div>
-    </div>
+    <!-- Your about us content here -->
 </section>
+
+@using Crayonlab.Models
+@model ShopViewModel
+
 <!-- Our Partners Section -->
 <section class="our-partners">
     <div class="section-header">
         <h2>OUR PARTNERS</h2>
     </div>
 
-    <div class="partners-container">
-        <div class="partner-image">
-            <img src="~/Content/assets/partner1.png" alt="Partner 1">
-        </div>
-        <div class="partner-image">
-            <img src="~/Content/assets/partner2.png" alt="Partner 2">
-        </div>
-        <div class="partner-image">
-            <img src="~/Content/assets/partner3.png" alt="Partner 3">
-        </div>
-        <div class="partner-image">
-            <img src="~/Content/assets/partner4.png" alt="Partner 4">
-        </div>
-        <div class="partner-image">
-            <img src="~/Content/assets/partner5.png" alt="Partner 5">
-        </div>
-        <div class="partner-image">
-            <img src="~/Content/assets/partner6.png" alt="Partner 6">
-        </div>
+    @if (User.Identity.IsAuthenticated)
+    {
+    <div class="upload">
+        <button id="uploadpartners" class="upload-button">Upload Partners</button>
     </div>
+    }
+
+<div class="partners-container">
+    @if (Model.Partners != null && Model.Partners.Any())
+        {
+            foreach (var partner in Model.Partners)
+            {
+    <div class="partner-image" data-id="@partner.Id">
+        <div class="separator">
+            
+            <img src="@partner.Image" alt="@partner.Description" loading="lazy">
+            <div class="description tooltip">@partner.Description</div>
+        </div>
+   
+
+
+        @if (User.Identity.IsAuthenticated)
+                    {
+        <button class="delete-partner" data-id="@partner.Id">×</button>
+                    }
+
+    </div>
+    
+            }
+
+        }
+        else
+        {
+    <div class="no-partners">
+        <p>No partners available yet.</p>
+    </div>
+        }
+</div>
 </section>
-<!-- Mobile Navigation Toggle -->
-<button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-    <span class="toggle-bar"></span>
-    <span class="toggle-bar"></span>
-    <span class="toggle-bar"></span>
-</button>
+
+<!-- Upload Modal -->
+<div id="uploadModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Upload Partner</h2>
+        <form id="uploadForm">
+            <div class="form-group">
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</div>
 
 <!-- Include Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize authentication state
+    const isAuthenticated = @Json.Serialize(User.Identity.IsAuthenticated);
+
     // Initialize Swiper
     var swiper = new Swiper('.swiper', {
         slidesPerView: 1,
@@ -141,56 +155,251 @@
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
-            640: {
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 2,
-            },
-            1024: {
-                slidesPerView: 4,
-            },
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 4 }
         }
     });
 
-    // Mobile menu toggle functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        const toggle = document.querySelector('.mobile-menu-toggle');
-        const nav = document.querySelector('nav ul');
+    // Modal functionality
+    const uploadModal = document.getElementById('uploadModal');
+    const uploadForm = document.getElementById('uploadForm');
+    const uploadBtn = document.getElementById('uploadpartners');
 
-        toggle.addEventListener('click', function() {
-            // Toggle the active state on both button and navigation
-            this.classList.toggle('active');
-            nav.classList.toggle('active');
-
-            // Toggle aria-expanded attribute for accessibility
-            const isExpanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !isExpanded);
+    if (uploadBtn) {
+        uploadBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            uploadModal.style.display = 'block';
         });
+    }
 
-        // Close menu when clicking on a nav link
-        document.querySelectorAll('nav ul li a').forEach(link => {
-            link.addEventListener('click', function() {
-                toggle.classList.remove('active');
-                nav.classList.remove('active');
-                toggle.setAttribute('aria-expanded', 'false');
-            });
-        });
+    document.querySelector('.close-button')?.addEventListener('click', function () {
+        uploadModal.style.display = 'none';
+    });
 
-        // Close menu when resizing to desktop
-        function handleResize() {
-            if (window.innerWidth > 768) {
-                toggle.classList.remove('active');
-                nav.classList.remove('active');
-                toggle.setAttribute('aria-expanded', 'false');
+    window.addEventListener('click', function (e) {
+        if (e.target === uploadModal) {
+            uploadModal.style.display = 'none';
+        }
+    });
+
+    // Form submission
+    if (uploadForm) {
+        uploadForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Uploading...';
+
+            try {
+                const response = await fetch('/Home/UploadPartner', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (!data.success) {
+                    throw new Error(data.message || 'Upload failed');
+                }
+
+                updatePartnersUI(data);
+                uploadModal.style.display = 'none';
+                this.reset();
+                showToast('Partner uploaded successfully!', 'success');
+            } catch (error) {
+                showToast(error.message, 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
             }
+        });
+    }
+
+    // Partner image click functionality
+    document.querySelectorAll('.partner-image').forEach(partner => {
+        partner.addEventListener('click', function(e) {
+            // Don't do anything if delete button was clicked
+            if (e.target.classList.contains('delete-partner')) {
+                return;
+            }
+
+            // Remove active class from all other partners
+            document.querySelectorAll('.partner-image').forEach(p => {
+                if (p !== this) p.classList.remove('active');
+            });
+
+            // Toggle active class on clicked partner
+            this.classList.toggle('active');
+        });
+    });
+
+    // Close descriptions when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.partner-image')) {
+            document.querySelectorAll('.partner-image').forEach(partner => {
+                partner.classList.remove('active');
+            });
+        }
+    });
+
+    // Initialize delete buttons
+    document.querySelectorAll('.delete-partner').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent triggering the parent click event
+            deletePartner.call(this, e); // Call deletePartner with proper context
+        });
+    });
+
+    // Delete partner function
+    async function deletePartner(event) {
+        event.stopPropagation();
+        const partnerId = this.getAttribute('data-id');
+        const partnerDiv = this.closest('.partner-image');
+
+        if (!confirm('Are you sure you want to delete this partner?')) {
+            return;
         }
 
-        window.addEventListener('resize', handleResize);
-    });
+        try {
+            const response = await fetch('/Home/DeletePartner', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ id: partnerId })
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                partnerDiv.remove();
+                checkEmptyPartners();
+                showToast('Partner deleted successfully!', 'success');
+            } else {
+                throw new Error(data.message || 'Failed to delete partner');
+            }
+        } catch (error) {
+            showToast(error.message, 'error');
+        }
+    }
+
+    // Helper functions
+    function updatePartnersUI(data) {
+        const partnersContainer = document.querySelector('.partners-container');
+        const noPartners = partnersContainer.querySelector('.no-partners');
+
+        if (noPartners) {
+            noPartners.remove();
+        }
+
+        const partnerDiv = document.createElement('div');
+        partnerDiv.className = 'partner-image';
+        partnerDiv.dataset.id = data.id;
+        partnerDiv.innerHTML = `
+            <div class="separator">
+                <img src="${data.imageUrl}" alt="${data.description}" loading="lazy">
+                <div class="description tooltip">${data.description}</div>
+            </div>
+            ${isAuthenticated ? `<button class="delete-partner" data-id="${data.id}">×</button>` : ''}
+        `;
+
+        partnersContainer.prepend(partnerDiv);
+
+        // Add click event to new partner
+        partnerDiv.addEventListener('click', function(e) {
+            if (!e.target.classList.contains('delete-partner')) {
+                document.querySelectorAll('.partner-image').forEach(p => {
+                    if (p !== this) p.classList.remove('active');
+                });
+                this.classList.toggle('active');
+            }
+        });
+
+        if (isAuthenticated) {
+            partnerDiv.querySelector('.delete-partner').addEventListener('click', function(e) {
+                e.stopPropagation();
+                deletePartner.call(this, e);
+            });
+        }
+    }
+
+    function checkEmptyPartners() {
+        const partnersContainer = document.querySelector('.partners-container');
+        if (partnersContainer.querySelectorAll('.partner-image').length === 0) {
+            partnersContainer.innerHTML = '<div class="no-partners"><p>No partners available yet.</p></div>';
+        }
+    }
+
+    function showToast(message, type = 'info') {
+        const toast = document.createElement('div');
+        toast.className = `toast ${type}`;
+        toast.textContent = message;
+        document.body.appendChild(toast);
+
+        setTimeout(() => {
+            toast.classList.add('show');
+        }, 10);
+
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => toast.remove(), 300);
+        }, 3000);
+    }
+});
 </script>
 
+<style>
+    /* Toast styles */
+    .toast {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 1000;
+    }
 
+        .toast.show {
+            opacity: 1;
+        }
 
+        .toast.success {
+            background-color: green;
+        }
 
+        .toast.error {
+            background-color: red;
+        }
 
+    /* Delete button styles */
+    .partner-image {
+        position: relative;
+    }
+
+    .delete-partner {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(255, 0, 0, 0.7);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .partner-image:hover .delete-partner {
+        display: block;
+    }
+</style>

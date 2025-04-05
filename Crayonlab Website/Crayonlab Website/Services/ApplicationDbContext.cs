@@ -14,5 +14,6 @@ namespace Crayonlab.Services
         public required DbSet<Longsleeve> Longsleeves { get; set; }
         public required DbSet<Soccerjersey> Soccerjerseys { get; set; }
         public required DbSet<Account> Accounts { get; set; }
+        public required DbSet<Partners> Partners { get; set; }
     }
 }
