@@ -91,7 +91,7 @@
                     <button class="add-to-cart-btn">
                         <i class="fa-solid fa-cart-shopping" style="margin-right:8px;"></i>ADD TO CART
                     </button>
-                    <button class="buy-now-btn">BUY NOW</button>
+                    <button class="buy-now-btn" id="buyNowBtn">BUY NOW</button>
                 </div>
 
                 <!-- FREE DELIVERY NOTE -->
@@ -135,6 +135,29 @@
                     return 0;
                 }
             };
+
+            document.getElementById('buyNowBtn').addEventListener('click', () => {
+    // Create product data
+    const product = {
+        id: urlParams.get('id'),
+        name: document.getElementById('productName').textContent,
+        frontImage: urlParams.get('frontImage'),
+        price: currentState.basePrice,
+        size: currentState.size,
+        gender: currentState.gender,
+        quantity: currentState.quantity
+    };
+
+    // Dispatch a custom event with the product data
+    const buyNowEvent = new CustomEvent('buyNowClicked', { 
+        detail: { product: product } 
+    });
+    document.dispatchEvent(buyNowEvent);
+
+    // Open the checkout modal (defined in layout)
+    document.getElementById('checkoutModal').style.display = 'block';
+    document.body.classList.add('modal-open');
+});
 
             // Get all price parameters with proper decimal parsing
             const sizePrices = {

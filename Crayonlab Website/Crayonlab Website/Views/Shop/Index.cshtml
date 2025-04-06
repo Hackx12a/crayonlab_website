@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <link href="https://fonts.cdnfonts.com/css/heaters" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="stylesheet" href="~/Content/StyleSheet.css">
 <link rel="stylesheet" href="~/css/shop.css">
 
@@ -133,8 +134,8 @@
     @if (User.Identity.IsAuthenticated)
 {
     <div class="deleteupload">
-        <button id="uploadCorporateButton" class="upload-button">Upload Design</button>
-        <button id="deleteCorporateButton" class="delete-button">Delete Design</button>
+                <button id="uploadCorporateButton" class="upload-button"><i class="fas fa-upload button-icon"></i> </button>
+            <button id="deleteCorporateButton" class="delete-button"><i class="fas fa-trash button-icon"></i></button>
     </div>
 }
 
@@ -210,7 +211,9 @@
     <!-- Upload Modal for Basketball -->
     <div id="uploadBasketballModal" class="modal">
         <div class="modal-content">
+           <div class="modal-headers">
             <span class="close">&times;</span>
+            </div>
             <h2>Upload New Basketball Designs</h2>
             <form asp-action="UploadBasketballJersey" asp-controller="Shop" method="post" enctype="multipart/form-data">
                 <div>
@@ -224,6 +227,36 @@
                 <div>
                     <label for="shortsDesignBasketball">Lower Design (Optional):</label>
                     <input type="file" name="shortsDesign" id="shortsDesignBasketball">
+                </div>
+                  <div id="sizeInputs">
+                    <div id="menSizesInputs" style="display: block;">
+                        <label for="menSPrice">Men XS Price:</label>
+                        <input type="number" name="menXSPrice" id="menXSPrice" step="0.01" required>
+                        <label for="menSPrice">Men S Price:</label>
+                        <input type="number" name="menSPrice" id="menSPrice" step="0.01" required>
+                        <label for="menMPrice">Men M Price:</label>
+                        <input type="number" name="menMPrice" id="menMPrice" step="0.01" required>
+                        <label for="menLPrice">Men L Price:</label>
+                        <input type="number" name="menLPrice" id="menLPrice" step="0.01" required>
+                        <label for="menXLPrice">Men XL Price:</label>
+                        <input type="number" name="menXLPrice" id="menXLPrice" step="0.01" required>
+                        <label for="menXXLPrice">Men XXL Price:</label>
+                        <input type="number" name="menXXLPrice" id="menXXLPrice" step="0.01" required>
+                    </div>
+                    <div id="womenSizesInputs" style="display: block;">
+                        <label for="womenXSPrice">Women XS Price:</label>
+                        <input type="number" name="womenXSPrice" id="womenXSPrice" step="0.01" required>
+                        <label for="womenSPrice">Women S Price:</label>
+                        <input type="number" name="womenSPrice" id="womenSPrice" step="0.01" required>
+                        <label for="womenMPrice">Women M Price:</label>
+                        <input type="number" name="womenMPrice" id="womenMPrice" step="0.01" required>
+                        <label for="womenLPrice">Women L Price:</label>
+                        <input type="number" name="womenLPrice" id="womenLPrice" step="0.01" required>
+                        <label for="womenXLPrice">Women XL Price:</label>
+                        <input type="number" name="womenXLPrice" id="womenXLPrice" step="0.01" required>
+                        <label for="womenXXLPrice">Women XXL Price:</label>
+                        <input type="number" name="womenXXLPrice" id="womenXXLPrice" step="0.01" required>
+                    </div>
                 </div>
 
                 <div class="uploadcenter"><button type="submit">Upload</button></div>
@@ -268,8 +301,8 @@
     @if (User.Identity.IsAuthenticated)
  {
     <div class="deleteupload">
-        <button id="uploadBasketballButton" class="upload-button">Upload Design</button>
-        <button id="deleteBasketballButton" class="delete-button">Delete Design</button>
+            <button id="uploadBasketballButton" class="upload-button"><i class="fas fa-upload button-icon"></i> </button>
+            <button id="deleteBasketballButton" class="delete-button"><i class="fas fa-trash button-icon"></i></button>
     </div>
  }
 
@@ -341,7 +374,9 @@
     <!-- Upload Modal for SOCCER JERSEY -->
     <div id="uploadSoccerModal" class="modal">
         <div class="modal-content">
+                       <div class="modal-headers">
             <span class="close">&times;</span>
+            </div>
             <h2>Upload New Soccer Designs</h2>
             <form asp-action="UploadSoccerJersey" asp-controller="Shop" method="post" enctype="multipart/form-data">
                 <div>
@@ -355,6 +390,36 @@
                 <div>
                     <label for="shortsDesignSoccer">Lower Design (Optional):</label>
                     <input type="file" name="shortsDesign" id="shortsDesignSoccer">
+                </div>
+                                <div id="sizeInputs">
+                    <div id="menSizesInputs" style="display: block;">
+                        <label for="menSPrice">Men XS Price:</label>
+                        <input type="number" name="menXSPrice" id="menXSPrice" step="0.01" required>
+                        <label for="menSPrice">Men S Price:</label>
+                        <input type="number" name="menSPrice" id="menSPrice" step="0.01" required>
+                        <label for="menMPrice">Men M Price:</label>
+                        <input type="number" name="menMPrice" id="menMPrice" step="0.01" required>
+                        <label for="menLPrice">Men L Price:</label>
+                        <input type="number" name="menLPrice" id="menLPrice" step="0.01" required>
+                        <label for="menXLPrice">Men XL Price:</label>
+                        <input type="number" name="menXLPrice" id="menXLPrice" step="0.01" required>
+                        <label for="menXXLPrice">Men XXL Price:</label>
+                        <input type="number" name="menXXLPrice" id="menXXLPrice" step="0.01" required>
+                    </div>
+                    <div id="womenSizesInputs" style="display: block;">
+                        <label for="womenXSPrice">Women XS Price:</label>
+                        <input type="number" name="womenXSPrice" id="womenXSPrice" step="0.01" required>
+                        <label for="womenSPrice">Women S Price:</label>
+                        <input type="number" name="womenSPrice" id="womenSPrice" step="0.01" required>
+                        <label for="womenMPrice">Women M Price:</label>
+                        <input type="number" name="womenMPrice" id="womenMPrice" step="0.01" required>
+                        <label for="womenLPrice">Women L Price:</label>
+                        <input type="number" name="womenLPrice" id="womenLPrice" step="0.01" required>
+                        <label for="womenXLPrice">Women XL Price:</label>
+                        <input type="number" name="womenXLPrice" id="womenXLPrice" step="0.01" required>
+                        <label for="womenXXLPrice">Women XXL Price:</label>
+                        <input type="number" name="womenXXLPrice" id="womenXXLPrice" step="0.01" required>
+                    </div>
                 </div>
 
                 <div class="uploadcenter"><button type="submit">Upload</button></div>
@@ -399,8 +464,10 @@
     @if (User.Identity.IsAuthenticated)
  {
     <div class="deleteupload">
-        <button id="uploadSoccerButton" class="upload-button">Upload Design</button>
-        <button id="deleteSoccerButton" class="delete-button">Delete Design</button>
+            <button id="uploadSoccerButton" class="upload-button"><i class="fas fa-upload button-icon"></i></button>
+                    <button id="deleteSoccerButton" class="delete-button">
+                <i class="fas fa-trash button-icon"></i>
+            </button>
     </div>
  }
     <div class="center">
@@ -467,7 +534,9 @@
     <!-- Upload Modal for LONG SLEEVE -->
     <div id="uploadLongSleeveModal" class="modal">
         <div class="modal-content">
+           <div class="modal-headers">
             <span class="close">&times;</span>
+            </div>
             <h2>Upload New LongSleeve Designs</h2>
             <form asp-action="UploadLongSleeve" asp-controller="Shop" method="post" enctype="multipart/form-data">
                 <div>
@@ -482,6 +551,36 @@
                     <label for="shortsDesignLongSleeve">Lower Design (Optional):</label>
                     <input type="file" name="shortsDesign" id="shortsDesignLongSleeve">
                 </div>
+                                <div id="sizeInputs">
+                    <div id="menSizesInputs" style="display: block;">
+                        <label for="menSPrice">Men XS Price:</label>
+                        <input type="number" name="menXSPrice" id="menXSPrice" step="0.01" required>
+                        <label for="menSPrice">Men S Price:</label>
+                        <input type="number" name="menSPrice" id="menSPrice" step="0.01" required>
+                        <label for="menMPrice">Men M Price:</label>
+                        <input type="number" name="menMPrice" id="menMPrice" step="0.01" required>
+                        <label for="menLPrice">Men L Price:</label>
+                        <input type="number" name="menLPrice" id="menLPrice" step="0.01" required>
+                        <label for="menXLPrice">Men XL Price:</label>
+                        <input type="number" name="menXLPrice" id="menXLPrice" step="0.01" required>
+                        <label for="menXXLPrice">Men XXL Price:</label>
+                        <input type="number" name="menXXLPrice" id="menXXLPrice" step="0.01" required>
+                    </div>
+                    <div id="womenSizesInputs" style="display: block;">
+                        <label for="womenXSPrice">Women XS Price:</label>
+                        <input type="number" name="womenXSPrice" id="womenXSPrice" step="0.01" required>
+                        <label for="womenSPrice">Women S Price:</label>
+                        <input type="number" name="womenSPrice" id="womenSPrice" step="0.01" required>
+                        <label for="womenMPrice">Women M Price:</label>
+                        <input type="number" name="womenMPrice" id="womenMPrice" step="0.01" required>
+                        <label for="womenLPrice">Women L Price:</label>
+                        <input type="number" name="womenLPrice" id="womenLPrice" step="0.01" required>
+                        <label for="womenXLPrice">Women XL Price:</label>
+                        <input type="number" name="womenXLPrice" id="womenXLPrice" step="0.01" required>
+                        <label for="womenXXLPrice">Women XXL Price:</label>
+                        <input type="number" name="womenXXLPrice" id="womenXXLPrice" step="0.01" required>
+                    </div>
+                </div>
 
                 <div class="uploadcenter"><button type="submit">Upload</button></div>
 
@@ -492,8 +591,9 @@
     <!-- Delete Modal for LONG SLEEVE -->
     <div id="deleteLongSleeveModal" class="modal">
         <div class="modal-content">
-
+           <div class="modal-headers">
             <span class="close">&times;</span>
+            </div>
             <h2>Delete LongSleeve Designs</h2>
             <div id="deleteLongSleeveImages" class="imagess">
                 <!-- Design images will be dynamically inserted here -->
@@ -525,8 +625,8 @@
     @if (User.Identity.IsAuthenticated)
  {
     <div class="deleteupload">
-        <button id="uploadLongSleeveButton" class="upload-button">Upload Design</button>
-        <button id="deleteLongSleeveButton" class="delete-button">Delete Design</button>
+            <button id="uploadLongSleeveButton" class="upload-button"><i class="fas fa-upload button-icon"></i></button>
+            <button id="deleteLongSleeveButton" class="delete-button"><i class="fas fa-trash button-icon"></i></button>
     </div>
  }
     <div class="center">

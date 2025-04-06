@@ -78,14 +78,12 @@
     <div class="section-header">
         <h2>OUR PARTNERS</h2>
     </div>
-
     @if (User.Identity.IsAuthenticated)
-    {
+{
     <div class="upload">
         <button id="uploadpartners" class="upload-button">Upload Partners</button>
     </div>
-    }
-
+}
 <div class="partners-container">
     @if (Model.Partners != null && Model.Partners.Any())
         {

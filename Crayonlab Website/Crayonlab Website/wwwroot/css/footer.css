@@ -101,10 +101,13 @@ footer {
         cursor: pointer;
         transition: all 0.3s ease;
         border-radius: 0;
-        height: 40px; /* Set a fixed height */
-        box-sizing: border-box; /* Include padding in height calculation */
-        margin-top: 0px;
+        height: 40px; /* Set the same height as the input */
+        width: auto; /* Change to auto for better alignment */
+        min-width: 100px; /* Optional: Set a minimum width */
+        box-sizing: border-box; /* Include padding in width calculation */
+        margin-top: 0px; /* Adjust this value to align with the input */
     }
+
 
         .footer-subscribe button:hover {
             background: darkorange;
