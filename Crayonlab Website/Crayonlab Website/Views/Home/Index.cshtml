@@ -65,9 +65,34 @@
     </form>
 </section>
 
+
+
 <!-- About Us Section -->
 <section class="about-us">
-    <!-- Your about us content here -->
+    <div class="section-header">
+        <h2>ABOUT US</h2>
+    </div>
+    <p class="about-description">
+        Welcome to CrayonLab, where creativity meets fashion! We specialize in high-quality <br class="desktop-only" />
+        apparel and sublimation printing, transforming ideas into vibrant, wearable art.<br class="desktop-only" />
+        Our mission is to empower individuals to express their unique style through<br class="desktop-only" />
+        custom designs that pop with color and personality.
+    </p>
+
+    <div class="about-images">
+        <div class="about-image">
+            <img src="~/Content/assets/about1.png" alt="Heat Pressing Process">
+            <div class="about-label">Heat Pressing Process</div>
+        </div>
+        <div class="about-image">
+            <img src="~/Content/assets/about2.png" alt="Stitching Service">
+            <div class="about-label">Stitching Service</div>
+        </div>
+        <div class="about-image">
+            <img src="~/Content/assets/about3.png" alt="Design Service">
+            <div class="about-label">Design Service</div>
+        </div>
+    </div>
 </section>
 
 @using Crayonlab.Models
@@ -84,37 +109,37 @@
         <button id="uploadpartners" class="upload-button">Upload Partners</button>
     </div>
 }
-<div class="partners-container">
-    @if (Model.Partners != null && Model.Partners.Any())
+    <div class="partners-container">
+        @if (Model.Partners != null && Model.Partners.Any())
         {
             foreach (var partner in Model.Partners)
             {
-    <div class="partner-image" data-id="@partner.Id">
-        <div class="separator">
-            
-            <img src="@partner.Image" alt="@partner.Description" loading="lazy">
-            <div class="description tooltip">@partner.Description</div>
-        </div>
-   
+        <div class="partner-image" data-id="@partner.Id">
+            <div class="separator">
+
+                <img src="@partner.Image" alt="@partner.Description" loading="lazy">
+                <div class="description tooltip">@partner.Description</div>
+            </div>
 
 
-        @if (User.Identity.IsAuthenticated)
+
+            @if (User.Identity.IsAuthenticated)
                     {
-        <button class="delete-partner" data-id="@partner.Id">×</button>
+            <button class="delete-partner" data-id="@partner.Id">×</button>
                     }
 
-    </div>
-    
+        </div>
+
             }
 
         }
         else
         {
-    <div class="no-partners">
-        <p>No partners available yet.</p>
-    </div>
+        <div class="no-partners">
+            <p>No partners available yet.</p>
+        </div>
         }
-</div>
+    </div>
 </section>
 
 <!-- Upload Modal -->

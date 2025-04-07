@@ -282,9 +282,7 @@ footer {
         gap: 15px;
     }
 
-    .bi-facebook {
-        align-self: flex-end;
-    }
+
 }
 
 @media (max-width: 480px) {

@@ -126,6 +126,13 @@
             // Retrieve query parameters from the URL
             const urlParams = new URLSearchParams(window.location.search);
 
+
+            const productName = urlParams.get('name');
+            if (productName) {
+                document.getElementById('productName').textContent = productName;
+            }
+
+
             // Helper function to safely parse decimal prices from URL
             const parseDecimal = (value) => {
                 if (!value) return 0;

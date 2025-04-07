@@ -26,14 +26,9 @@ html {
 
 .logo {
     flex: 0 1 auto; /* Ensure the logo stays at its natural size */
-    margin-right:100px;
+    margin-left: 70px;
  
 }
-
-    .logo img {
-        height: 55px;
-        margin-left: 40px;
-    }
 
 .partner-image {
     text-align: center; /* Center the text below the image */
@@ -87,14 +82,12 @@ html {
                 font-size: 18px;
             }
                 nav ul li a:hover {
-                    color: darkorange;
+                    color: #ff6a00;
                 }
 
 
 
-.search-icon {
-    margin-left: 15px;
-}
+
 
 /* Right Side Icons Section */
 .right-icons {
@@ -141,6 +134,8 @@ html {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+
+
     .cart-sidebar {
         width: 100% !important;
     }
@@ -335,17 +330,7 @@ html {
     transform: translateY(0);
 }
 /* Cart Counter Styles */
-.cart-icon-container {
-    position: fixed; /* Changed from relative to fixed */
-    right: 70px; /* Position from right edge of viewport */
-    top: 30px; /* Position from top edge of viewport */
-    cursor: pointer;
-    z-index: 10000;
-    display: inline-flex;
-    align-items: center;
-    /* Removed margin-left since we're using fixed positioning */
-    /* Removed height as it's not necessary for fixed positioning */
-}
+
 
     .cart-icon-container i {
         font-size: 1.7rem;
@@ -1311,12 +1296,11 @@ html {
 
 .logo {
     flex: 0 1 auto; /* Ensure the logo stays at its natural size */
-    margin-left: 100px;
 }
 
     .logo img {
-        height: 60px;
-        margin-left: 60px;
+        height: 30px;
+        padding: 10px;
     }
 
 
@@ -1324,8 +1308,8 @@ html {
 .ul-navbar {
     list-style: none;
     display: flex;
-    align-items: center;
-    gap: 40px; /* Adjust space between nav items */
+    align-items: flex-start;
+    gap: 20px; /* Adjust space between nav items */
     padding: 0;
     margin: 0;
 }
@@ -1341,7 +1325,7 @@ html {
                 font-size: 18px;
             }
                 nav ul li a:hover {
-                    color: darkorange;
+                    color: #ff6a00;
                 }
 
 
@@ -1584,18 +1568,6 @@ html {
 
 .add-to-cart-btn.added::after {
     transform: translateY(0);
-}
-/* Cart Counter Styles */
-.cart-icon-container {
-    position: fixed; /* Changed from relative to fixed */
-    right: 70px; /* Position from right edge of viewport */
-    top: 30px; /* Position from top edge of viewport */
-    cursor: pointer;
-    z-index: 10000;
-    display: inline-flex;
-    align-items: center;
-    /* Removed margin-left since we're using fixed positioning */
-    /* Removed height as it's not necessary for fixed positioning */
 }
 
     .cart-icon-container i {
@@ -2840,5 +2812,105 @@ input, select {
         width: 95%;
         margin: 10px auto;
         padding: 15px;
+    }
+}
+.cart-icon-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between order list and cart icon */
+    margin-left: auto; /* Pushes container to the right */
+    padding-right: 20px; /* Right padding */
+}
+
+.order-list-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.order-toggle-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+    .order-toggle-wrapper i {
+        font-size: 30px;
+        color: #333; /* Dark gray color */
+        transition: color 0.2s ease;
+    }
+
+    .order-toggle-wrapper:hover i {
+        color: #fb740f; /* Orange color on hover */
+    }
+
+.order-confirmation-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #fb740f; /* Orange background */
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.cart-icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#cartIcon {
+    font-size: 30px;
+    color: #333; /* Dark gray color */
+    transition: color 0.2s ease;
+}
+
+    #cartIcon:hover {
+        color: #fb740f; /* Orange color on hover */
+    }
+
+.cart-counter {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #fb740f; /* Orange background */
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+@media (max-width: 768px) {
+    .cart-icon-container {
+        gap: 15px;
+        padding-right: 15px;
+    }
+
+    .order-toggle-wrapper i,
+    #cartIcon {
+        font-size: 22px;
+    }
+
+    .order-confirmation-badge,
+    .cart-counter {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
     }
 }

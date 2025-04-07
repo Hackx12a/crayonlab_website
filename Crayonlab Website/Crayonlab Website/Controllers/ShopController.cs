@@ -41,6 +41,7 @@ namespace Crayonlab.Controllers
 
         [HttpPost]
         public async Task<IActionResult> UploadDesign(
+            String Name,
             IFormFile frontDesign,
             IFormFile backDesign,
             decimal menXSPrice,
@@ -101,7 +102,8 @@ namespace Crayonlab.Controllers
                     WomenMPrice = womenMPrice,
                     WomenLPrice = womenLPrice,
                     WomenXLPrice = womenXLPrice,
-                    WomenXXLPrice = womenXXLPrice
+                    WomenXXLPrice = womenXXLPrice,
+                    Name = Name
                 };
 
                 context.Designs.Add(design);
@@ -118,6 +120,7 @@ namespace Crayonlab.Controllers
 
         [HttpPost]
         public async Task<IActionResult> UploadBasketballJersey(
+            String Name,
             IFormFile frontDesign,
             IFormFile backDesign,
             decimal price,
@@ -177,7 +180,8 @@ namespace Crayonlab.Controllers
                     WomenMPrice = womenMPrice,
                     WomenLPrice = womenLPrice,
                     WomenXLPrice = womenXLPrice,
-                    WomenXXLPrice = womenXXLPrice
+                    WomenXXLPrice = womenXXLPrice,
+                    Name = Name
                 };
 
                 context.BasketballJerseys.Add(jersey);
@@ -194,6 +198,7 @@ namespace Crayonlab.Controllers
 
         [HttpPost]
         public async Task<IActionResult> UploadLongsleeve(
+            String Name,
             IFormFile frontDesign,
             IFormFile backDesign,
             decimal price,
@@ -254,7 +259,8 @@ namespace Crayonlab.Controllers
                     WomenMPrice = womenMPrice,
                     WomenLPrice = womenLPrice,
                     WomenXLPrice = womenXLPrice,
-                    WomenXXLPrice = womenXXLPrice
+                    WomenXXLPrice = womenXXLPrice,
+                    Name = Name
                 };
 
                 context.Longsleeves.Add(longsleeve);
@@ -271,6 +277,7 @@ namespace Crayonlab.Controllers
 
         [HttpPost]
         public async Task<IActionResult> UploadSoccerJersey(
+            String Name,
             IFormFile frontDesign,
             IFormFile backDesign,
             decimal price,
@@ -331,7 +338,8 @@ namespace Crayonlab.Controllers
                     WomenMPrice = womenMPrice,
                     WomenLPrice = womenLPrice,
                     WomenXLPrice = womenXLPrice,
-                    WomenXXLPrice = womenXXLPrice
+                    WomenXXLPrice = womenXXLPrice,
+                    Name = Name
                 };
 
                 context.Soccerjerseys.Add(soccerjersey);
