@@ -2,12 +2,11 @@ using System.Collections.Generic;
 
 namespace Crayonlab.Models
 {
-	public class ShopViewModel
-	{
-		public IEnumerable<Designs> Designs { get; set; }
-		public IEnumerable<BasketballJersey> BasketballJerseys { get; set; }
-        public IEnumerable<Longsleeve> Longsleeves { get; set; }
-        public IEnumerable<Soccerjersey> Soccerjerseys { get; set; }
-        public IEnumerable<Partners> Partners { get; set; }
+    public class ShopViewModel
+    {
+        public List<ShirtType> ShirtTypes { get; set; }
+        public Dictionary<int, List<ShirtDesign>> DesignsByType { get; set; }
+        public bool IsAdmin { get; set; }
+        public List<Partners> Partners { get; set; } // Ensure this property is correctly defined
     }
 }

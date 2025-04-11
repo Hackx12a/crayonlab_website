@@ -49,6 +49,14 @@
       "PackagePath": "staticwebassets\\Content\\assets\\633e158c-02b4-4416-a522-e9b34b24f7b4_image10.jfif"
     },
     {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\6b124810-f632-4da5-82b3-191115bc5d44_image4.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\6b124810-f632-4da5-82b3-191115bc5d44_image4.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\6cc1d13d-bf4c-4199-8524-1b96afa80d37_image3.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\6cc1d13d-bf4c-4199-8524-1b96afa80d37_image3.png"
+    },
+    {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\7370078e-42c9-4610-8c2e-a3d74f18b45e_cor22.png",
       "PackagePath": "staticwebassets\\Content\\assets\\7370078e-42c9-4610-8c2e-a3d74f18b45e_cor22.png"
     },
@@ -99,6 +107,10 @@
     {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Sfront.png",
       "PackagePath": "staticwebassets\\Content\\assets\\Sfront.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\aa3910c3-1276-46c5-8566-78ce7fa3ce11_6cc1d13d-bf4c-4199-8524-1b96afa80d37_image3.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\aa3910c3-1276-46c5-8566-78ce7fa3ce11_6cc1d13d-bf4c-4199-8524-1b96afa80d37_image3.png"
     },
     {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\about1.png",
@@ -235,6 +247,10 @@
     {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\c2aa8e34-5fc5-4184-b034-ef0674229d8c_bas8.png",
       "PackagePath": "staticwebassets\\Content\\assets\\c2aa8e34-5fc5-4184-b034-ef0674229d8c_bas8.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\c38f2eea-b009-4cf0-b38a-f49bc8306318_6b124810-f632-4da5-82b3-191115bc5d44_image4.png",
+      "PackagePath": "staticwebassets\\Content\\assets\\c38f2eea-b009-4cf0-b38a-f49bc8306318_6b124810-f632-4da5-82b3-191115bc5d44_image4.png"
     },
     {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\cc2bec57-3a04-4b43-be4e-4856170298a4.png",
@@ -571,6 +587,190 @@
     {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\customize.css",
       "PackagePath": "staticwebassets\\Content\\customize.css"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\08648793-04ae-42c4-b97a-69bfa62d95d8.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\08648793-04ae-42c4-b97a-69bfa62d95d8.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\0a83c815-ad5a-4ae0-ab5c-4fd7ef918990.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\0a83c815-ad5a-4ae0-ab5c-4fd7ef918990.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\0fa41646-5770-4e68-9675-e3b071951c6c.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\0fa41646-5770-4e68-9675-e3b071951c6c.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\124e33a8-6ad7-46b8-85bd-0611af521155.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\124e33a8-6ad7-46b8-85bd-0611af521155.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\15f0462f-4124-4827-bf3c-891bd918bd06.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\15f0462f-4124-4827-bf3c-891bd918bd06.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\17c0094a-62d5-465a-886e-4085d87a32df.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\17c0094a-62d5-465a-886e-4085d87a32df.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\1a6d9ec2-51ab-4d3b-91b2-f988763989ce.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\1a6d9ec2-51ab-4d3b-91b2-f988763989ce.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\32c02ab9-b1b2-46bc-9cbf-080778ff1174.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\32c02ab9-b1b2-46bc-9cbf-080778ff1174.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\349553a7-932e-41ae-90e4-85f1783ce04a.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\349553a7-932e-41ae-90e4-85f1783ce04a.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\3613ffb5-401c-4edd-bb40-9d3ed106b48a.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\3613ffb5-401c-4edd-bb40-9d3ed106b48a.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\397f6010-8386-47e7-bc1c-b6ac7801f717.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\397f6010-8386-47e7-bc1c-b6ac7801f717.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\42fbf09c-b6a6-4b3c-8f4a-378fc63a7053.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\42fbf09c-b6a6-4b3c-8f4a-378fc63a7053.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\49eeab17-e9d1-4c4d-938b-a274d41e2b87.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\49eeab17-e9d1-4c4d-938b-a274d41e2b87.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\58043a6d-500b-4c4d-bdbf-d2ea3a50bd33.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\58043a6d-500b-4c4d-bdbf-d2ea3a50bd33.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\67619092-ff57-44e3-a6fd-1c9c987c29e0.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\67619092-ff57-44e3-a6fd-1c9c987c29e0.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\7106f87c-a12d-4cc6-9b25-472431db8854.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\7106f87c-a12d-4cc6-9b25-472431db8854.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\716d8410-20c0-4732-b4f2-ffd8da2b45f0.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\716d8410-20c0-4732-b4f2-ffd8da2b45f0.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\7f9820b1-eb9e-44fb-a532-e9555b9b7077.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\7f9820b1-eb9e-44fb-a532-e9555b9b7077.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\809af8cc-f745-4831-840b-7c9f7a84f384.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\809af8cc-f745-4831-840b-7c9f7a84f384.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\826e2d44-d0f2-4fec-81cb-e6b8e20f6bf2.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\826e2d44-d0f2-4fec-81cb-e6b8e20f6bf2.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\8e959e21-aa91-4545-9505-a8388505520b.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\8e959e21-aa91-4545-9505-a8388505520b.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\8fc681a0-7a9e-4eef-9142-0ed243a433a5.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\8fc681a0-7a9e-4eef-9142-0ed243a433a5.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\902b12bd-21f5-4e91-93d6-901e158af69c.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\902b12bd-21f5-4e91-93d6-901e158af69c.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\9127e2b3-0a16-49a5-b284-be19deab13cf.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\9127e2b3-0a16-49a5-b284-be19deab13cf.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\937a96aa-f092-4472-bc47-7919ca2a3103.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\937a96aa-f092-4472-bc47-7919ca2a3103.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\982bf2e5-e134-448e-a244-0a3d701f7791.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\982bf2e5-e134-448e-a244-0a3d701f7791.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\a45402fe-0c8b-4de3-9ee1-666e3f6f7f8a.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\a45402fe-0c8b-4de3-9ee1-666e3f6f7f8a.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\a4b5a184-6786-4884-ad5e-f28dabaf0da9.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\a4b5a184-6786-4884-ad5e-f28dabaf0da9.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\a5869189-f40e-44ac-8c0e-ec1031367eaf.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\a5869189-f40e-44ac-8c0e-ec1031367eaf.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\a5b34be3-2c47-48c4-8c82-f9ed24af65b7.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\a5b34be3-2c47-48c4-8c82-f9ed24af65b7.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\a776955d-d1b1-4da4-a82a-b80038f1cda2.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\a776955d-d1b1-4da4-a82a-b80038f1cda2.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\b2c85c9e-f0d2-4c34-bab1-6662f9475f4a.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\b2c85c9e-f0d2-4c34-bab1-6662f9475f4a.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\b3463d51-ddb5-4655-9e2b-8c86dcd8c6cb.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\b3463d51-ddb5-4655-9e2b-8c86dcd8c6cb.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\b823831a-b8bb-4997-8402-1226ce3adb65.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\b823831a-b8bb-4997-8402-1226ce3adb65.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\b9a17584-1354-4c43-8047-7a05f36c3f98.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\b9a17584-1354-4c43-8047-7a05f36c3f98.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\bb926225-b732-4585-8412-5c7b431bafe1.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\bb926225-b732-4585-8412-5c7b431bafe1.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\c809e017-b86c-4039-85de-54c0cf47ef2b.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\c809e017-b86c-4039-85de-54c0cf47ef2b.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\c88817d6-2406-46b4-ae00-e405164f033e.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\c88817d6-2406-46b4-ae00-e405164f033e.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\d579c4d3-96ce-452b-b34f-0ba713a58026.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\d579c4d3-96ce-452b-b34f-0ba713a58026.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\d5a075ce-f2b5-4eea-8b93-7a28fd8a65cb.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\d5a075ce-f2b5-4eea-8b93-7a28fd8a65cb.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\d610abfc-500a-4927-a017-dc1e11556358.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\d610abfc-500a-4927-a017-dc1e11556358.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\d76bdf79-5c54-4702-8f60-7412cecc34bb.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\d76bdf79-5c54-4702-8f60-7412cecc34bb.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\e132e9b8-e891-4635-8ab6-fb9f3a155f96.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\e132e9b8-e891-4635-8ab6-fb9f3a155f96.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\ea5fbc91-7f3b-4fee-9936-fecbce62623b.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\ea5fbc91-7f3b-4fee-9936-fecbce62623b.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\f5de4bce-416d-495a-a681-0d102cf34599.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\f5de4bce-416d-495a-a681-0d102cf34599.png"
+    },
+    {
+      "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\fc9f0365-285a-4c56-bbc1-ec674982757a.png",
+      "PackagePath": "staticwebassets\\Content\\uploads\\fc9f0365-285a-4c56-bbc1-ec674982757a.png"
     },
     {
       "Id": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\partner1.png",

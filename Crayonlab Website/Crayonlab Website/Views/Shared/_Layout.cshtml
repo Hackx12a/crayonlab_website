@@ -432,13 +432,11 @@
                         };
                         this.items.push(newItem);
                         this.showNotification('Added to cart');
-
                     }
 
                     this.saveToLocalStorage();
                     this.updateCartUI();
                     this.updateCartCounter();
-
                 },
                 removeItem(index) {
                     this.items.splice(index, 1);
@@ -477,21 +475,21 @@
                         cartItemsEl.innerHTML = '<div class="empty-cart">Your cart is empty</div>';
                     } else {
                         cartItemsEl.innerHTML = this.items.map((item, index) => `
-                        <div class="cart-item">
-                            <img src="${item.frontImage}" alt="${item.name}" class="cart-item-image">
-                            <div class="cart-item-details">
-                                <div class="cart-item-title">${item.name}</div>
-                                <div class="cart-item-size">${item.gender === 'men' ? 'Men' : 'Women'}'s ${item.size}</div>
-                                <div class="cart-item-quantity">
-                                    <button class="cart-item-decrease" data-index="${index}">-</button>
-                                    <input type="number" min="1" value="${item.quantity}" class="cart-item-quantity-input" data-index="${index}">
-                                    <button class="cart-item-increase" data-index="${index}">+</button>
-                                </div>
-                                <div class="cart-item-price">₱${(item.price * item.quantity).toFixed(2)}</div>
-                                <button class="cart-item-remove" data-index="${index}">Remove</button>
-                            </div>
+                <div class="cart-item">
+                    <img src="${item.frontImage}" alt="${item.name}" class="cart-item-image">
+                    <div class="cart-item-details">
+                        <div class="cart-item-title">${item.name}</div>
+                        <div class="cart-item-size">${item.gender === 'men' ? 'Men' : 'Women'}'s ${item.size}</div>
+                        <div class="cart-item-quantity">
+                            <button class="cart-item-decrease" data-index="${index}">-</button>
+                            <input type="number" min="1" value="${item.quantity}" class="cart-item-quantity-input" data-index="${index}">
+                            <button class="cart-item-increase" data-index="${index}">+</button>
                         </div>
-                    `).join('');
+                        <div class="cart-item-price">₱${(item.price * item.quantity).toFixed(2)}</div>
+                        <button class="cart-item-remove" data-index="${index}">Remove</button>
+                    </div>
+                </div>
+            `).join('');
 
                         // Add event listeners for quantity changes
                         document.querySelectorAll('.cart-item-decrease').forEach(btn => {
@@ -607,35 +605,35 @@
                     }
 
                     orderListContent.innerHTML = this.orders.map((order, orderIndex) => `
-                    <div class="order-item">
-                        <h4>Order #${orderIndex + 1} - ${new Date(order.date).toLocaleString()}</h4>
-                        <div class="customer-info">
-                            <p><strong>Customer:</strong> ${order.customer.firstName} ${order.customer.lastName}</p>
-                            <p><strong>Address:</strong> ${order.customer.address}</p>
-                            <p><strong>Contact:</strong> ${order.customer.contactNumber}</p>
-                        </div>
+            <div class="order-item">
+                <h4>Order #${orderIndex + 1} - ${new Date(order.date).toLocaleString()}</h4>
+                <div class="customer-info">
+                    <p><strong>Customer:</strong> ${order.customer.firstName} ${order.customer.lastName}</p>
+                    <p><strong>Address:</strong> ${order.customer.address}</p>
+                    <p><strong>Contact:</strong> ${order.customer.contactNumber}</p>
+                </div>
 
-                        <h5>Items:</h5>
-                        ${order.items.map(item => `
-                            <div style="display: flex; margin-bottom: 10px;">
-                                <img src="${item.frontImage}" alt="${item.name}" class="order-item-image">
-                                <div class="order-item-details">
-                                    <p><strong>${item.name}</strong></p>
-                                    <p>${item.gender === 'men' ? 'Men' : 'Women'}'s ${item.size} × ${item.quantity}</p>
-                                    <p>₱${(item.price * item.quantity).toFixed(2)}</p>
-                                </div>
-                            </div>
-                        `).join('')}
-
-                        <div class="order-summary-section">
-                            <p><strong>Subtotal:</strong> ₱${order.total.toFixed(2)}</p>
-                            <p><strong>Shipping:</strong> ₱${order.shipping.toFixed(2)}</p>
-                            <p><strong>Total:</strong> ₱${(order.total + order.shipping).toFixed(2)}</p>
-                            <p><strong>Payment Method:</strong> ${order.paymentMethod}</p>
-                            <p><strong>Status:</strong> ${order.status || 'Processing'}</p>
+                <h5>Items:</h5>
+                ${order.items.map(item => `
+                    <div style="display: flex; margin-bottom: 10px;">
+                        <img src="${item.frontImage}" alt="${item.name}" class="order-item-image">
+                        <div class="order-item-details">
+                            <p><strong>${item.name}</strong></p>
+                            <p>${item.gender === 'men' ? 'Men' : 'Women'}'s ${item.size} × ${item.quantity}</p>
+                            <p>₱${(item.price * item.quantity).toFixed(2)}</p>
                         </div>
                     </div>
-                `).join('');
+                `).join('')}
+
+                <div class="order-summary-section">
+                    <p><strong>Subtotal:</strong> ₱${order.total.toFixed(2)}</p>
+                    <p><strong>Shipping:</strong> ₱${order.shipping.toFixed(2)}</p>
+                    <p><strong>Total:</strong> ₱${(order.total + order.shipping).toFixed(2)}</p>
+                    <p><strong>Payment Method:</strong> ${order.paymentMethod}</p>
+                    <p><strong>Status:</strong> ${order.status || 'Processing'}</p>
+                </div>
+            </div>
+        `).join('');
                 }
             };
 
@@ -711,17 +709,17 @@
                 // Update the cart items display in checkout modal
                 const checkoutCartItems = document.getElementById('checkoutCartItems');
                 checkoutCartItems.innerHTML = cart.items.map(item => `
-                <div class="checkout-cart-item">
-                    <img src="${item.frontImage}" alt="${item.name}">
-                    <div class="checkout-cart-item-details">
-                        <div class="checkout-cart-item-title">${item.name}</div>
-                        <div class="checkout-cart-item-info">
-                            <span>${item.gender === 'men' ? 'Men' : 'Women'}'s ${item.size} × ${item.quantity}</span>
-                            <span>₱${(item.price * item.quantity).toFixed(2)}</span>
-                        </div>
-                    </div>
+        <div class="checkout-cart-item">
+            <img src="${item.frontImage}" alt="${item.name}">
+            <div class="checkout-cart-item-details">
+                <div class="checkout-cart-item-title">${item.name}</div>
+                <div class="checkout-cart-item-info">
+                    <span>${item.gender === 'men' ? 'Men' : 'Women'}'s ${item.size} × ${item.quantity}</span>
+                    <span>₱${(item.price * item.quantity).toFixed(2)}</span>
                 </div>
-            `).join('');
+            </div>
+        </div>
+    `).join('');
 
                 // Update all the summary sections
                 document.getElementById('cartSubtotal').textContent = `₱${totalPrice}`;
@@ -761,19 +759,147 @@
                     }
                 };
 
-                // Process order
-                orderHistory.addOrder(orderData);
-                alert('Order placed successfully!');
+                const submitButton = document.querySelector('.submit-order');
+                const originalButtonText = submitButton.innerHTML;
+                submitButton.innerHTML = '<i class="bi bi-hourglass-split"></i> Processing...';
+                submitButton.disabled = true;
 
-                // Reset and close
-                cart.items = [];
-                cart.saveToLocalStorage();
-                cart.updateCartUI();
-                cart.updateCartCounter();
+                // Send the order to the server for email processing
+                fetch('/Order/SendOrderEmail', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(orderData)
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // Process order locally after successful email sending
+                        orderHistory.addOrder(orderData);
 
-                document.getElementById('checkoutModal').style.display = 'none';
-                document.body.classList.remove('modal-open');
+                        // Show success message
+                        showOrderConfirmation();
+
+                        // Reset and close
+                        cart.items = [];
+                        cart.saveToLocalStorage();
+                        cart.updateCartUI();
+                        cart.updateCartCounter();
+
+                        document.getElementById('checkoutModal').style.display = 'none';
+                        document.body.classList.remove('modal-open');
+                    })
+                    .catch(error => {
+                        console.error('Error sending order:', error);
+                        alert('There was a problem processing your order. Please try again.');
+                    })
+                    .finally(() => {
+                        // Restore button state
+                        submitButton.innerHTML = originalButtonText;
+                        submitButton.disabled = false;
+                    });
             });
+            function showOrderConfirmation() {
+                // Create a more styled confirmation modal
+                const confirmationModal = document.createElement('div');
+                confirmationModal.className = 'order-confirmation-modal';
+                confirmationModal.innerHTML = `
+        <div class="confirmation-content">
+            <div class="confirmation-header">
+                <i class="bi bi-check-circle-fill success-icon"></i>
+                <h2>Order Placed Successfully!</h2>
+            </div>
+            <div class="confirmation-body">
+                <p>Thank you for your order!</p>
+                <p>Your order has been received and is now being processed. A confirmation email has been sent to your provided email address.</p>
+                <p>The shop owner has also been notified and will prepare your items shortly.</p>
+                <p>If you have any questions about your order, please contact our customer service.</p>
+            </div>
+            <div class="confirmation-footer">
+                <button id="confirmationCloseBtn" class="confirmation-close-btn">Continue Shopping</button>
+            </div>
+        </div>
+    `;
+
+                document.body.appendChild(confirmationModal);
+
+                // Add event listener to close the modal
+                document.getElementById('confirmationCloseBtn').addEventListener('click', () => {
+                    confirmationModal.remove();
+                    window.location.href = '/Shop'; // Redirect to shop page
+                });
+
+                // Add styles for the confirmation modal
+                const style = document.createElement('style');
+                style.textContent = `
+        .order-confirmation-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+        }
+        
+        .confirmation-content {
+            background-color: white;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .confirmation-header {
+            margin-bottom: 20px;
+        }
+        
+        .success-icon {
+            font-size: 60px;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        
+        .confirmation-header h2 {
+            color: #333;
+            font-size: 24px;
+            margin: 0;
+        }
+        
+        .confirmation-body {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .confirmation-close-btn {
+            background-color: #fb740f;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .confirmation-close-btn:hover {
+            background-color: #e06400;
+        }
+    `;
+                document.head.appendChild(style);
+            }
             // Initialize cart and order history
             cart.init();
             orderHistory.init();
@@ -788,24 +914,23 @@
                 }
             });
 
-
             document.addEventListener('buyNowClicked', function (e) {
                 const product = e.detail.product;
 
                 // Update checkout modal with this single product
                 const checkoutCartItems = document.getElementById('checkoutCartItems');
                 checkoutCartItems.innerHTML = `
-            <div class="checkout-cart-item">
-                <img src="${product.frontImage}" alt="${product.name}">
-                <div class="checkout-cart-item-details">
-                    <div class="checkout-cart-item-title">${product.name}</div>
-                    <div class="checkout-cart-item-info">
-                        <span>${product.gender === 'men' ? 'Men' : 'Women'}'s ${product.size} × ${product.quantity}</span>
-                        <span>₱${(product.price * product.quantity).toFixed(2)}</span>
-                    </div>
+        <div class="checkout-cart-item">
+            <img src="${product.frontImage}" alt="${product.name}">
+            <div class="checkout-cart-item-details">
+                <div class="checkout-cart-item-title">${product.name}</div>
+                <div class="checkout-cart-item-info">
+                    <span>${product.gender === 'men' ? 'Men' : 'Women'}'s ${product.size} × ${product.quantity}</span>
+                    <span>₱${(product.price * product.quantity).toFixed(2)}</span>
                 </div>
             </div>
-        `;
+        </div>
+    `;
 
                 // Calculate prices
                 const subtotal = product.price * product.quantity;
@@ -823,8 +948,6 @@
                 cart.saveToLocalStorage();
                 cart.updateCartCounter();
             });
-
-
 
             // Navbar toggle functionality
             const menuToggle = document.querySelector('.menu-toggle');
@@ -893,8 +1016,6 @@
                     }
                 }
             });
-
-
         });
     </script>
    

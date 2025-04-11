@@ -30,9 +30,9 @@
                             <img id="shortsImage" class="third-image" src="" alt="Product Shorts Image" style="display: none;" />
                         </div>
 
-                        <img id="mainImage" class="main-image" src="~/Content/assets/image4.png" alt="Product Main Image">
+                        <img id="mainImage" class="main-image"  alt="Product Main Image">
                         <img id="backImage" class="back-image" src="" alt="Product Back Image" style="display: none;">
-                        <img id="zoomedImage" class="zoomed-image" src="~/Content/assets/image4.png" alt="Product Zoomed Image">
+                        <img id="zoomedImage" class="zoomed-image"  alt="Product Zoomed Image">
                     </div>
 
                 </div>
@@ -125,12 +125,10 @@
         document.addEventListener('DOMContentLoaded', () => {
             // Retrieve query parameters from the URL
             const urlParams = new URLSearchParams(window.location.search);
+            const designId = urlParams.get('id');
+            const productName = urlParams.get('name') || designId || "Product";
+            document.getElementById('productName').textContent = productName;
 
-
-            const productName = urlParams.get('name');
-            if (productName) {
-                document.getElementById('productName').textContent = productName;
-            }
 
 
             // Helper function to safely parse decimal prices from URL
@@ -148,7 +146,7 @@
     const product = {
         id: urlParams.get('id'),
         name: document.getElementById('productName').textContent,
-        frontImage: urlParams.get('frontImage'),
+        frontImage: urlParams.get('frontImage') ? '/Content/uploads/' + urlParams.get('frontImage') : "",
         price: currentState.basePrice,
         size: currentState.size,
         gender: currentState.gender,
@@ -417,17 +415,14 @@
             const shortsImage = urlParams.get('shortsImage');
 
             if (frontImage) {
-                document.getElementById('mainImage').src = frontImage;
-                document.getElementById('zoomedImage').src = backImage || frontImage;
+                document.getElementById('mainImage').src = '/Content/uploads/' + frontImage;
+                document.getElementById('zoomedImage').src = backImage ? '/Content/uploads/' + backImage : '/Content/uploads/' + frontImage;
             }
 
-            if (backImage) {
-                document.getElementById('backImage').src = backImage;
-                document.getElementById('backImage').style.display = 'block';
-            }
+          
 
             if (shortsImage) {
-                document.getElementById('shortsImage').src = shortsImage;
+                document.getElementById('shortsImage').src = '/Content/uploads/' + shortsImage;
                 document.getElementById('shortsImage').style.display = 'block';
             }
 
@@ -532,7 +527,7 @@
                 const product = {
                     id: urlParams.get('id'),
                     name: document.getElementById('productName').textContent,
-                    frontImage: urlParams.get('frontImage'),
+                    frontImage: urlParams.get('frontImage') ? '/Content/uploads/' + urlParams.get('frontImage') : "",
                     price: currentState.basePrice,
                     size: currentState.size,
                     gender: currentState.gender,

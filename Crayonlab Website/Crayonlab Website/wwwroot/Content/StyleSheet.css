@@ -254,7 +254,7 @@ html {
 
 .cart-item-quantity input {
     width: 50px;
-    height: 25px;
+    height: 6px;
     text-align: center;
     margin: 0 5px;
 }
@@ -492,7 +492,6 @@ html {
 
     }
 
-    
  
 
     .category {
@@ -567,7 +566,7 @@ h2 {
     position: relative;
     z-index: 1;
     object-fit: contain; /* Ensure the image fits within the container without cropping */
-    margin-top: 70px;
+  
 }
 
 /* Zoomed image (the image in the background) */
@@ -587,17 +586,18 @@ h2 {
 }
 
 /* New third image - smaller size */
-.third-image {
-    width: 45%; /* Set the width to be smaller */
+#shortsImage {
+    width: 70%; /* Set the width to be smaller */
     height: auto; /* Keep the aspect ratio intact */
     object-fit: contain; /* Ensure the image fits within the container without cropping */
     border-radius: 10px;
     position: absolute; /* Absolute positioning to place it in front */
-    top: 235px; /* Optional: adjust top position if necessary */
+    top: 370px; /* Optional: adjust top position if necessary */
     left: 65%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for perfect centering */
     z-index: 3; /* Ensure it sits above the zoomed image */
 }
+
 
 /* On hover, swap the positions of the images */
 .category:hover .main-image {
@@ -1379,6 +1379,10 @@ html {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+
+
+
+
     .cart-sidebar {
         width: 100% !important;
     }
@@ -1494,7 +1498,7 @@ html {
 }
 
 .cart-item-quantity input {
-    width: 40px;
+    width: 65px;
     text-align: center;
     margin: 0 5px;
 }
@@ -2913,4 +2917,70 @@ input, select {
         height: 18px;
         font-size: 10px;
     }
+}
+
+
+
+/*FOR PRODUCT*/
+
+.main-image1 {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%; /* Make the image take the full width of the container */
+    height: 100%; /* Set a fixed height for consistency */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    object-fit: contain; /* Ensure the image fits within the container without cropping */
+    top: 70px;
+}
+
+/* Zoomed image (the image in the background) */
+.zoomed-image1 {
+    grid-row: 1;
+    grid-column: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Match the height of the main image */
+    object-fit: contain; /* Ensure the image fits fully within the container */
+    z-index: 0; /* Default, zoomed image is behind */
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+
+
+/* On hover, swap the positions of the images */
+.category:hover .main-image1 {
+    position: absolute; /* Make it absolute to move freely */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Send main image to the back */
+    margin-bottom: 40px; /* Ensure the margin bottom is applied to the main image */
+    margin-top: 30px; /* Reset margin-top to avoid unwanted space */
+    height: 90%;
+}
+
+.category:hover .zoomed-image1 {
+    position: relative; /* Make zoomed image return to its default position */
+    margin-top: 75px; /* Add margin-top to the zoomed image */
+    z-index: 2; /* Bring zoomed image to the front */
+    height: 100%;
+}
+
+.third-images1 {
+    width: 70%; /* Further reduce the width */
+    height: 150px; /* Set a fixed height */
+    object-fit: contain; /* Ensure the image fits within the container without cropping */
+    border-radius: 10px;
+    position: absolute; /* Absolute positioning to place it in front */
+    top: 200px; /* Adjust top position as needed */
+    left: 65%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    z-index: 3; /* Ensure it sits above the zoomed image */
 }

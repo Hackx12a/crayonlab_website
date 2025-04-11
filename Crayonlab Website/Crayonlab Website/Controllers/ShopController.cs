@@ -7,43 +7,50 @@ using System.Threading.Tasks;
 using System;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 
 namespace Crayonlab.Controllers
 {
     public class ShopController : Controller
     {
-        private readonly ApplicationDbContext context;
-        private readonly IWebHostEnvironment env;
+        private readonly ApplicationDbContext _context;
+        private readonly IAuthorizationService _authorizationService;
 
-        public ShopController(ApplicationDbContext context, IWebHostEnvironment env)
+        public ShopController(ApplicationDbContext context, IAuthorizationService authorizationService)
         {
-            this.context = context;
-            this.env = env;
+            _context = context;
+            _authorizationService = authorizationService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var designs = context.Designs.ToList();
-            var jerseys = context.BasketballJerseys.ToList();
-            var longsleeves = context.Longsleeves.ToList();
-            var soccerjerseys = context.Soccerjerseys.ToList();
+            var isAdmin = User.Identity.IsAuthenticated &&
+                         (await _authorizationService.AuthorizeAsync(User, "Admin")).Succeeded;
 
-            var viewModel = new ShopViewModel
+            var model = new ShopViewModel
             {
-                Designs = designs,
-                BasketballJerseys = jerseys,
-                Longsleeves = longsleeves,
-                Soccerjerseys = soccerjerseys
+                ShirtTypes = await _context.ShirtTypes.ToListAsync(),
+                DesignsByType = (await _context.ShirtDesigns
+                    .Include(d => d.ShirtType)
+                    .Where(d => isAdmin || d.IsActive)
+                    .ToListAsync())
+                    .GroupBy(d => d.ShirtTypeId)
+                    .ToDictionary(g => g.Key, g => g.ToList()),
+                IsAdmin = isAdmin
             };
 
-            return View(viewModel);
+            return View(model);
         }
 
         [HttpPost]
+        [Authorize(Policy = "Admin")]
         public async Task<IActionResult> UploadDesign(
-            String Name,
             IFormFile frontDesign,
             IFormFile backDesign,
+            IFormFile shortsDesign,
+            int shirtTypeId,
+            string name,
             decimal menXSPrice,
             decimal menSPrice,
             decimal menMPrice,
@@ -55,42 +62,30 @@ namespace Crayonlab.Controllers
             decimal womenMPrice,
             decimal womenLPrice,
             decimal womenXLPrice,
-            decimal womenXXLPrice,
-            IFormFile shortDesign = null)
+            decimal womenXXLPrice)
         {
-            if (!IsValidFileUpload(frontDesign, backDesign))
+            if (frontDesign == null || frontDesign.Length == 0)
             {
-                ViewData["ErrorMessage"] = "Both front and back designs must be selected for upload.";
-                return View("Error");
-            }
-
-            if (
-                menXSPrice <= 0 ||
-                menSPrice <= 0 ||
-                menMPrice <= 0 ||
-                menLPrice <= 0 ||
-                menXLPrice <= 0 ||
-                menXXLPrice <= 0 ||
-                womenXSPrice <= 0 ||
-                womenSPrice <= 0 ||
-                womenMPrice <= 0 ||
-                womenLPrice <= 0 ||
-                womenXLPrice <= 0 ||
-                womenXXLPrice <= 0)
-            {
-              
-                
-
+                return Json(new { success = false, message = "Front design is required." });
             }
 
             try
             {
-                var uniqueFileNames = await SaveUploadedFiles(frontDesign, backDesign, shortDesign);
-                var design = new Designs
+                var shirtType = await _context.ShirtTypes.FindAsync(shirtTypeId);
+                if (shirtType == null)
                 {
-                    FrontDesign = uniqueFileNames.Item1,
-                    BackDesign = uniqueFileNames.Item2,
-                    ShortsDesign = uniqueFileNames.Item3 ?? string.Empty,
+                    return Json(new { success = false, message = "Invalid shirt type." });
+                }
+
+                var design = new ShirtDesign
+                {
+                    ShirtTypeId = shirtTypeId,
+                    Name = name,
+                    FrontDesign = await SaveFile(frontDesign), // Only filename
+                    BackDesign = backDesign != null ? await SaveFile(backDesign) : null, // Only filename
+                    ShortsDesign = shortsDesign != null ? await SaveFile(shortsDesign) : string.Empty, // Only filename
+                    CreatedDate = DateTime.UtcNow,
+                    IsActive = true,
                     MenXSPrice = menXSPrice,
                     MenSPrice = menSPrice,
                     MenMPrice = menMPrice,
@@ -102,401 +97,89 @@ namespace Crayonlab.Controllers
                     WomenMPrice = womenMPrice,
                     WomenLPrice = womenLPrice,
                     WomenXLPrice = womenXLPrice,
-                    WomenXXLPrice = womenXXLPrice,
-                    Name = Name
+                    WomenXXLPrice = womenXXLPrice
                 };
 
-                context.Designs.Add(design);
-                await context.SaveChangesAsync();
+                _context.ShirtDesigns.Add(design);
+                await _context.SaveChangesAsync();
 
-                return RedirectToAction("Index");
+                return Json(new { success = true });
+            }
+            catch (DbUpdateException dbEx)
+            {
+                // Log the inner exception
+                var innerException = dbEx.InnerException?.Message ?? "No inner exception.";
+                return Json(new { success = false, message = $"Database update error: {innerException}" });
             }
             catch (Exception ex)
             {
-                ViewData["ErrorMessage"] = $"An error occurred: {ex.Message}";
-                return View("Error");
+                // Log the general exception
+                return Json(new { success = false, message = $"An error occurred: {ex.Message}" });
             }
         }
 
-        [HttpPost]
-        public async Task<IActionResult> UploadBasketballJersey(
-            String Name,
-            IFormFile frontDesign,
-            IFormFile backDesign,
-            decimal price,
-            decimal menXSPrice,
-            decimal menSPrice,
-            decimal menMPrice,
-            decimal menLPrice,
-            decimal menXLPrice,
-            decimal menXXLPrice,
-            decimal womenXSPrice,
-            decimal womenSPrice,
-            decimal womenMPrice,
-            decimal womenLPrice,
-            decimal womenXLPrice,
-            decimal womenXXLPrice,
-            IFormFile shortDesign = null)
+
+
+
+        private async Task<string> SaveFile(IFormFile file)
         {
-            if (!IsValidFileUpload(frontDesign, backDesign))
+            if (file == null || file.Length == 0)
+                throw new ArgumentException("File is not valid.");
+
+            // Get the root path of the application
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Content", "uploads");
+
+            // Create the uploads directory if it doesn't exist
+            if (!Directory.Exists(uploadsFolder))
             {
-                ViewData["ErrorMessage"] = "Both front and back designs must be selected for upload.";
-                return View("Error");
-            }
-            if (
-                menXSPrice <= 0 ||
-                menSPrice <= 0 ||
-                menMPrice <= 0 ||
-                menLPrice <= 0 ||
-                menXLPrice <= 0 ||
-                menXXLPrice <= 0 ||
-                womenXSPrice <= 0 ||
-                womenSPrice <= 0 ||
-                womenMPrice <= 0 ||
-                womenLPrice <= 0 ||
-                womenXLPrice <= 0 ||
-                womenXXLPrice <= 0)
-            {
-                ViewData["ErrorMessage"] = "All prices must be positive numbers.";
-                return View("Error");
+                Directory.CreateDirectory(uploadsFolder);
             }
 
-            try
-            {
-                var uniqueFileNames = await SaveUploadedFiles(frontDesign, backDesign, shortDesign);
-                var jersey = new BasketballJersey
-                {
-                    FrontDesign = uniqueFileNames.Item1,
-                    BackDesign = uniqueFileNames.Item2,
-                    ShortsDesign = uniqueFileNames.Item3 ?? string.Empty,
-                    MenXSPrice = menXSPrice,
-                    MenSPrice = menSPrice,
-                    MenMPrice = menMPrice,
-                    MenLPrice = menLPrice,
-                    MenXLPrice = menXLPrice,
-                    MenXXLPrice = menXXLPrice,
-                    WomenXSPrice = womenXSPrice,
-                    WomenSPrice = womenSPrice,
-                    WomenMPrice = womenMPrice,
-                    WomenLPrice = womenLPrice,
-                    WomenXLPrice = womenXLPrice,
-                    WomenXXLPrice = womenXXLPrice,
-                    Name = Name
-                };
-
-                context.BasketballJerseys.Add(jersey);
-                await context.SaveChangesAsync();
-
-                return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                ViewData["ErrorMessage"] = $"An error occurred: {ex.Message}";
-                return View("Error");
-            }
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> UploadLongsleeve(
-            String Name,
-            IFormFile frontDesign,
-            IFormFile backDesign,
-            decimal price,
-            decimal menXSPrice,
-            decimal menSPrice,
-            decimal menMPrice,
-            decimal menLPrice,
-            decimal menXLPrice,
-            decimal menXXLPrice,
-            decimal womenXSPrice,
-            decimal womenSPrice,
-            decimal womenMPrice,
-            decimal womenLPrice,
-            decimal womenXLPrice,
-            decimal womenXXLPrice,
-            IFormFile shortDesign = null)
-        {
-            if (!IsValidFileUpload(frontDesign, backDesign))
-            {
-                ViewData["ErrorMessage"] = "Both front and back designs must be selected for upload.";
-                return View("Error");
-            }
-
-            if (
-                menXSPrice <= 0 ||
-                menSPrice <= 0 ||
-                menMPrice <= 0 ||
-                menLPrice <= 0 ||
-                menXLPrice <= 0 ||
-                menXXLPrice <= 0 ||
-                womenXSPrice <= 0 ||
-                womenSPrice <= 0 ||
-                womenMPrice <= 0 ||
-                womenLPrice <= 0 ||
-                womenXLPrice <= 0 ||
-                womenXXLPrice <= 0)
-            {
-                ViewData["ErrorMessage"] = "All prices must be positive numbers.";
-                return View("Error");
-            }
-
-            try
-            {
-                var uniqueFileNames = await SaveUploadedFiles(frontDesign, backDesign, shortDesign);
-                var longsleeve = new Longsleeve
-                {
-                    FrontDesign = uniqueFileNames.Item1,
-                    BackDesign = uniqueFileNames.Item2,
-                    ShortsDesign = uniqueFileNames.Item3 ?? string.Empty,
-                    MenXSPrice = menXSPrice,
-                    MenSPrice = menSPrice,
-                    MenMPrice = menMPrice,
-                    MenLPrice = menLPrice,
-                    MenXLPrice = menXLPrice,
-                    MenXXLPrice = menXXLPrice,
-                    WomenXSPrice = womenXSPrice,
-                    WomenSPrice = womenSPrice,
-                    WomenMPrice = womenMPrice,
-                    WomenLPrice = womenLPrice,
-                    WomenXLPrice = womenXLPrice,
-                    WomenXXLPrice = womenXXLPrice,
-                    Name = Name
-                };
-
-                context.Longsleeves.Add(longsleeve);
-                await context.SaveChangesAsync();
-
-                return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                ViewData["ErrorMessage"] = $"An error occurred: {ex.Message}";
-                return View("Error");
-            }
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> UploadSoccerJersey(
-            String Name,
-            IFormFile frontDesign,
-            IFormFile backDesign,
-            decimal price,
-            decimal menXSPrice,
-            decimal menSPrice,
-            decimal menMPrice,
-            decimal menLPrice,
-            decimal menXLPrice,
-            decimal menXXLPrice,
-            decimal womenXSPrice,
-            decimal womenSPrice,
-            decimal womenMPrice,
-            decimal womenLPrice,
-            decimal womenXLPrice,
-            decimal womenXXLPrice,
-            IFormFile shortDesign = null)
-        {
-            if (!IsValidFileUpload(frontDesign, backDesign))
-            {
-                ViewData["ErrorMessage"] = "Both front and back designs must be selected for upload.";
-                return View("Error");
-            }
-
-            if (
-                menXSPrice <= 0 ||
-                menSPrice <= 0 ||
-                menMPrice <= 0 ||
-                menLPrice <= 0 ||
-                menXLPrice <= 0 ||
-                menXXLPrice <= 0 ||
-                womenXSPrice <= 0 ||
-                womenSPrice <= 0 ||
-                womenMPrice <= 0 ||
-                womenLPrice <= 0 ||
-                womenXLPrice <= 0 ||
-                womenXXLPrice <= 0)
-            {
-                ViewData["ErrorMessage"] = "All prices must be positive numbers.";
-                return View("Error");
-            }
-
-            try
-            {
-                var uniqueFileNames = await SaveUploadedFiles(frontDesign, backDesign, shortDesign);
-                var soccerjersey = new Soccerjersey
-                {
-                    FrontDesign = uniqueFileNames.Item1,
-                    BackDesign = uniqueFileNames.Item2,
-                    ShortsDesign = uniqueFileNames.Item3 ?? string.Empty,
-                    MenXSPrice = menXSPrice,
-                    MenSPrice = menSPrice,
-                    MenMPrice = menMPrice,
-                    MenLPrice = menLPrice,
-                    MenXLPrice = menXLPrice,
-                    MenXXLPrice = menXXLPrice,
-                    WomenXSPrice = womenXSPrice,
-                    WomenSPrice = womenSPrice,
-                    WomenMPrice = womenMPrice,
-                    WomenLPrice = womenLPrice,
-                    WomenXLPrice = womenXLPrice,
-                    WomenXXLPrice = womenXXLPrice,
-                    Name = Name
-                };
-
-                context.Soccerjerseys.Add(soccerjersey);
-                await context.SaveChangesAsync();
-
-                return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                ViewData["ErrorMessage"] = $"An error occurred: {ex.Message}";
-                return View("Error");
-            }
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> DeleteDesign(int id)
-        {
-            var design = await context.Designs.FindAsync(id);
-            if (design == null)
-            {
-                return NotFound();
-            }
-
-            return await DeleteDesignFiles(design);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> DeleteBasketballJersey(int id)
-        {
-            var jersey = await context.BasketballJerseys.FindAsync(id);
-            if (jersey == null)
-            {
-                return NotFound();
-            }
-
-            return await DeleteDesignFiles(jersey);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> DeleteLongsleeve(int id)
-        {
-            var longsleeve = await context.Longsleeves.FindAsync(id);
-            if (longsleeve == null)
-            {
-                return NotFound();
-            }
-
-            return await DeleteDesignFiles(longsleeve);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> DeleteSoccerJersey(int id)
-        {
-            var soccerjersey = await context.Soccerjerseys.FindAsync(id);
-            if (soccerjersey == null)
-            {
-                return NotFound();
-            }
-
-            return await DeleteDesignFiles(soccerjersey);
-        }
-
-        // Helper methods
-        private async Task<(string, string, string)> SaveUploadedFiles(IFormFile frontDesign, IFormFile backDesign, IFormFile optionalDesign = null)
-        {
-            var uploadsFolder = Path.Combine(env.WebRootPath, "Content/assets");
-            EnsureDirectoryExists(uploadsFolder);
-
-            var uniqueFrontFileName = await SaveFileAsync(frontDesign, uploadsFolder);
-            var uniqueBackFileName = await SaveFileAsync(backDesign, uploadsFolder);
-            string uniqueShortFileName = optionalDesign != null ? await SaveFileAsync(optionalDesign, uploadsFolder) : null;
-
-            return (uniqueFrontFileName, uniqueBackFileName, uniqueShortFileName);
-        }
-
-        private async Task<string> SaveFileAsync(IFormFile file, string uploadsFolder)
-        {
-            var uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(file.FileName)}";
+            // Generate a unique filename to avoid conflicts
+            var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
             var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
             using (var stream = new FileStream(filePath, FileMode.Create))
             {
                 await file.CopyToAsync(stream);
             }
-            return uniqueFileName;
+
+            return uniqueFileName; // Return only the filename
         }
 
-        private async Task<IActionResult> DeleteDesignFiles(Designs design)
+        [HttpPost]
+        [Authorize(Policy = "Admin")]
+        public async Task<IActionResult> ToggleAvailability(int id, bool isActive)
         {
-            var uploadsFolder = Path.Combine(env.WebRootPath, "Content/assets");
-            DeleteFileIfExists(Path.Combine(uploadsFolder, design.FrontDesign));
-            DeleteFileIfExists(Path.Combine(uploadsFolder, design.BackDesign));
-            DeleteFileIfExists(Path.Combine(uploadsFolder, design.ShortsDesign));
-
-            context.Designs.Remove(design);
-            await context.SaveChangesAsync();
-
-            return Ok();
-        }
-
-        private async Task<IActionResult> DeleteDesignFiles(BasketballJersey jersey)
-        {
-            var uploadsFolder = Path.Combine(env.WebRootPath, "Content/assets");
-            DeleteFileIfExists(Path.Combine(uploadsFolder, jersey.FrontDesign));
-            DeleteFileIfExists(Path.Combine(uploadsFolder, jersey.BackDesign));
-            DeleteFileIfExists(Path.Combine(uploadsFolder, jersey.ShortsDesign));
-
-            context.BasketballJerseys.Remove(jersey);
-            await context.SaveChangesAsync();
-
-            return Ok();
-        }
-
-        private async Task<IActionResult> DeleteDesignFiles(Longsleeve longsleeve)
-        {
-            var uploadsFolder = Path.Combine(env.WebRootPath, "Content/assets");
-            DeleteFileIfExists(Path.Combine(uploadsFolder, longsleeve.FrontDesign));
-            DeleteFileIfExists(Path.Combine(uploadsFolder, longsleeve.BackDesign));
-            DeleteFileIfExists(Path.Combine(uploadsFolder, longsleeve.ShortsDesign));
-
-            context.Longsleeves.Remove(longsleeve);
-            await context.SaveChangesAsync();
-
-            return Ok();
-        }
-
-        private async Task<IActionResult> DeleteDesignFiles(Soccerjersey soccerjersey)
-        {
-            var uploadsFolder = Path.Combine(env.WebRootPath, "Content/assets");
-            DeleteFileIfExists(Path.Combine(uploadsFolder, soccerjersey.FrontDesign));
-            DeleteFileIfExists(Path.Combine(uploadsFolder, soccerjersey.BackDesign));
-            DeleteFileIfExists(Path.Combine(uploadsFolder, soccerjersey.ShortsDesign));
-
-            context.Soccerjerseys.Remove(soccerjersey);
-            await context.SaveChangesAsync();
-
-            return Ok();
-        }
-
-        private void DeleteFileIfExists(string filePath)
-        {
-            if (System.IO.File.Exists(filePath))
+            try
             {
-                System.IO.File.Delete(filePath);
+                var design = await _context.ShirtDesigns.FindAsync(id);
+                if (design == null)
+                {
+                    return Json(new { success = false, message = "Design not found." });
+                }
+
+                design.IsActive = isActive;
+                await _context.SaveChangesAsync();
+
+                return Json(new
+                {
+                    success = true,
+                    message = "Availability updated successfully.",
+                    newStatus = design.IsActive
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    success = false,
+                    message = "An error occurred on the server.",
+                    error = ex.Message
+                });
             }
         }
 
-        private bool IsValidFileUpload(IFormFile frontDesign, IFormFile backDesign)
-        {
-            return frontDesign != null && backDesign != null && frontDesign.Length > 0 && backDesign.Length > 0;
-        }
 
-        private void EnsureDirectoryExists(string path)
-        {
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
-        }
     }
 }
