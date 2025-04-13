@@ -181,7 +181,7 @@ namespace Crayonlab.Controllers
         }
 
 
-        // Add this method to your ShopController.cs
+       //search query
 
         [HttpGet]
         public async Task<IActionResult> Search(string query)
