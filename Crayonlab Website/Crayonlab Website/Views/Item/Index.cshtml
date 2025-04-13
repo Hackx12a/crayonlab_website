@@ -102,22 +102,46 @@
         </div>
 
         <!-- PRODUCT DETAILS SECTION (Collage) -->
-        <div class="details-section">
-            <h2>PRODUCT DETAILS</h2>
-            <p>
-                Here you can showcase more images of the product from different angles, or close-up shots.
-                The collage below displays one large landscape image on top and two smaller images side by side below.
-            </p><br>
-            <div class="detail-images">
-                <!-- Upper (landscape) image spanning two columns -->
-                <img src="~/Content/assets/logo2.jpg" alt="Detail 1">
-                <!-- Two images side by side -->
-                <img src="~/Content/assets/partner1.png" alt="Detail 2">
-                <img src="~/Content/assets/partner2.png" alt="Detail 3">
-            </div>
-        </div>
-    </div>
 
+           
+            <div class="details-section">
+                <div class="details-header">
+                    <h2>PRODUCT DETAILS</h2>
+                    <div class="separator-line"></div>
+                </div>
+
+                <p class="details-description">
+                    Experience the craftsmanship of our premium product from multiple angles.
+                    These detailed views showcase the quality materials and attention to detail that define our brand.
+                </p>
+
+                <!-- Logo Image Above Detail Images -->
+                <div class="logo-container">
+                    <img src="~/Content/assets/logo2.jpg" alt="Brand Logo" class="brand-logo">
+                </div>
+
+                <div class="detail-images-container">
+                    <!-- Front and Back Images -->
+                    <div class="front-back-images">
+                        <div class="detail-image-container">
+                            <div class="image-header">
+                                <span class="view-label">FRONT VIEW</span>
+                            </div>
+                            <div class="image-wrapper">
+                                <img id="detailFrontImage" src="" alt="Front View">
+                            </div>
+                        </div>
+                        <div class="detail-image-container">
+                            <div class="image-header">
+                                <span class="view-label">BACK VIEW</span>
+                            </div>
+                            <div class="image-wrapper">
+                                <img id="detailBackImage" src="" alt="Back View">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
     <!-- SCRIPT: RETRIEVE PRODUCT DETAILS, QUANTITY & TOGGLE LOGIC -->
@@ -425,6 +449,22 @@
                 document.getElementById('shortsImage').src = '/Content/uploads/' + shortsImage;
                 document.getElementById('shortsImage').style.display = 'block';
             }
+
+            if (frontImage) {
+    document.getElementById('detailFrontImage').src = '/Content/uploads/' + frontImage;
+    // Make sure front image is displayed
+    document.getElementById('detailFrontImage').style.display = 'block';
+}
+
+if (backImage) {
+    document.getElementById('detailBackImage').src = '/Content/uploads/' + backImage;
+    // Make sure back image is displayed
+    document.getElementById('detailBackImage').style.display = 'block';
+} else if (frontImage) {
+    // If no back image is available, use the front image
+    document.getElementById('detailBackImage').src = '/Content/uploads/' + frontImage;
+    document.getElementById('detailBackImage').style.display = 'block';
+}
 
             // Quantity selector
             const minusBtn = document.getElementById('minusBtn');

@@ -121,6 +121,8 @@ li {
     /* Responsive styles */
     @media (max-width: 768px) {
 
+
+
         .close-button-nav {
             display: block; /* Show the close button on mobile */
         }
@@ -282,5 +284,30 @@ li {
 
 
 
-  
 
+/* Active link styles */
+.ul-navbar li.active a {
+    color: #ff6a00;
+}
+
+.ul-navbar li.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ff6a00;
+    transform: scaleX(1); /* Show underline for active link */
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+    .ul-navbar li.active a {
+        color: #ff6a00;
+    }
+
+    .ul-navbar li.active::after {
+        transform: scaleX(1);
+    }
+}

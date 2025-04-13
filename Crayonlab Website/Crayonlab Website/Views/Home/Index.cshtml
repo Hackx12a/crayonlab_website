@@ -95,6 +95,70 @@
     </div>
 </section>
 
+
+
+<!-- News and Updates Section -->
+<section class="news-updates">
+    <div class="section-header">
+        <h2>NEWS AND UPDATES</h2>
+    </div>
+    @if (User.Identity.IsAuthenticated)
+    {
+    <div class="upload">
+        <button id="uploadnews" class="upload-button">Upload News</button>
+    </div>
+    }
+
+    <div class="news-slider-container">
+        <div class="news-slider">
+            @if (Model.NewsandUpdate != null && Model.NewsandUpdate.Any())
+            {
+                foreach (var news in Model.NewsandUpdate)
+                {
+            <div class="news-item" data-id="@news.Id">
+                <div class="separator">
+                    <img src="@news.Image" alt="@news.Description" loading="lazy">
+                    <div class="news-description tooltip">@news.Description</div>
+                </div>
+                @if (User.Identity.IsAuthenticated)
+                        {
+                <button class="delete-news" data-id="@news.Id">×</button>
+                        }
+            </div>
+                }
+            }
+            else
+            {
+            <div class="no-news">
+                <p>No news available yet.</p>
+            </div>
+            }
+        </div>
+        <div class="news-pagination"></div>
+    </div>
+</section>
+
+<!-- News Upload Modal -->
+<div id="newsUploadModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close-news-button">&times;</span>
+        <h2>Upload News</h2>
+        <form id="newsUploadForm">
+            <div class="form-group">
+                <label for="newsImage">Image:</label>
+                <input type="file" id="newsImage" name="image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="newsDescription">Description:</label>
+                <textarea id="newsDescription" name="description" required></textarea>
+            </div>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</div>
+
+
+
 @using Crayonlab.Models
 @model ShopViewModel
 
@@ -241,6 +305,241 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+
+    // Add this to your existing DOMContentLoaded event listener
+
+    // News slider functionality
+    function initNewsSlider() {
+        const newsSlider = document.querySelector('.news-slider');
+        const newsItems = document.querySelectorAll('.news-item');
+
+        if (!newsSlider || newsItems.length === 0) return;
+
+        // Add navigation buttons
+        const sliderContainer = document.querySelector('.news-slider-container');
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'nav-button nav-prev';
+        prevBtn.innerHTML = '❮';
+
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'nav-button nav-next';
+        nextBtn.innerHTML = '❯';
+
+        sliderContainer.appendChild(prevBtn);
+        sliderContainer.appendChild(nextBtn);
+
+        // Create pagination dots
+        const paginationContainer = document.querySelector('.news-pagination');
+        const itemWidth = newsItems[0].offsetWidth + 20; // Including gap
+        const containerWidth = newsSlider.offsetWidth;
+        const visibleItems = Math.min(3, Math.floor(containerWidth / itemWidth));
+        const totalPages = Math.ceil(newsItems.length / visibleItems);
+
+        for (let i = 0; i < totalPages; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'pagination-dot' + (i === 0 ? ' active' : '');
+            dot.dataset.page = i;
+            paginationContainer.appendChild(dot);
+
+            dot.addEventListener('click', () => {
+                scrollToPage(i);
+                updateActiveDot(i);
+            });
+        }
+
+        // Navigation button click handlers
+        let currentPage = 0;
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 0) {
+                currentPage--;
+                scrollToPage(currentPage);
+                updateActiveDot(currentPage);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < totalPages - 1) {
+                currentPage++;
+                scrollToPage(currentPage);
+                updateActiveDot(currentPage);
+            }
+        });
+
+        // Function to scroll to specific page
+        function scrollToPage(pageIndex) {
+            const scrollPosition = pageIndex * visibleItems * itemWidth;
+            newsSlider.scrollTo({
+                left: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Function to update active pagination dot
+        function updateActiveDot(pageIndex) {
+            document.querySelectorAll('.pagination-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === pageIndex);
+            });
+        }
+
+        // Handle scroll events to update pagination
+        newsSlider.addEventListener('scroll', () => {
+            const scrollPosition = newsSlider.scrollLeft;
+            const newPage = Math.round(scrollPosition / (visibleItems * itemWidth));
+
+            if (newPage !== currentPage) {
+                currentPage = newPage;
+                updateActiveDot(currentPage);
+            }
+        });
+    }
+
+    // News Upload Modal functionality
+    const newsUploadModal = document.getElementById('newsUploadModal');
+    const newsUploadForm = document.getElementById('newsUploadForm');
+    const uploadNewsBtn = document.getElementById('uploadnews');
+
+    if (uploadNewsBtn) {
+        uploadNewsBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            newsUploadModal.style.display = 'block';
+        });
+    }
+
+    document.querySelector('.close-news-button')?.addEventListener('click', function () {
+        newsUploadModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (e) {
+        if (e.target === newsUploadModal) {
+            newsUploadModal.style.display = 'none';
+        }
+    });
+
+    // News Upload Form submission
+    if (newsUploadForm) {
+        newsUploadForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Uploading...';
+
+            try {
+                const response = await fetch('/Home/UploadNewsUpdate', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (!data.success) {
+                    throw new Error(data.message || 'Upload failed');
+                }
+
+                updateNewsUI(data);
+                newsUploadModal.style.display = 'none';
+                this.reset();
+                showToast('News uploaded successfully!', 'success');
+
+                // Reinitialize the slider after adding new content
+                initNewsSlider();
+            } catch (error) {
+                showToast(error.message, 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            }
+        });
+    }
+
+    // Initialize delete news buttons
+    document.querySelectorAll('.delete-news').forEach(button => {
+        button.addEventListener('click', function (e) {
+            e.stopPropagation();
+            deleteNews.call(this, e);
+        });
+    });
+
+    // Delete news function
+    async function deleteNews(event) {
+        event.stopPropagation();
+        const newsId = this.getAttribute('data-id');
+        const newsItem = this.closest('.news-item');
+
+        if (!confirm('Are you sure you want to delete this news item?')) {
+            return;
+        }
+
+        try {
+            const response = await fetch('/Home/DeleteNewsUpdate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ id: newsId })
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                newsItem.remove();
+                checkEmptyNews();
+                showToast('News deleted successfully!', 'success');
+
+                // Reinitialize the slider after removing content
+                initNewsSlider();
+            } else {
+                throw new Error(data.message || 'Failed to delete news');
+            }
+        } catch (error) {
+            showToast(error.message, 'error');
+        }
+    }
+
+    // Helper function to update News UI
+    function updateNewsUI(data) {
+        const newsSlider = document.querySelector('.news-slider');
+        const noNews = document.querySelector('.no-news');
+
+        if (noNews) {
+            noNews.remove();
+        }
+
+        const newsItem = document.createElement('div');
+        newsItem.className = 'news-item';
+        newsItem.dataset.id = data.id;
+        newsItem.innerHTML = `
+        <div class="separator">
+            <img src="${data.imageUrl}" alt="${data.description}" loading="lazy">
+            <div class="news-description tooltip">${data.description}</div>
+        </div>
+        ${isAuthenticated ? `<button class="delete-news" data-id="${data.id}">×</button>` : ''}
+    `;
+
+        newsSlider.prepend(newsItem);
+
+        if (isAuthenticated) {
+            newsItem.querySelector('.delete-news').addEventListener('click', function (e) {
+                e.stopPropagation();
+                deleteNews.call(this, e);
+            });
+        }
+    }
+
+    // Helper function to check if news container is empty
+    function checkEmptyNews() {
+        const newsSlider = document.querySelector('.news-slider');
+        if (newsSlider.querySelectorAll('.news-item').length === 0) {
+            newsSlider.innerHTML = '<div class="no-news"><p>No news available yet.</p></div>';
+        }
+    }
+
+    // Initialize the news slider on page load
+    initNewsSlider();
 
     // Partner image click functionality
     document.querySelectorAll('.partner-image').forEach(partner => {

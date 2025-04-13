@@ -181,5 +181,58 @@ namespace Crayonlab.Controllers
         }
 
 
+        // Add this method to your ShopController.cs
+
+        [HttpGet]
+        public async Task<IActionResult> Search(string query)
+        {
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                return Json(new { success = false, message = "Search query is required" });
+            }
+
+            try
+            {
+                query = query.ToLower().Trim();
+
+                // Get all designs that match the query or shirt types
+                var matchingDesigns = await _context.ShirtDesigns
+                    .Where(d => (d.Name.ToLower().Contains(query) || d.ShirtType.Name.ToLower().Contains(query)) && d.IsActive)
+                    .Include(d => d.ShirtType)
+                    .Select(d => new
+                    {
+                        id = d.Id,
+                        name = d.Name,
+                        frontDesign = d.FrontDesign,
+                        backDesign = d.BackDesign,
+                        shortsDesign = d.ShortsDesign,
+                        shirtTypeId = d.ShirtTypeId,
+                        shirtTypeName = d.ShirtType.Name,
+                        isActive = d.IsActive,
+                        menXSPrice = d.MenXSPrice,
+                        menSPrice = d.MenSPrice,
+                        menMPrice = d.MenMPrice,
+                        menLPrice = d.MenLPrice,
+                        menXLPrice = d.MenXLPrice,
+                        menXXLPrice = d.MenXXLPrice,
+                        womenXSPrice = d.WomenXSPrice,
+                        womenSPrice = d.WomenSPrice,
+                        womenMPrice = d.WomenMPrice,
+                        womenLPrice = d.WomenLPrice,
+                        womenXLPrice = d.WomenXLPrice,
+                        womenXXLPrice = d.WomenXXLPrice
+                    })
+                    .ToListAsync();
+
+                return Json(new { success = true, results = matchingDesigns });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "An error occurred while searching: " + ex.Message });
+            }
+        }
+
+
+
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GSgIWMQ760ImOMjh9M8TriAYk3p7gA35vqpoN00cLAU=",
+  "Hash": "28pP4HJMdI/WTmYCu+F+0n19wvpOkgVd5H8XS4OUTqU=",
   "Source": "WebApplication3",
   "BasePath": "_content/WebApplication3",
   "Mode": "Default",
@@ -332,12 +332,12 @@
       "OriginalItemSpec": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl (1).css"
     },
     {
-      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\bezpkl6r13-1djh1ie02o.gz",
+      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\bezpkl6r13-1woo7b0gti.gz",
       "SourceId": "WebApplication3",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebApplication3",
-      "RelativePath": "Content/StyleSheet#[.{fingerprint=1djh1ie02o}]?.css.gz",
+      "RelativePath": "Content/StyleSheet#[.{fingerprint=1woo7b0gti}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -346,8 +346,8 @@
       "RelatedAsset": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "c57wdy15nr",
-      "Integrity": "0M6YrvL5t9L5MHnbA1ObD1viESA/RshfALXU/zr0JFw=",
+      "Fingerprint": "elsquesgt3",
+      "Integrity": "vlZExgigjxXK7VVNaCpVActrmWUB+UZ6tdHzeKWjGeY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css"
@@ -416,12 +416,12 @@
       "OriginalItemSpec": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\cn4vvvwyyp-kvd2lyffgn.gz",
+      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\cn4vvvwyyp-p0mb66619k.gz",
       "SourceId": "WebApplication3",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebApplication3",
-      "RelativePath": "css/product#[.{fingerprint=kvd2lyffgn}]?.css.gz",
+      "RelativePath": "css/product#[.{fingerprint=p0mb66619k}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -430,8 +430,8 @@
       "RelatedAsset": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "6ado7at8me",
-      "Integrity": "wgfM0ecYYVKKPXmKLxHaVTfoY/DPdt8WPFhSOZWHZL8=",
+      "Fingerprint": "hbiy94vsit",
+      "Integrity": "w0UejwQdEVu0/wrTztQ08Y1pkSXMYMgidmxf5heypjQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css"
@@ -689,12 +689,12 @@
       "OriginalItemSpec": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\gutjxrvo2z-rjb7bkprt9.gz",
+      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\gutjxrvo2z-8kb8gk3xs3.gz",
       "SourceId": "WebApplication3",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebApplication3",
-      "RelativePath": "css/navbar#[.{fingerprint=rjb7bkprt9}]?.css.gz",
+      "RelativePath": "css/navbar#[.{fingerprint=8kb8gk3xs3}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -703,8 +703,8 @@
       "RelatedAsset": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "1tzgxzdla5",
-      "Integrity": "u6l0D3qDGjK0A6gkRZKvwQN73mwMK1dZn6tHi5i7npo=",
+      "Fingerprint": "t8k8jqruds",
+      "Integrity": "gxxvbbSVyV2M1+4vLTuX8EwSTu1+JcX8EQXxgQ3zf8w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css"
@@ -983,12 +983,12 @@
       "OriginalItemSpec": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\owjka7xrph-5v5w6i0g83.gz",
+      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\owjka7xrph-k9ymtt8yz1.gz",
       "SourceId": "WebApplication3",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebApplication3",
-      "RelativePath": "css/modal#[.{fingerprint=5v5w6i0g83}]?.css.gz",
+      "RelativePath": "css/modal#[.{fingerprint=k9ymtt8yz1}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -997,8 +997,8 @@
       "RelatedAsset": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\modal.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "f8dw7j2zf8",
-      "Integrity": "AYK7OYXNQHeGKV/G/pP5j/uVZ1hH8ei7NcDbijmpyTg=",
+      "Fingerprint": "bowzugr2n9",
+      "Integrity": "K95iRL8sOttMjE7T95dUdw6vrUlDzKZS9YVqyIXT4cE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\modal.css"
@@ -1781,6 +1781,27 @@
       "OriginalItemSpec": "wwwroot\\Content\\assets\\4164f160-5cad-4889-8b4d-3d835226225e_image9.png"
     },
     {
+      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\4b6126e2-4408-4031-a093-1f5061fada70.png",
+      "SourceId": "WebApplication3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\",
+      "BasePath": "_content/WebApplication3",
+      "RelativePath": "Content/assets/4b6126e2-4408-4031-a093-1f5061fada70#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d7iy4ws087",
+      "Integrity": "qVQtpKAYL28ud7duO9awkgD3fILSocjPXerzndzipfg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Content\\assets\\4b6126e2-4408-4031-a093-1f5061fada70.png"
+    },
+    {
       "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\5dc427a5-4915-4a76-85ba-789adc6a08de.png",
       "SourceId": "WebApplication3",
       "SourceType": "Discovered",
@@ -1884,6 +1905,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Content\\assets\\7370078e-42c9-4610-8c2e-a3d74f18b45e_cor22.png"
+    },
+    {
+      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\9aff63d2-007d-4f64-bc3e-2c882aae41b3.png",
+      "SourceId": "WebApplication3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\",
+      "BasePath": "_content/WebApplication3",
+      "RelativePath": "Content/assets/9aff63d2-007d-4f64-bc3e-2c882aae41b3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9wvonwp16v",
+      "Integrity": "eX5cbcJm38AR8Bv8ue8xyGV80pHdL3RqBkBpF8aBR4U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Content\\assets\\9aff63d2-007d-4f64-bc3e-2c882aae41b3.png"
     },
     {
       "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\9bd3c727-5597-4d15-8a48-868196036f87_cor6.png",
@@ -3314,6 +3356,27 @@
       "OriginalItemSpec": "wwwroot\\Content\\assets\\f5128937-c055-4a91-9f4c-f46d823fae3d_image11.jfif"
     },
     {
+      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\f8e36c71-089f-4fc4-95f3-0e251c65d0cd.png",
+      "SourceId": "WebApplication3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\",
+      "BasePath": "_content/WebApplication3",
+      "RelativePath": "Content/assets/f8e36c71-089f-4fc4-95f3-0e251c65d0cd#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "72iazsb3mf",
+      "Integrity": "79w01WZnaocoJMW6jdtVuiaAihqKhrLv2caadhHxpAE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Content\\assets\\f8e36c71-089f-4fc4-95f3-0e251c65d0cd.png"
+    },
+    {
       "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\Hback.png",
       "SourceId": "WebApplication3",
       "SourceType": "Discovered",
@@ -4693,8 +4756,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1djh1ie02o",
-      "Integrity": "RYVKwdDfF50oIQCPGdBN17kaWY+DtxsWXeYOPlecLP8=",
+      "Fingerprint": "1woo7b0gti",
+      "Integrity": "//gsTL5BFoCFF8Fzeota/857UUtVrS4TyaL2fMWnM6s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Content\\StyleSheet.css"
@@ -5055,6 +5118,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Content\\uploads\\716d8410-20c0-4732-b4f2-ffd8da2b45f0.png"
+    },
+    {
+      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\7337b52f-dc5f-405d-ba39-958f08ff643e.png",
+      "SourceId": "WebApplication3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\",
+      "BasePath": "_content/WebApplication3",
+      "RelativePath": "Content/uploads/7337b52f-dc5f-405d-ba39-958f08ff643e#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q3n4jizzmk",
+      "Integrity": "9rjxNHclI50RxGaqa0qUUS7fn9TRMVZRkV+D6naqzpU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Content\\uploads\\7337b52f-dc5f-405d-ba39-958f08ff643e.png"
     },
     {
       "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\7f9820b1-eb9e-44fb-a532-e9555b9b7077.png",
@@ -5454,6 +5538,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Content\\uploads\\bb926225-b732-4585-8412-5c7b431bafe1.png"
+    },
+    {
+      "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\c18090ff-25f0-48d1-b0a0-7ce43b3ed42d.png",
+      "SourceId": "WebApplication3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\",
+      "BasePath": "_content/WebApplication3",
+      "RelativePath": "Content/uploads/c18090ff-25f0-48d1-b0a0-7ce43b3ed42d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mt9tnnvd4f",
+      "Integrity": "+jnTivznswoyA4xh3gAvV67m/S0x29Tbe7kHv319Nwc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Content\\uploads\\c18090ff-25f0-48d1-b0a0-7ce43b3ed42d.png"
     },
     {
       "Identity": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\c809e017-b86c-4039-85de-54c0cf47ef2b.png",
@@ -5890,8 +5995,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5v5w6i0g83",
-      "Integrity": "T8wXBP1z6ke34nLc4eaFcB5teIj1nlC/mpY5B+g6gXg=",
+      "Fingerprint": "k9ymtt8yz1",
+      "Integrity": "CNgPIdKLNxKUZi9oRnW/sAxJLe2CEgGMcCFwU/kc8Iw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\modal.css"
@@ -5911,8 +6016,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rjb7bkprt9",
-      "Integrity": "yb4Bs6mKx3XTb1kbWHwuRoGsjNM6oIBqb8M7/KyjbcA=",
+      "Fingerprint": "8kb8gk3xs3",
+      "Integrity": "eMNP4wE/sWXRZGVBIIxgqwCH0arlqwHV0srF+k9YXQU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\navbar.css"
@@ -5932,8 +6037,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kvd2lyffgn",
-      "Integrity": "wF95VL/M6YRVLzvD2x8P1IxnrxVaKtxSkG7X/i6gwGU=",
+      "Fingerprint": "p0mb66619k",
+      "Integrity": "x31Mx7mkcVy8pQx0+KK9KTZ/0MpoINMFOZaZHdhhmbM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\product.css"
@@ -7838,6 +7943,88 @@
       ]
     },
     {
+      "Route": "Content/assets/4b6126e2-4408-4031-a093-1f5061fada70.d7iy4ws087.png",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\4b6126e2-4408-4031-a093-1f5061fada70.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "282263"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qVQtpKAYL28ud7duO9awkgD3fILSocjPXerzndzipfg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 11:38:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d7iy4ws087"
+        },
+        {
+          "Name": "label",
+          "Value": "Content/assets/4b6126e2-4408-4031-a093-1f5061fada70.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qVQtpKAYL28ud7duO9awkgD3fILSocjPXerzndzipfg="
+        }
+      ]
+    },
+    {
+      "Route": "Content/assets/4b6126e2-4408-4031-a093-1f5061fada70.png",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\4b6126e2-4408-4031-a093-1f5061fada70.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "282263"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qVQtpKAYL28ud7duO9awkgD3fILSocjPXerzndzipfg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 11:38:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qVQtpKAYL28ud7duO9awkgD3fILSocjPXerzndzipfg="
+        }
+      ]
+    },
+    {
       "Route": "Content/assets/5dc427a5-4915-4a76-85ba-789adc6a08de.0h9q5v27qd.png",
       "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\5dc427a5-4915-4a76-85ba-789adc6a08de.png",
       "Selectors": [],
@@ -8244,6 +8431,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-pgRgdyLH8Ituo0Go75W74ofB3Ts42kNoZ90FFfWE6gs="
+        }
+      ]
+    },
+    {
+      "Route": "Content/assets/9aff63d2-007d-4f64-bc3e-2c882aae41b3.9wvonwp16v.png",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\9aff63d2-007d-4f64-bc3e-2c882aae41b3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "591826"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eX5cbcJm38AR8Bv8ue8xyGV80pHdL3RqBkBpF8aBR4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 11:38:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9wvonwp16v"
+        },
+        {
+          "Name": "label",
+          "Value": "Content/assets/9aff63d2-007d-4f64-bc3e-2c882aae41b3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eX5cbcJm38AR8Bv8ue8xyGV80pHdL3RqBkBpF8aBR4U="
+        }
+      ]
+    },
+    {
+      "Route": "Content/assets/9aff63d2-007d-4f64-bc3e-2c882aae41b3.png",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\9aff63d2-007d-4f64-bc3e-2c882aae41b3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "591826"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eX5cbcJm38AR8Bv8ue8xyGV80pHdL3RqBkBpF8aBR4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 11:38:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eX5cbcJm38AR8Bv8ue8xyGV80pHdL3RqBkBpF8aBR4U="
         }
       ]
     },
@@ -13820,6 +14089,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-T1LYmtLJVIRg3bRU7Cx35RficM4livYXv10o8m0sajE="
+        }
+      ]
+    },
+    {
+      "Route": "Content/assets/f8e36c71-089f-4fc4-95f3-0e251c65d0cd.72iazsb3mf.png",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\f8e36c71-089f-4fc4-95f3-0e251c65d0cd.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"79w01WZnaocoJMW6jdtVuiaAihqKhrLv2caadhHxpAE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 11:38:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "72iazsb3mf"
+        },
+        {
+          "Name": "label",
+          "Value": "Content/assets/f8e36c71-089f-4fc4-95f3-0e251c65d0cd.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-79w01WZnaocoJMW6jdtVuiaAihqKhrLv2caadhHxpAE="
+        }
+      ]
+    },
+    {
+      "Route": "Content/assets/f8e36c71-089f-4fc4-95f3-0e251c65d0cd.png",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\assets\\f8e36c71-089f-4fc4-95f3-0e251c65d0cd.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"79w01WZnaocoJMW6jdtVuiaAihqKhrLv2caadhHxpAE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 11:38:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-79w01WZnaocoJMW6jdtVuiaAihqKhrLv2caadhHxpAE="
         }
       ]
     },
@@ -19802,13 +20153,13 @@
       ]
     },
     {
-      "Route": "Content/StyleSheet.1djh1ie02o.css",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\bezpkl6r13-1djh1ie02o.gz",
+      "Route": "Content/StyleSheet.1woo7b0gti.css",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\bezpkl6r13-1woo7b0gti.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000149231458"
+          "Quality": "0.000133547009"
         }
       ],
       "ResponseHeaders": [
@@ -19818,15 +20169,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6700"
+          "Value": "7487"
         },
         {
           "Name": "ETag",
-          "Value": "\"0M6YrvL5t9L5MHnbA1ObD1viESA/RshfALXU/zr0JFw=\""
+          "Value": "\"vlZExgigjxXK7VVNaCpVActrmWUB+UZ6tdHzeKWjGeY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:38:19 GMT"
+          "Value": "Sun, 13 Apr 2025 13:33:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19846,13 +20197,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RYVKwdDfF50oIQCPGdBN17kaWY+DtxsWXeYOPlecLP8=\""
+          "Value": "W/\"//gsTL5BFoCFF8Fzeota/857UUtVrS4TyaL2fMWnM6s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1djh1ie02o"
+          "Value": "1woo7b0gti"
         },
         {
           "Name": "label",
@@ -19860,12 +20211,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RYVKwdDfF50oIQCPGdBN17kaWY+DtxsWXeYOPlecLP8="
+          "Value": "sha256-//gsTL5BFoCFF8Fzeota/857UUtVrS4TyaL2fMWnM6s="
         }
       ]
     },
     {
-      "Route": "Content/StyleSheet.1djh1ie02o.css",
+      "Route": "Content/StyleSheet.1woo7b0gti.css",
       "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -19875,7 +20226,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "61435"
+          "Value": "67849"
         },
         {
           "Name": "Content-Type",
@@ -19883,11 +20234,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RYVKwdDfF50oIQCPGdBN17kaWY+DtxsWXeYOPlecLP8=\""
+          "Value": "\"//gsTL5BFoCFF8Fzeota/857UUtVrS4TyaL2fMWnM6s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:38:19 GMT"
+          "Value": "Sun, 13 Apr 2025 13:33:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19897,7 +20248,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1djh1ie02o"
+          "Value": "1woo7b0gti"
         },
         {
           "Name": "label",
@@ -19905,13 +20256,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RYVKwdDfF50oIQCPGdBN17kaWY+DtxsWXeYOPlecLP8="
+          "Value": "sha256-//gsTL5BFoCFF8Fzeota/857UUtVrS4TyaL2fMWnM6s="
         }
       ]
     },
     {
-      "Route": "Content/StyleSheet.1djh1ie02o.css.gz",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\bezpkl6r13-1djh1ie02o.gz",
+      "Route": "Content/StyleSheet.1woo7b0gti.css.gz",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\bezpkl6r13-1woo7b0gti.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -19920,7 +20271,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6700"
+          "Value": "7487"
         },
         {
           "Name": "Content-Type",
@@ -19928,11 +20279,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0M6YrvL5t9L5MHnbA1ObD1viESA/RshfALXU/zr0JFw=\""
+          "Value": "\"vlZExgigjxXK7VVNaCpVActrmWUB+UZ6tdHzeKWjGeY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:38:19 GMT"
+          "Value": "Sun, 13 Apr 2025 13:33:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19950,7 +20301,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1djh1ie02o"
+          "Value": "1woo7b0gti"
         },
         {
           "Name": "label",
@@ -19958,18 +20309,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0M6YrvL5t9L5MHnbA1ObD1viESA/RshfALXU/zr0JFw="
+          "Value": "sha256-vlZExgigjxXK7VVNaCpVActrmWUB+UZ6tdHzeKWjGeY="
         }
       ]
     },
     {
       "Route": "Content/StyleSheet.css",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\bezpkl6r13-1djh1ie02o.gz",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\bezpkl6r13-1woo7b0gti.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000149231458"
+          "Quality": "0.000133547009"
         }
       ],
       "ResponseHeaders": [
@@ -19979,15 +20330,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6700"
+          "Value": "7487"
         },
         {
           "Name": "ETag",
-          "Value": "\"0M6YrvL5t9L5MHnbA1ObD1viESA/RshfALXU/zr0JFw=\""
+          "Value": "\"vlZExgigjxXK7VVNaCpVActrmWUB+UZ6tdHzeKWjGeY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:38:19 GMT"
+          "Value": "Sun, 13 Apr 2025 13:33:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20007,13 +20358,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RYVKwdDfF50oIQCPGdBN17kaWY+DtxsWXeYOPlecLP8=\""
+          "Value": "W/\"//gsTL5BFoCFF8Fzeota/857UUtVrS4TyaL2fMWnM6s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RYVKwdDfF50oIQCPGdBN17kaWY+DtxsWXeYOPlecLP8="
+          "Value": "sha256-//gsTL5BFoCFF8Fzeota/857UUtVrS4TyaL2fMWnM6s="
         }
       ]
     },
@@ -20028,7 +20379,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "61435"
+          "Value": "67849"
         },
         {
           "Name": "Content-Type",
@@ -20036,11 +20387,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RYVKwdDfF50oIQCPGdBN17kaWY+DtxsWXeYOPlecLP8=\""
+          "Value": "\"//gsTL5BFoCFF8Fzeota/857UUtVrS4TyaL2fMWnM6s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:38:19 GMT"
+          "Value": "Sun, 13 Apr 2025 13:33:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20050,13 +20401,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RYVKwdDfF50oIQCPGdBN17kaWY+DtxsWXeYOPlecLP8="
+          "Value": "sha256-//gsTL5BFoCFF8Fzeota/857UUtVrS4TyaL2fMWnM6s="
         }
       ]
     },
     {
       "Route": "Content/StyleSheet.css.gz",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\bezpkl6r13-1djh1ie02o.gz",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\bezpkl6r13-1woo7b0gti.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -20065,7 +20416,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6700"
+          "Value": "7487"
         },
         {
           "Name": "Content-Type",
@@ -20073,11 +20424,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0M6YrvL5t9L5MHnbA1ObD1viESA/RshfALXU/zr0JFw=\""
+          "Value": "\"vlZExgigjxXK7VVNaCpVActrmWUB+UZ6tdHzeKWjGeY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:38:19 GMT"
+          "Value": "Sun, 13 Apr 2025 13:33:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20095,7 +20446,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0M6YrvL5t9L5MHnbA1ObD1viESA/RshfALXU/zr0JFw="
+          "Value": "sha256-vlZExgigjxXK7VVNaCpVActrmWUB+UZ6tdHzeKWjGeY="
         }
       ]
     },
@@ -21490,6 +21841,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-FUtgcBKr4h9l0tVLuIneCEDsL9PNN9mJM6BNgIvcokk="
+        }
+      ]
+    },
+    {
+      "Route": "Content/uploads/7337b52f-dc5f-405d-ba39-958f08ff643e.png",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\7337b52f-dc5f-405d-ba39-958f08ff643e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "444464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9rjxNHclI50RxGaqa0qUUS7fn9TRMVZRkV+D6naqzpU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 14:04:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9rjxNHclI50RxGaqa0qUUS7fn9TRMVZRkV+D6naqzpU="
+        }
+      ]
+    },
+    {
+      "Route": "Content/uploads/7337b52f-dc5f-405d-ba39-958f08ff643e.q3n4jizzmk.png",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\7337b52f-dc5f-405d-ba39-958f08ff643e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "444464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9rjxNHclI50RxGaqa0qUUS7fn9TRMVZRkV+D6naqzpU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 14:04:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q3n4jizzmk"
+        },
+        {
+          "Name": "label",
+          "Value": "Content/uploads/7337b52f-dc5f-405d-ba39-958f08ff643e.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9rjxNHclI50RxGaqa0qUUS7fn9TRMVZRkV+D6naqzpU="
         }
       ]
     },
@@ -23048,6 +23481,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-/pxIAD5+G9xd1uAnI5T5otRsFEbar9fidBzGQie+RiM="
+        }
+      ]
+    },
+    {
+      "Route": "Content/uploads/c18090ff-25f0-48d1-b0a0-7ce43b3ed42d.mt9tnnvd4f.png",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\c18090ff-25f0-48d1-b0a0-7ce43b3ed42d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "381143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+jnTivznswoyA4xh3gAvV67m/S0x29Tbe7kHv319Nwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 14:04:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mt9tnnvd4f"
+        },
+        {
+          "Name": "label",
+          "Value": "Content/uploads/c18090ff-25f0-48d1-b0a0-7ce43b3ed42d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+jnTivznswoyA4xh3gAvV67m/S0x29Tbe7kHv319Nwc="
+        }
+      ]
+    },
+    {
+      "Route": "Content/uploads/c18090ff-25f0-48d1-b0a0-7ce43b3ed42d.png",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\uploads\\c18090ff-25f0-48d1-b0a0-7ce43b3ed42d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "381143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+jnTivznswoyA4xh3gAvV67m/S0x29Tbe7kHv319Nwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 14:04:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+jnTivznswoyA4xh3gAvV67m/S0x29Tbe7kHv319Nwc="
         }
       ]
     },
@@ -25556,13 +26071,13 @@
       ]
     },
     {
-      "Route": "css/modal.5v5w6i0g83.css",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\owjka7xrph-5v5w6i0g83.gz",
+      "Route": "css/modal.css",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\owjka7xrph-k9ymtt8yz1.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001315789474"
+          "Quality": "0.000487804878"
         }
       ],
       "ResponseHeaders": [
@@ -25572,19 +26087,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "759"
+          "Value": "2049"
         },
         {
           "Name": "ETag",
-          "Value": "\"AYK7OYXNQHeGKV/G/pP5j/uVZ1hH8ei7NcDbijmpyTg=\""
+          "Value": "\"K95iRL8sOttMjE7T95dUdw6vrUlDzKZS9YVqyIXT4cE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 12:30:02 GMT"
+          "Value": "Sat, 12 Apr 2025 11:47:41 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -25600,26 +26115,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"T8wXBP1z6ke34nLc4eaFcB5teIj1nlC/mpY5B+g6gXg=\""
+          "Value": "W/\"CNgPIdKLNxKUZi9oRnW/sAxJLe2CEgGMcCFwU/kc8Iw=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "5v5w6i0g83"
-        },
-        {
-          "Name": "label",
-          "Value": "css/modal.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-T8wXBP1z6ke34nLc4eaFcB5teIj1nlC/mpY5B+g6gXg="
+          "Value": "sha256-CNgPIdKLNxKUZi9oRnW/sAxJLe2CEgGMcCFwU/kc8Iw="
         }
       ]
     },
     {
-      "Route": "css/modal.5v5w6i0g83.css",
+      "Route": "css/modal.css",
       "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\modal.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -25629,7 +26136,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2002"
+          "Value": "8761"
         },
         {
           "Name": "Content-Type",
@@ -25637,11 +26144,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"T8wXBP1z6ke34nLc4eaFcB5teIj1nlC/mpY5B+g6gXg=\""
+          "Value": "\"CNgPIdKLNxKUZi9oRnW/sAxJLe2CEgGMcCFwU/kc8Iw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 12:30:02 GMT"
+          "Value": "Sat, 12 Apr 2025 11:47:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CNgPIdKLNxKUZi9oRnW/sAxJLe2CEgGMcCFwU/kc8Iw="
+        }
+      ]
+    },
+    {
+      "Route": "css/modal.css.gz",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\owjka7xrph-k9ymtt8yz1.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2049"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K95iRL8sOttMjE7T95dUdw6vrUlDzKZS9YVqyIXT4cE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 11:47:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K95iRL8sOttMjE7T95dUdw6vrUlDzKZS9YVqyIXT4cE="
+        }
+      ]
+    },
+    {
+      "Route": "css/modal.k9ymtt8yz1.css",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\owjka7xrph-k9ymtt8yz1.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000487804878"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2049"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K95iRL8sOttMjE7T95dUdw6vrUlDzKZS9YVqyIXT4cE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 11:47:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CNgPIdKLNxKUZi9oRnW/sAxJLe2CEgGMcCFwU/kc8Iw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k9ymtt8yz1"
+        },
+        {
+          "Name": "label",
+          "Value": "css/modal.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CNgPIdKLNxKUZi9oRnW/sAxJLe2CEgGMcCFwU/kc8Iw="
+        }
+      ]
+    },
+    {
+      "Route": "css/modal.k9ymtt8yz1.css",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\modal.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8761"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CNgPIdKLNxKUZi9oRnW/sAxJLe2CEgGMcCFwU/kc8Iw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 11:47:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25651,7 +26303,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5v5w6i0g83"
+          "Value": "k9ymtt8yz1"
         },
         {
           "Name": "label",
@@ -25659,13 +26311,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-T8wXBP1z6ke34nLc4eaFcB5teIj1nlC/mpY5B+g6gXg="
+          "Value": "sha256-CNgPIdKLNxKUZi9oRnW/sAxJLe2CEgGMcCFwU/kc8Iw="
         }
       ]
     },
     {
-      "Route": "css/modal.5v5w6i0g83.css.gz",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\owjka7xrph-5v5w6i0g83.gz",
+      "Route": "css/modal.k9ymtt8yz1.css.gz",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\owjka7xrph-k9ymtt8yz1.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -25674,7 +26326,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "759"
+          "Value": "2049"
         },
         {
           "Name": "Content-Type",
@@ -25682,11 +26334,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AYK7OYXNQHeGKV/G/pP5j/uVZ1hH8ei7NcDbijmpyTg=\""
+          "Value": "\"K95iRL8sOttMjE7T95dUdw6vrUlDzKZS9YVqyIXT4cE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 12:30:02 GMT"
+          "Value": "Sat, 12 Apr 2025 11:47:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25704,7 +26356,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5v5w6i0g83"
+          "Value": "k9ymtt8yz1"
         },
         {
           "Name": "label",
@@ -25712,18 +26364,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AYK7OYXNQHeGKV/G/pP5j/uVZ1hH8ei7NcDbijmpyTg="
+          "Value": "sha256-K95iRL8sOttMjE7T95dUdw6vrUlDzKZS9YVqyIXT4cE="
         }
       ]
     },
     {
-      "Route": "css/modal.css",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\owjka7xrph-5v5w6i0g83.gz",
+      "Route": "css/navbar.8kb8gk3xs3.css",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\gutjxrvo2z-8kb8gk3xs3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001315789474"
+          "Quality": "0.000545553737"
         }
       ],
       "ResponseHeaders": [
@@ -25733,19 +26385,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "759"
+          "Value": "1832"
         },
         {
           "Name": "ETag",
-          "Value": "\"AYK7OYXNQHeGKV/G/pP5j/uVZ1hH8ei7NcDbijmpyTg=\""
+          "Value": "\"gxxvbbSVyV2M1+4vLTuX8EwSTu1+JcX8EQXxgQ3zf8w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 12:30:02 GMT"
+          "Value": "Sat, 12 Apr 2025 14:00:00 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -25761,155 +26413,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"T8wXBP1z6ke34nLc4eaFcB5teIj1nlC/mpY5B+g6gXg=\""
+          "Value": "W/\"eMNP4wE/sWXRZGVBIIxgqwCH0arlqwHV0srF+k9YXQU=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "8kb8gk3xs3"
+        },
+        {
+          "Name": "label",
+          "Value": "css/navbar.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-T8wXBP1z6ke34nLc4eaFcB5teIj1nlC/mpY5B+g6gXg="
+          "Value": "sha256-eMNP4wE/sWXRZGVBIIxgqwCH0arlqwHV0srF+k9YXQU="
         }
       ]
     },
     {
-      "Route": "css/modal.css",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\modal.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2002"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"T8wXBP1z6ke34nLc4eaFcB5teIj1nlC/mpY5B+g6gXg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 12:30:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-T8wXBP1z6ke34nLc4eaFcB5teIj1nlC/mpY5B+g6gXg="
-        }
-      ]
-    },
-    {
-      "Route": "css/modal.css.gz",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\owjka7xrph-5v5w6i0g83.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "759"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AYK7OYXNQHeGKV/G/pP5j/uVZ1hH8ei7NcDbijmpyTg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 12:30:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AYK7OYXNQHeGKV/G/pP5j/uVZ1hH8ei7NcDbijmpyTg="
-        }
-      ]
-    },
-    {
-      "Route": "css/navbar.css",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\gutjxrvo2z-rjb7bkprt9.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000571428571"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1749"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u6l0D3qDGjK0A6gkRZKvwQN73mwMK1dZn6tHi5i7npo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 19:32:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"yb4Bs6mKx3XTb1kbWHwuRoGsjNM6oIBqb8M7/KyjbcA=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-yb4Bs6mKx3XTb1kbWHwuRoGsjNM6oIBqb8M7/KyjbcA="
-        }
-      ]
-    },
-    {
-      "Route": "css/navbar.css",
+      "Route": "css/navbar.8kb8gk3xs3.css",
       "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -25919,7 +26442,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6805"
+          "Value": "7313"
         },
         {
           "Name": "Content-Type",
@@ -25927,121 +26450,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yb4Bs6mKx3XTb1kbWHwuRoGsjNM6oIBqb8M7/KyjbcA=\""
+          "Value": "\"eMNP4wE/sWXRZGVBIIxgqwCH0arlqwHV0srF+k9YXQU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 19:32:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-yb4Bs6mKx3XTb1kbWHwuRoGsjNM6oIBqb8M7/KyjbcA="
-        }
-      ]
-    },
-    {
-      "Route": "css/navbar.css.gz",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\gutjxrvo2z-rjb7bkprt9.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1749"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u6l0D3qDGjK0A6gkRZKvwQN73mwMK1dZn6tHi5i7npo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 19:32:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-u6l0D3qDGjK0A6gkRZKvwQN73mwMK1dZn6tHi5i7npo="
-        }
-      ]
-    },
-    {
-      "Route": "css/navbar.rjb7bkprt9.css",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\gutjxrvo2z-rjb7bkprt9.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000571428571"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1749"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u6l0D3qDGjK0A6gkRZKvwQN73mwMK1dZn6tHi5i7npo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 19:32:39 GMT"
+          "Value": "Sat, 12 Apr 2025 14:00:00 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"yb4Bs6mKx3XTb1kbWHwuRoGsjNM6oIBqb8M7/KyjbcA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rjb7bkprt9"
+          "Value": "8kb8gk3xs3"
         },
         {
           "Name": "label",
@@ -26049,13 +26472,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-yb4Bs6mKx3XTb1kbWHwuRoGsjNM6oIBqb8M7/KyjbcA="
+          "Value": "sha256-eMNP4wE/sWXRZGVBIIxgqwCH0arlqwHV0srF+k9YXQU="
         }
       ]
     },
     {
-      "Route": "css/navbar.rjb7bkprt9.css",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
+      "Route": "css/navbar.8kb8gk3xs3.css.gz",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\gutjxrvo2z-8kb8gk3xs3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -26064,7 +26487,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6805"
+          "Value": "1832"
         },
         {
           "Name": "Content-Type",
@@ -26072,56 +26495,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yb4Bs6mKx3XTb1kbWHwuRoGsjNM6oIBqb8M7/KyjbcA=\""
+          "Value": "\"gxxvbbSVyV2M1+4vLTuX8EwSTu1+JcX8EQXxgQ3zf8w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 19:32:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "rjb7bkprt9"
-        },
-        {
-          "Name": "label",
-          "Value": "css/navbar.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-yb4Bs6mKx3XTb1kbWHwuRoGsjNM6oIBqb8M7/KyjbcA="
-        }
-      ]
-    },
-    {
-      "Route": "css/navbar.rjb7bkprt9.css.gz",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\gutjxrvo2z-rjb7bkprt9.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1749"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u6l0D3qDGjK0A6gkRZKvwQN73mwMK1dZn6tHi5i7npo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 19:32:39 GMT"
+          "Value": "Sat, 12 Apr 2025 14:00:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26139,7 +26517,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rjb7bkprt9"
+          "Value": "8kb8gk3xs3"
         },
         {
           "Name": "label",
@@ -26147,18 +26525,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-u6l0D3qDGjK0A6gkRZKvwQN73mwMK1dZn6tHi5i7npo="
+          "Value": "sha256-gxxvbbSVyV2M1+4vLTuX8EwSTu1+JcX8EQXxgQ3zf8w="
         }
       ]
     },
     {
-      "Route": "css/product.css",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\cn4vvvwyyp-kvd2lyffgn.gz",
+      "Route": "css/navbar.css",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\gutjxrvo2z-8kb8gk3xs3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001472754050"
+          "Quality": "0.000545553737"
         }
       ],
       "ResponseHeaders": [
@@ -26168,15 +26546,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "678"
+          "Value": "1832"
         },
         {
           "Name": "ETag",
-          "Value": "\"wgfM0ecYYVKKPXmKLxHaVTfoY/DPdt8WPFhSOZWHZL8=\""
+          "Value": "\"gxxvbbSVyV2M1+4vLTuX8EwSTu1+JcX8EQXxgQ3zf8w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 08:40:49 GMT"
+          "Value": "Sat, 12 Apr 2025 14:00:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26196,13 +26574,150 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"wF95VL/M6YRVLzvD2x8P1IxnrxVaKtxSkG7X/i6gwGU=\""
+          "Value": "W/\"eMNP4wE/sWXRZGVBIIxgqwCH0arlqwHV0srF+k9YXQU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wF95VL/M6YRVLzvD2x8P1IxnrxVaKtxSkG7X/i6gwGU="
+          "Value": "sha256-eMNP4wE/sWXRZGVBIIxgqwCH0arlqwHV0srF+k9YXQU="
+        }
+      ]
+    },
+    {
+      "Route": "css/navbar.css",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eMNP4wE/sWXRZGVBIIxgqwCH0arlqwHV0srF+k9YXQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 14:00:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eMNP4wE/sWXRZGVBIIxgqwCH0arlqwHV0srF+k9YXQU="
+        }
+      ]
+    },
+    {
+      "Route": "css/navbar.css.gz",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\gutjxrvo2z-8kb8gk3xs3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gxxvbbSVyV2M1+4vLTuX8EwSTu1+JcX8EQXxgQ3zf8w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 14:00:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gxxvbbSVyV2M1+4vLTuX8EwSTu1+JcX8EQXxgQ3zf8w="
+        }
+      ]
+    },
+    {
+      "Route": "css/product.css",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\cn4vvvwyyp-p0mb66619k.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000791139241"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1263"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w0UejwQdEVu0/wrTztQ08Y1pkSXMYMgidmxf5heypjQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 17:33:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"x31Mx7mkcVy8pQx0+KK9KTZ/0MpoINMFOZaZHdhhmbM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x31Mx7mkcVy8pQx0+KK9KTZ/0MpoINMFOZaZHdhhmbM="
         }
       ]
     },
@@ -26217,7 +26732,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1611"
+          "Value": "3694"
         },
         {
           "Name": "Content-Type",
@@ -26225,11 +26740,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wF95VL/M6YRVLzvD2x8P1IxnrxVaKtxSkG7X/i6gwGU=\""
+          "Value": "\"x31Mx7mkcVy8pQx0+KK9KTZ/0MpoINMFOZaZHdhhmbM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 08:40:49 GMT"
+          "Value": "Thu, 10 Apr 2025 17:33:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26239,13 +26754,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wF95VL/M6YRVLzvD2x8P1IxnrxVaKtxSkG7X/i6gwGU="
+          "Value": "sha256-x31Mx7mkcVy8pQx0+KK9KTZ/0MpoINMFOZaZHdhhmbM="
         }
       ]
     },
     {
       "Route": "css/product.css.gz",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\cn4vvvwyyp-kvd2lyffgn.gz",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\cn4vvvwyyp-p0mb66619k.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -26254,7 +26769,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "678"
+          "Value": "1263"
         },
         {
           "Name": "Content-Type",
@@ -26262,11 +26777,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wgfM0ecYYVKKPXmKLxHaVTfoY/DPdt8WPFhSOZWHZL8=\""
+          "Value": "\"w0UejwQdEVu0/wrTztQ08Y1pkSXMYMgidmxf5heypjQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 08:40:49 GMT"
+          "Value": "Thu, 10 Apr 2025 17:33:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26284,18 +26799,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wgfM0ecYYVKKPXmKLxHaVTfoY/DPdt8WPFhSOZWHZL8="
+          "Value": "sha256-w0UejwQdEVu0/wrTztQ08Y1pkSXMYMgidmxf5heypjQ="
         }
       ]
     },
     {
-      "Route": "css/product.kvd2lyffgn.css",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\cn4vvvwyyp-kvd2lyffgn.gz",
+      "Route": "css/product.p0mb66619k.css",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\cn4vvvwyyp-p0mb66619k.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001472754050"
+          "Quality": "0.000791139241"
         }
       ],
       "ResponseHeaders": [
@@ -26305,15 +26820,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "678"
+          "Value": "1263"
         },
         {
           "Name": "ETag",
-          "Value": "\"wgfM0ecYYVKKPXmKLxHaVTfoY/DPdt8WPFhSOZWHZL8=\""
+          "Value": "\"w0UejwQdEVu0/wrTztQ08Y1pkSXMYMgidmxf5heypjQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 08:40:49 GMT"
+          "Value": "Thu, 10 Apr 2025 17:33:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26333,13 +26848,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"wF95VL/M6YRVLzvD2x8P1IxnrxVaKtxSkG7X/i6gwGU=\""
+          "Value": "W/\"x31Mx7mkcVy8pQx0+KK9KTZ/0MpoINMFOZaZHdhhmbM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kvd2lyffgn"
+          "Value": "p0mb66619k"
         },
         {
           "Name": "label",
@@ -26347,12 +26862,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wF95VL/M6YRVLzvD2x8P1IxnrxVaKtxSkG7X/i6gwGU="
+          "Value": "sha256-x31Mx7mkcVy8pQx0+KK9KTZ/0MpoINMFOZaZHdhhmbM="
         }
       ]
     },
     {
-      "Route": "css/product.kvd2lyffgn.css",
+      "Route": "css/product.p0mb66619k.css",
       "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -26362,7 +26877,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1611"
+          "Value": "3694"
         },
         {
           "Name": "Content-Type",
@@ -26370,11 +26885,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wF95VL/M6YRVLzvD2x8P1IxnrxVaKtxSkG7X/i6gwGU=\""
+          "Value": "\"x31Mx7mkcVy8pQx0+KK9KTZ/0MpoINMFOZaZHdhhmbM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 08:40:49 GMT"
+          "Value": "Thu, 10 Apr 2025 17:33:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26384,7 +26899,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kvd2lyffgn"
+          "Value": "p0mb66619k"
         },
         {
           "Name": "label",
@@ -26392,13 +26907,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wF95VL/M6YRVLzvD2x8P1IxnrxVaKtxSkG7X/i6gwGU="
+          "Value": "sha256-x31Mx7mkcVy8pQx0+KK9KTZ/0MpoINMFOZaZHdhhmbM="
         }
       ]
     },
     {
-      "Route": "css/product.kvd2lyffgn.css.gz",
-      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\cn4vvvwyyp-kvd2lyffgn.gz",
+      "Route": "css/product.p0mb66619k.css.gz",
+      "AssetFile": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\obj\\Debug\\net9.0\\compressed\\cn4vvvwyyp-p0mb66619k.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -26407,7 +26922,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "678"
+          "Value": "1263"
         },
         {
           "Name": "Content-Type",
@@ -26415,11 +26930,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wgfM0ecYYVKKPXmKLxHaVTfoY/DPdt8WPFhSOZWHZL8=\""
+          "Value": "\"w0UejwQdEVu0/wrTztQ08Y1pkSXMYMgidmxf5heypjQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 08:40:49 GMT"
+          "Value": "Thu, 10 Apr 2025 17:33:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26437,7 +26952,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kvd2lyffgn"
+          "Value": "p0mb66619k"
         },
         {
           "Name": "label",
@@ -26445,7 +26960,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wgfM0ecYYVKKPXmKLxHaVTfoY/DPdt8WPFhSOZWHZL8="
+          "Value": "sha256-w0UejwQdEVu0/wrTztQ08Y1pkSXMYMgidmxf5heypjQ="
         }
       ]
     },

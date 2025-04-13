@@ -7,6 +7,85 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\Sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\Sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost_sqlexpress/crayonlabDB/True/SqlTable/dbo.ShirtTypes.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Services\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Services\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\OrderController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Controllers\\OrderController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Contact\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Contact\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\Error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Shared\\Error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\modal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\modal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Models\\ShopViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Models\\ShopViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Models\\NewsandUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Models\\NewsandUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Models\\Partners.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Models\\Partners.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Product\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Product\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -15,40 +94,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\Sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\Sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\Ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Controllers\\Ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\ItemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Controllers\\ItemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost_sqlexpress/crayonlabDB/True/SqlTable/dbo.ShirtDesigns.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -68,10 +115,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -81,7 +124,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -93,33 +136,142 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "product.css",
-              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css",
-              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css",
-              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css",
-              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAYwH0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T11:52:08.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "modal.css",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\modal.css",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\modal.css",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\modal.css",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\modal.css",
+              "ViewState": "AgIAAK4BAAAAAAAAAAAjwLYBAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-10T17:32:40.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T11:29:36.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAYwO8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T11:22:56.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAuwPgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T16:00:20.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGsBAAAAAAAAAAAUwIsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T14:46:31.709Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Product\\Index.cshtml",
-              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADEAAAAWAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAI0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T17:21:18.784Z",
+              "WhenOpened": "2025-04-10T13:33:12.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:09:54.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "navbar.css",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
+              "ViewState": "AgIAABgBAAAAAAAAAAAYwDgBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-10T17:08:27.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StyleSheet.css",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css",
+              "ViewState": "AgIAAOQMAAAAAAAAAAAAAP4MAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-09T09:58:59.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T09:25:52.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAowNoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T09:21:37.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Sheet.css",
               "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\Sheet.css",
               "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\Sheet.css",
@@ -132,33 +284,112 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "navbar.css",
-              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
-              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
-              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
-              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\navbar.css",
-              "ViewState": "AgIAALQAAAAAAAAAAAAAAMwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-10T17:08:27.152Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "dbo.ShirtTypes.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost_sqlexpress/crayonlabDB/True/SqlTable/dbo.ShirtTypes.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/localhost_sqlexpress/crayonlabDB/True/SqlTable/dbo.ShirtTypes.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-04-13T13:39:45.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Services\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Services\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Services\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Services\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowCgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T16:00:20.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T11:12:19.558Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\appsettings.json",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\appsettings.json",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\appsettings.json",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-12T12:28:03.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T12:35:48.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Program.cs",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Program.cs",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Program.cs",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:43:59.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-10T14:46:31.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ShopViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Models\\ShopViewModel.cs",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Models\\ShopViewModel.cs",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Models\\ShopViewModel.cs",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Models\\ShopViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T11:17:07.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NewsandUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Models\\NewsandUpdate.cs",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Models\\NewsandUpdate.cs",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Models\\NewsandUpdate.cs",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Models\\NewsandUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T11:12:06.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Partners.cs",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Models\\Partners.cs",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Models\\Partners.cs",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Models\\Partners.cs",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Models\\Partners.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T11:13:28.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "ItemController.cs",
               "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\ItemController.cs",
               "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Controllers\\ItemController.cs",
@@ -166,87 +397,44 @@
               "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Controllers\\ItemController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T15:59:53.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T15:59:53.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAYAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T15:09:54.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T17:21:18.784Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T14:46:31.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "product.css",
+              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css",
+              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css",
+              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css",
+              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\product.css",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-10T14:46:31.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T17:32:40.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "dbo.ShirtDesigns [Data]",
+              "DocumentIndex": 24,
+              "Title": "dbo.ShirtDesigns.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost_sqlexpress/crayonlabDB/True/SqlTable/dbo.ShirtDesigns.sql",
-              "ToolTip": "dbo.ShirtDesigns [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/localhost_sqlexpress/crayonlabDB/True/SqlTable/dbo.ShirtDesigns.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-04-10T13:35:31.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T13:35:31.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml",
-              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml",
-              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml",
-              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Item\\Index.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T13:33:12.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StyleSheet.css",
-              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css",
-              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css",
-              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css",
-              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\wwwroot\\Content\\StyleSheet.css",
-              "ViewState": "AgIAAOAAAAAAAAAAAAAmwAABAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-09T09:58:59.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 27,
               "Title": "productlist.js",
               "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\js\\productlist.js",
               "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\wwwroot\\js\\productlist.js",
@@ -254,12 +442,11 @@
               "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\wwwroot\\js\\productlist.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-10T11:48:38.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T11:48:38.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 28,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Privacy.cshtml",
@@ -267,12 +454,11 @@
               "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-09T09:41:35.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:41:35.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "shop.css",
               "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\shop.css",
               "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\shop.css",
@@ -280,25 +466,11 @@
               "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\wwwroot\\css\\shop.css",
               "ViewState": "AgIAADwAAAAAAAAAAAAtwFUAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-09T09:27:43.41Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:27:43.41Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml",
-              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml",
-              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml",
-              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Views\\Shop\\Index.cshtml",
-              "ViewState": "AgIAAJEBAAAAAAAAAAAswLgBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-09T09:25:52.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 25,
               "Title": "ShirtDesign.cs",
               "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Models\\ShirtDesign.cs",
               "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Models\\ShirtDesign.cs",
@@ -306,21 +478,7 @@
               "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Models\\ShirtDesign.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:21:58.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ShopController.cs",
-              "DocumentMoniker": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs",
-              "RelativeDocumentMoniker": "Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs",
-              "ToolTip": "C:\\Users\\alber\\OneDrive\\Desktop\\crayonlab_website\\Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs",
-              "RelativeToolTip": "Crayonlab Website\\Crayonlab Website\\Controllers\\ShopController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAADwv7QAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:21:37.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:21:58.586Z"
             }
           ]
         }

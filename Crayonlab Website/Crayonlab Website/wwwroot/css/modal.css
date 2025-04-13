@@ -93,3 +93,347 @@
 .partner-image:hover .delete-partner {
     display: block;
 }
+
+
+/* News and Updates Styles */
+.news-updates {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    .section-header h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: #f88c08;
+    }
+
+.news-slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.news-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    gap: 20px;
+    padding: 10px 5px;
+}
+
+    .news-slider::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+.news-item {
+    flex: 0 0 auto;
+    width: calc(33.333% - 15px);
+    min-width: 280px;
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    .news-item {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 640px) {
+    .news-item {
+        width: calc(100% - 15px);
+    }
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-item .separator {
+    position: relative;
+    overflow: hidden;
+    height: 220px; /* Fixed height for consistent look */
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain; /* Show full image without cropping */
+    background-color: #f5f5f5; /* Light background for transparent images */
+    transition: transform 0.5s ease;
+}
+
+.news-item:hover img {
+    transform: scale(1.05);
+}
+
+.news-description {
+    padding: 15px;
+    background-color: white;
+    font-size: 0.9rem;
+    color: blue;
+}
+
+    .news-description.tooltip {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        font-size: 0.9rem;
+        color: #333;
+        transition: all 0.3s ease;
+    }
+
+.news-item:hover .news-description.tooltip {
+    display: block;
+}
+
+.delete-news {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
+
+.news-item:hover .delete-news {
+    display: block;
+}
+
+.no-news {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered upload button */
+.upload {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.upload-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+    .upload-button:hover {
+        background-color: #45a049;
+    }
+
+/* Pagination Styles */
+.news-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.pagination-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .pagination-dot.active {
+        background-color: #333;
+    }
+
+/* Navigation Buttons */
+.news-slider-container .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.news-slider-container .nav-prev {
+    left: 10px;
+}
+
+.news-slider-container .nav-next {
+    right: 10px;
+}
+
+.news-slider-container .nav-button:hover {
+    background-color: white;
+}
+
+/* Modal styles for news upload */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-news-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal h2 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .form-group input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        min-height: 100px;
+        resize: vertical;
+    }
+
+.modal button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+    .modal button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+/* Toast notification styles */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+}
+
+    .toast.show {
+        opacity: 1;
+    }
+
+    .toast.success {
+        background-color: green;
+    }
+
+    .toast.error {
+        background-color: red;
+    }
+
+/* Also update partner images to be consistent */
+.partner-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    max-height: 220px;
+}
+
+
+
+/* Center the customize button in the explore-more section */
+.explore-more form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+  

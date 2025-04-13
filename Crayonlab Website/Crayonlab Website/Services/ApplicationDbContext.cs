@@ -9,11 +9,12 @@ namespace Crayonlab.Services
         {
         }
 
-        // New simplified structure
+      
         public DbSet<ShirtType> ShirtTypes { get; set; }
         public DbSet<ShirtDesign> ShirtDesigns { get; set; }
+        public DbSet<NewsandUpdate> NewsandUpdate { get; set; }
 
-        // Keep these if you still need them for existing functionality
+        
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Partners> Partners { get; set; }
 
