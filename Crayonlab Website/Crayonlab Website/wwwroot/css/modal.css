@@ -436,4 +436,19 @@
 }
 
 
-  
+.sliding-title {
+    font-size: 48px;
+    white-space: nowrap;
+    position: relative;
+    animation: slide 5s infinite alternate;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
